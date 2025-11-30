@@ -379,12 +379,13 @@ defineExpose({
 }
 
 .question-text {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 700;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--text);
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @keyframes cardSlide {

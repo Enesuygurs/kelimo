@@ -52,11 +52,11 @@
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.25);
   --shadow-glow: 0 0 20px rgba(91, 95, 226, 0.4);
   
-  /* Border Radius - more rounded for mobile game feel */
-  --radius-sm: 12px;
+  /* Border Radius - consistent rounded corners */
+  --radius-sm: 16px;
   --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
   --radius-full: 9999px;
 }
 
