@@ -13,7 +13,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ATLAS", meaning: "Haritalar topluluğu içeren kitap" },
     { word: "AVUKAT", meaning: "Hukuk işlerinde danışmanlık yapan kişi" },
     { word: "ANTIKA", meaning: "Eski ve değerli eşya" },
-    { word: "ARITMA", meaning: "Suyu temizleme işlemi" }
+    { word: "ARITMA", meaning: "Suyu temizleme işlemi" },
+    { word: "AKUSTIK", meaning: "Ses bilimiyle veya ses yalıtımıyla ilgili" },
+    { word: "AYDIN", meaning: "Bilgili, kültürlü kimse" }
   ],
   B: [
     { word: "BARO", meaning: "Bir şehir veya bölge avukatlarının bağlı oldukları meslek kuruluşu" },
@@ -23,7 +25,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "BALKON", meaning: "Binanın dışına çıkıntı yapan açık alan" },
     { word: "BISTURI", meaning: "Ameliyatlarda kullanılan kesici alet" },
     { word: "BUFET", meaning: "Yiyecek ve içeceklerin sergilendiği masa" },
-    { word: "BONUS", meaning: "Ek ödül veya prim" }
+    { word: "BONUS", meaning: "Ek ödül veya prim" },
+    { word: "BAYRAK", meaning: "Bir milleti veya kurumu simgeleyen bez" },
+    { word: "BEREKET", meaning: "Bol ve verimli olma durumu" }
   ],
   C: [
     { word: "CIPS", meaning: "İnce, yuvarlak kesilerek kızartılmış patates" },
@@ -33,7 +37,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "CAZIBE", meaning: "Çekim gücü, albenisi olan" },
     { word: "CENAZE", meaning: "Ölmüş kişinin bedeni" },
     { word: "CEZVE", meaning: "Türk kahvesi pişirilen kap" },
-    { word: "CUMLE", meaning: "Anlam taşıyan söz dizisi" }
+    { word: "CUMLE", meaning: "Anlam taşıyan söz dizisi" },
+    { word: "CEVIZ", meaning: "Kabuklu bir ağaç meyvesi" },
+    { word: "CANLI", meaning: "Yaşayan varlık" }
   ],
   Ç: [
     { word: "ÇATAPAT", meaning: "Ayakla çiğnendiğinde ya da duvara sürtüldüğünde patlayan eğlence fişeği" },
@@ -43,7 +49,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ÇEKIM", meaning: "Kamera ile görüntü alma" },
     { word: "ÇIRAK", meaning: "Bir ustanın yanında öğrenen kişi" },
     { word: "ÇIPLAK", meaning: "Üzerinde giysi olmayan" },
-    { word: "ÇERÇEVE", meaning: "Resim veya ayna kenarı" }
+    { word: "ÇERÇEVE", meaning: "Resim veya ayna kenarı" },
+    { word: "ÇATAL", meaning: "Yemek yerken kullanılan iki uçlu araç" },
+    { word: "ÇAPRAZ", meaning: "Birbirini kesen veya çapraz duran durum" }
   ],
   D: [
     { word: "DIVAN", meaning: "Osmanlı'da hem devletin karar meclisi, hem de şairlerin şiir hazinesi anlamlarındaki söz" },
@@ -53,7 +61,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "DOSYA", meaning: "Belgelerin konulduğu kap" },
     { word: "DUVAR", meaning: "Yapıları bölen dikey yapı elemanı" },
     { word: "DENEME", meaning: "Bir şeyi test etme" },
-    { word: "DERGI", meaning: "Periyodik olarak yayınlanan basılı materyal" }
+    { word: "DERGI", meaning: "Periyodik olarak yayınlanan basılı materyal" },
+    { word: "DURAK", meaning: "Toplu taşıma araçlarının durduğu yer" },
+    { word: "DIYAR", meaning: "Ülke, memleket" }
   ],
   E: [
     { word: "ERGONOMIK", meaning: "Çok rahat ya da kullanımı kolay tasarlanmış ürün" },
@@ -63,7 +73,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "EZBER", meaning: "Akılda tutarak öğrenme" },
     { word: "ENFES", meaning: "Çok lezzetli, harika" },
     { word: "EKSEN", meaning: "Dönen bir cismin ortasından geçen çizgi" },
-    { word: "ESINTI", meaning: "Hafif rüzgar" }
+    { word: "ESINTI", meaning: "Hafif rüzgar" },
+    { word: "EKIP", meaning: "Bir işi birlikte yapan kişiler topluluğu" },
+    { word: "ESAS", meaning: "Temel, ana kural" }
   ],
   F: [
     { word: "FAZLA", meaning: "Ölçüyü aşan, aşırı, çok fazla" },
@@ -73,7 +85,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "FILTRE", meaning: "Süzgeç görevi gören alet" },
     { word: "FIRTINA", meaning: "Şiddetli rüzgar ve yağış" },
     { word: "FOSIL", meaning: "Taşlaşmış canlı kalıntısı" },
-    { word: "FREN", meaning: "Aracı durduran sistem" }
+    { word: "FREN", meaning: "Aracı durduran sistem" },
+    { word: "FARK", meaning: "İki şey arasındaki ayrılık" },
+    { word: "FIKIR", meaning: "Düşünce, görüş" }
   ],
   G: [
     { word: "GIDON", meaning: "Bisiklet direksiyonu" },
@@ -83,7 +97,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "GRAFIK", meaning: "Verilerin görsel gösterimi" },
     { word: "GURME", meaning: "Yemek konusunda uzman kişi" },
     { word: "GOREV", meaning: "Yapılması gereken iş" },
-    { word: "GIZEM", meaning: "Sır, esrar" }
+    { word: "GIZEM", meaning: "Sır, esrar" },
+    { word: "GEMI", meaning: "Denizde yol alan araç" },
+    { word: "GIRIS", meaning: "Bir yere ilk adım atılan bölüm" }
   ],
   H: [
     { word: "HIPOTERMI", meaning: "Merkezi vücut sıcaklığının 35°C altına düşmesi" },
@@ -93,7 +109,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "HAVALE", meaning: "Para transferi" },
     { word: "HESAP", meaning: "Matematiksel işlem" },
     { word: "HOROZ", meaning: "Erkek tavuk" },
-    { word: "HUTBE", meaning: "Cuma namazında okunan konuşma" }
+    { word: "HUTBE", meaning: "Cuma namazında okunan konuşma" },
+    { word: "HIKAYE", meaning: "Anlatı, öykü" },
+    { word: "HIZMET", meaning: "Birine yapılan iş, servis" }
   ],
   İ: [
     { word: "ISTATISTIK", meaning: "Bir sonuç çıkarmak için verileri yöntemli bir biçimde toplayıp sayı olarak belirtme" },
@@ -103,7 +121,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ITIRAZ", meaning: "Karşı çıkma" },
     { word: "IZIN", meaning: "Müsaade" },
     { word: "ILAC", meaning: "Hastalığı iyileştiren madde" },
-    { word: "ICAT", meaning: "Yeni bir şey bulma" }
+    { word: "ICAT", meaning: "Yeni bir şey bulma" },
+    { word: "ILHAM", meaning: "Yaratıcı sezgi, esin" },
+    { word: "ISIK", meaning: "Görmeyi sağlayan enerji" }
   ],
   K: [
     { word: "KAFI", meaning: "Yeterli, yetecek ölçüde olan" },
@@ -113,7 +133,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "KIMLIK", meaning: "Kişiyi tanıtan belge" },
     { word: "KOPYA", meaning: "Aynısından yapılmış örnek" },
     { word: "KREDI", meaning: "Bankadan alınan borç" },
-    { word: "KUPON", meaning: "İndirim belgesi" }
+    { word: "KUPON", meaning: "İndirim belgesi" },
+    { word: "KAYNAK", meaning: "Bir şeyin çıktığı yer" },
+    { word: "KUTUP", meaning: "Dünyanın en uç noktalarından her biri" }
   ],
   L: [
     { word: "LOGO", meaning: "Bir ürün, firma ya da hizmet ismini, harf ve resimsel olarak belirten görsel öge" },
@@ -123,7 +145,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "LOKUM", meaning: "Türk tatlısı" },
     { word: "LIMAN", meaning: "Gemilerin yanaştığı yer" },
     { word: "LUGAT", meaning: "Sözlük" },
-    { word: "LIMIT", meaning: "Üst sınır" }
+    { word: "LIMIT", meaning: "Üst sınır" },
+    { word: "LEZZET", meaning: "Tat, lezzetli olma hali" },
+    { word: "LABIRENT", meaning: "Karmaşık yol ağı" }
   ],
   M: [
     { word: "MEMUR", meaning: "Devlet hizmetinde aylıkla çalışan kimse, görevli" },
@@ -133,7 +157,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "MIZAH", meaning: "Güldürü, espri" },
     { word: "MOLOZ", meaning: "Yıkıntı parçaları" },
     { word: "MUZIP", meaning: "Şakacı, muzır" },
-    { word: "MUTLU", meaning: "Sevinçli, neşeli" }
+    { word: "MUTLU", meaning: "Sevinçli, neşeli" },
+    { word: "MAHAL", meaning: "Yer, mevki" },
+    { word: "MOTOR", meaning: "Enerjiyi harekete çeviren makine" }
   ],
   N: [
     { word: "NACAK", meaning: "Tek ağızlı balta" },
@@ -143,7 +169,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "NORM", meaning: "Standart, ölçüt" },
     { word: "NOTER", meaning: "Resmi belgeleri onaylayan kişi" },
     { word: "NUFUS", meaning: "Bir yerdeki insan sayısı" },
-    { word: "NUANS", meaning: "İnce fark" }
+    { word: "NUANS", meaning: "İnce fark" },
+    { word: "NABIZ", meaning: "Kalp atışının damarlarda hissedilmesi" },
+    { word: "NOSTALJI", meaning: "Geçmişe duyulan özlem" }
   ],
   O: [
     { word: "OTOMAT", meaning: "Yiyecek, içecek gibi şeylerin alınabildiği mekanik veya elektrikli araç" },
@@ -153,7 +181,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ORTAM", meaning: "Çevre, atmosfer" },
     { word: "OZGUN", meaning: "Orijinal, kendine has" },
     { word: "OLMAZ", meaning: "Kabul edilemez, imkansız" },
-    { word: "OPERA", meaning: "Müzikli tiyatro eseri" }
+    { word: "OPERA", meaning: "Müzikli tiyatro eseri" },
+    { word: "OYUNCU", meaning: "Bir oyunda veya tiyatroda rol alan kişi" },
+    { word: "OTURUM", meaning: "Belirli süreli toplantı bölümü" }
   ],
   Ö: [
     { word: "ÖRDEK", meaning: "Perdeayaklılardan evcil ve yabanisi de bulunan su kuşu" },
@@ -163,7 +193,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ÖĞÜT", meaning: "Tavsiye, nasihat" },
     { word: "ÖRNEK", meaning: "Model, numune" },
     { word: "ÖNCE", meaning: "Daha evvel" },
-    { word: "ÖLÇÜT", meaning: "Ölçü, kriter" }
+    { word: "ÖLÇÜT", meaning: "Ölçü, kriter" },
+    { word: "ÖYKÜ", meaning: "Kısa anlatı, hikaye" },
+    { word: "ÖNCELIK", meaning: "Önde tutulma durumu" }
   ],
   P: [
     { word: "PELIKAN", meaning: "Perdeayaklılardan evcil ve yabanisi de bulunan su kuşu" },
@@ -173,7 +205,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "PERGEL", meaning: "Daire çizmeye yarayan alet" },
     { word: "PINTI", meaning: "Çok tutumlu, cimri" },
     { word: "PLAKA", meaning: "Araç kimlik belgesi" },
-    { word: "POSTA", meaning: "Mektup gönderme hizmeti" }
+    { word: "POSTA", meaning: "Mektup gönderme hizmeti" },
+    { word: "PUSULA", meaning: "Yön bulmaya yarayan alet" },
+    { word: "PIRLANTA", meaning: "Değerli taş" }
   ],
   R: [
     { word: "RADYAN", meaning: "Bir dairede yarıçap uzunluğundaki yay parçasını gören merkez açıya, eşit açı ölçme birimi" },
@@ -183,7 +217,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "RETRO", meaning: "Eski tarz, nostaljik" },
     { word: "RITIM", meaning: "Müzikte tempo" },
     { word: "ROBOT", meaning: "Otomatik çalışan makine" },
-    { word: "RUTIN", meaning: "Alışılmış düzen" }
+    { word: "RUTIN", meaning: "Alışılmış düzen" },
+    { word: "RAPOR", meaning: "Bir durumun yazılı olarak açıklanması" },
+    { word: "REVIZYON", meaning: "Gözden geçirme ve düzeltme" }
   ],
   S: [
     { word: "SAVSAK", meaning: "İşlerine önem vermeyen, ihmalkar" },
@@ -193,7 +229,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "SPONSOR", meaning: "Maddi destek veren kişi veya kurum" },
     { word: "STATIK", meaning: "Hareketsiz, durağan" },
     { word: "STRATEJI", meaning: "Uzun vadeli plan" },
-    { word: "SISTEM", meaning: "Düzenli işleyiş" }
+    { word: "SISTEM", meaning: "Düzenli işleyiş" },
+    { word: "SEMBOL", meaning: "Bir kavramı temsil eden işaret" },
+    { word: "SAGLAM", meaning: "Dayanıklı, güçlü" }
   ],
   Ş: [
     { word: "ŞARBON", meaning: "İnce ve yarı saydam bir tür kağıt" },
@@ -203,7 +241,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ŞIFRE", meaning: "Gizli kod" },
     { word: "ŞOFOR", meaning: "Araç kullanan kişi" },
     { word: "ŞAPKA", meaning: "Başa giyilen aksesuar" },
-    { word: "ŞEKER", meaning: "Tatlı madde" }
+    { word: "ŞEKER", meaning: "Tatlı madde" },
+    { word: "ŞANLI", meaning: "Onurlu, şerefli" },
+    { word: "ŞEFTALI", meaning: "Sulu bir yaz meyvesi" }
   ],
   T: [
     { word: "SULTAN", meaning: "İnce yufkaların içine kaymak konulup üstüne dövülmüş fıstık serpilerek yapılan bir tür baklava" },
@@ -213,7 +253,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "TIRAJ", meaning: "Basılan kopya sayısı" },
     { word: "TRAFIK", meaning: "Yol üzerindeki araç akışı" },
     { word: "TREND", meaning: "Moda akım" },
-    { word: "TURIST", meaning: "Gezgin, seyahat eden kişi" }
+    { word: "TURIST", meaning: "Gezgin, seyahat eden kişi" },
+    { word: "TALEP", meaning: "İstek, arz" },
+    { word: "TARTI", meaning: "Ağırlık ölçmeye yarayan alet" }
   ],
   U: [
     { word: "UFO", meaning: "Gökyüzünde tanımlanamayan cisim" },
@@ -223,7 +265,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "UYARI", meaning: "Dikkat çekme, ihtar" },
     { word: "UZANTI", meaning: "Devam eden bölüm" },
     { word: "UZMAN", meaning: "Alanında bilgili kişi" },
-    { word: "UCRET", meaning: "Hizmet karşılığı ödenen para" }
+    { word: "UCRET", meaning: "Hizmet karşılığı ödenen para" },
+    { word: "UYDU", meaning: "Bir gezegenin çevresinde dönen gök cismi" },
+    { word: "UZAY", meaning: "Dünya atmosferi dışındaki alan" }
   ],
   Ü: [
     { word: "ÜZÜM", meaning: "En fazla çeşide sahip olan meyve türü" },
@@ -233,7 +277,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ÜRETIM", meaning: "Yapım, imalat" },
     { word: "ÜSLUP", meaning: "Tarz, biçim" },
     { word: "ÜCRET", meaning: "Ödeme, bedel" },
-    { word: "ÜNVAN", meaning: "Meslek veya makam adı" }
+    { word: "ÜNVAN", meaning: "Meslek veya makam adı" },
+    { word: "ÜÇGEN", meaning: "Üç kenarlı geometrik şekil" },
+    { word: "ÜSTAD", meaning: "Usta, uzman kişi" }
   ],
   V: [
     { word: "VERIM", meaning: "Bir işten elde edilen iyi sonuç, fayda" },
@@ -243,7 +289,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "VERGI", meaning: "Devlete ödenen zorunlu para" },
     { word: "VIDEO", meaning: "Hareketli görüntü kaydı" },
     { word: "VIRAJ", meaning: "Yolun kıvrımı" },
-    { word: "VIZYON", meaning: "Gelecek görüşü" }
+    { word: "VIZYON", meaning: "Gelecek görüşü" },
+    { word: "VITRIN", meaning: "Mağaza ürünlerinin sergilendiği cam bölme" },
+    { word: "VURGUN", meaning: "Ani büyük kazanç veya beklenmedik darbe" }
   ],
   Y: [
     { word: "YARAR", meaning: "Bir işten elde edilen iyi sonuç, fayda" },
@@ -253,7 +301,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "YILDIZ", meaning: "Gökyüzünde parlayan gök cismi" },
     { word: "YOGUN", meaning: "Sıkışık, kalabalık" },
     { word: "YUREK", meaning: "Kalp, gönül" },
-    { word: "YUZEY", meaning: "Bir şeyin dış kısmı" }
+    { word: "YUZEY", meaning: "Bir şeyin dış kısmı" },
+    { word: "YANKI", meaning: "Sesin engelden yansıyarak geri dönmesi" },
+    { word: "YORUM", meaning: "Bir konuya ilişkin değerlendirme" }
   ],
   Z: [
     { word: "ZAT", meaning: "Kimse, kişi" },
@@ -263,7 +313,9 @@ export const WORDS_DATABASE: Record<string, WordData[]> = {
     { word: "ZONE", meaning: "Bölge, alan" },
     { word: "ZURNA", meaning: "Nefesli çalgı" },
     { word: "ZUMBA", meaning: "Dans sporu türü" },
-    { word: "ZIRVE", meaning: "En yüksek nokta" }
+    { word: "ZIRVE", meaning: "En yüksek nokta" },
+    { word: "ZAFER", meaning: "Galibiyet, başarı" },
+    { word: "ZENGIN", meaning: "Maddi varlığı fazla olan" }
   ]
 };
 
