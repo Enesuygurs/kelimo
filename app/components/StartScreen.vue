@@ -2,11 +2,8 @@
   <div class="start-screen">
     <!-- Logo Section -->
     <div class="logo-section">
-      <div class="logo-icon-wrapper">
-        <div class="logo-icon">
-          <span class="logo-letter">K</span>
-        </div>
-        <div class="logo-glow"></div>
+      <div class="logo-icon">
+        <span class="logo-letter">K</span>
       </div>
       <h1 class="logo-text">kelimo</h1>
       <p class="logo-tagline">Kelime Oyunu</p>
@@ -60,7 +57,7 @@
     
     <!-- How to Play Section -->
     <div class="how-to-play">
-      <button type="button" class="how-to-header" @click.prevent="toggleRules" @touchend.prevent="toggleRules">
+      <button type="button" class="how-to-header" @click="toggleRules">
         <div class="how-to-left">
           <span class="how-icon">📖</span>
           <span class="how-title">Nasıl Oynanır?</span>
@@ -134,11 +131,6 @@ function toggleRules() {
   animation: fadeInDown 0.6s ease;
 }
 
-.logo-icon-wrapper {
-  position: relative;
-  margin-bottom: 12px;
-}
-
 .logo-icon {
   width: 80px;
   height: 80px;
@@ -147,23 +139,7 @@ function toggleRules() {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-lg);
-  animation: logoBounce 2s ease-in-out infinite;
-  position: relative;
-  z-index: 2;
-}
-
-.logo-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, var(--primary), transparent 70%);
-  transform: translate(-50%, -50%);
-  opacity: 0.4;
-  animation: glowPulse 2s ease-in-out infinite;
-  z-index: 1;
+  margin-bottom: 12px;
 }
 
 .logo-letter {
@@ -451,26 +427,6 @@ function toggleRules() {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes logoBounce {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-8px) rotate(2deg);
-  }
-}
-
-@keyframes glowPulse {
-  0%, 100% {
-    opacity: 0.4;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 

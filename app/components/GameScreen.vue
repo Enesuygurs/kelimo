@@ -410,12 +410,13 @@ defineExpose({
 .input-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 6px;
+  padding: 6px 6px 6px 0;
   margin-bottom: 16px;
   transition: box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .input-group:focus-within {
@@ -453,8 +454,9 @@ defineExpose({
 }
 
 .send-btn {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -464,7 +466,6 @@ defineExpose({
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: transform 0.2s ease;
-  box-shadow: 0 4px 15px rgba(91, 95, 226, 0.4);
 }
 
 .send-btn svg {
