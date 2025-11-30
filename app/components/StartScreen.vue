@@ -1,92 +1,93 @@
 <template>
   <div class="start-screen">
-    <!-- Animated background orbs -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    
     <!-- Logo Section -->
     <div class="logo-section">
-      <div class="logo-container">
+      <div class="logo-icon-wrapper">
         <div class="logo-icon">
           <span class="logo-letter">K</span>
         </div>
-        <h1 class="logo-text">kelimo</h1>
+        <div class="logo-glow"></div>
       </div>
+      <h1 class="logo-text">kelimo</h1>
+      <p class="logo-tagline">Kelime Oyunu</p>
     </div>
     
     <!-- Game Modes Section -->
     <div class="modes-section">
       <!-- Daily Mode Card -->
-      <div class="mode-card daily-mode" :class="{ completed: dailyCompleted }">
-        <div class="mode-badge">
-          <span class="badge-icon">📅</span>
-          <span class="badge-text">GÜNLÜK</span>
+      <div class="mode-card" :class="{ completed: dailyCompleted }">
+        <div class="mode-icon daily">
+          <span>📅</span>
         </div>
-        
-        <div class="mode-info">
-          <p class="mode-subtitle">{{ dailyCompleted ? 'Bugünün oyunu tamamlandı!' : 'Bugünün soru setini oyna' }}</p>
-          <p class="mode-description">{{ dailyCompleted ? 'Yarın yeni sorular seni bekliyor' : 'Her gün yeni sorular, aynı kelimeler herkese' }}</p>
+        <div class="mode-content">
+          <div class="mode-header">
+            <span class="mode-title">Günlük</span>
+            <span class="mode-badge daily">YENİ</span>
+          </div>
+          <p class="mode-desc">{{ dailyCompleted ? 'Bugün tamamlandı!' : 'Her gün yeni sorular' }}</p>
         </div>
-        
-        <button v-if="!dailyCompleted" class="play-button daily-button" @click="$emit('startDaily')">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon">
+        <button v-if="!dailyCompleted" class="play-btn daily" @click="$emit('startDaily')">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
-          <span class="btn-text">Oyna</span>
         </button>
-        <div v-else class="completed-badge">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="check-icon">
+        <div v-else class="done-check">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
           </svg>
-          <span>Tamamlandı</span>
         </div>
       </div>
       
       <!-- Unlimited Mode Card -->
-      <div class="mode-card unlimited-mode">
-        <div class="mode-badge unlimited">
-          <span class="badge-icon">♾️</span>
-          <span class="badge-text">LİMİTSİZ</span>
+      <div class="mode-card">
+        <div class="mode-icon unlimited">
+          <span>♾️</span>
         </div>
-        
-        <div class="mode-info">
-          <p class="mode-subtitle">Sınırsız soru seti</p>
-          <p class="mode-description">Sonraki günü bekleme, istediğin kadar oyna</p>
+        <div class="mode-content">
+          <div class="mode-header">
+            <span class="mode-title">Sınırsız</span>
+            <span class="mode-badge unlimited">∞</span>
+          </div>
+          <p class="mode-desc">İstediğin kadar oyna</p>
         </div>
-        
-        <button class="play-button unlimited-button" @click="$emit('startUnlimited')">
-          <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon">
+        <button class="play-btn unlimited" @click="$emit('startUnlimited')">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
-          <span class="btn-text">Oyna</span>
         </button>
       </div>
     </div>
     
     <!-- How to Play Section -->
     <div class="how-to-play">
-      <button type="button" class="section-header" @click.prevent="toggleRules" @touchend.prevent="toggleRules">
-        <span class="section-icon">📖</span>
-        <span class="section-title">Nasıl Oynanır?</span>
-        <svg class="chevron" :class="{ open: showRules }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button type="button" class="how-to-header" @click.prevent="toggleRules" @touchend.prevent="toggleRules">
+        <div class="how-to-left">
+          <span class="how-icon">📖</span>
+          <span class="how-title">Nasıl Oynanır?</span>
+        </div>
+        <svg class="chevron" :class="{ open: showRules }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M6 9l6 6 6-6"/>
         </svg>
       </button>
       <div v-show="showRules" class="rules-content">
         <div class="rule-item">
-          <span class="rule-number">1</span>
-          <p>Her harfe ait sorunun cevabını bul. Cevap o harf ile başlar.</p>
+          <div class="rule-num">1</div>
+          <p>Her harfe ait sorunun cevabını bul</p>
         </div>
         <div class="rule-item">
-          <span class="rule-number">2</span>
-          <p>Bilmiyorsan <span class="pass-badge">PAS</span> butonuna bas, sonra dönebilirsin.</p>
+          <div class="rule-num">2</div>
+          <p>Bilmiyorsan <span class="pass-tag">PAS</span> geç, sonra dön</p>
         </div>
         <div class="rule-item">
-          <span class="rule-number">3</span>
-          <p>Toplam süre <strong>5 dakika</strong>'dır. 26 harf için yarış!</p>
+          <div class="rule-num">3</div>
+          <p>Toplam süre <strong>5 dakika</strong></p>
         </div>
       </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <p>v1.0 • Kelimo</p>
     </div>
   </div>
 </template>
@@ -117,98 +118,79 @@ function toggleRules() {
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
+  padding: 24px 20px;
+  padding-bottom: 40px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 20px;
-  padding-bottom: 40px;
-}
-
-/* Animated orbs */
-.orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.5;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.orb-1 {
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.5), transparent 70%);
-  top: -100px;
-  right: -100px;
-  animation: orbFloat 12s ease-in-out infinite;
-}
-
-.orb-2 {
-  width: 280px;
-  height: 280px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.4), transparent 70%);
-  bottom: 100px;
-  left: -100px;
-  animation: orbFloat 10s ease-in-out infinite reverse;
-}
-
-.orb-3 {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.35), transparent 70%);
-  top: 40%;
-  right: -60px;
-  animation: orbFloat 14s ease-in-out infinite 2s;
 }
 
 /* Logo Section */
 .logo-section {
-  position: relative;
-  z-index: 1;
-  padding: 30px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 0 30px;
+  animation: fadeInDown 0.6s ease;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  animation: fadeIn 0.6s ease;
+.logo-icon-wrapper {
+  position: relative;
+  margin-bottom: 12px;
 }
 
 .logo-icon {
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6, #a855f7);
-  border-radius: var(--radius-lg);
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
-  animation: logoPulse 3s ease-in-out infinite;
+  box-shadow: var(--shadow-lg);
+  animation: logoBounce 2s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, var(--primary), transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+  animation: glowPulse 2s ease-in-out infinite;
+  z-index: 1;
 }
 
 .logo-letter {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo-text {
   font-size: 3rem;
   font-weight: 900;
+  color: white;
   letter-spacing: -1px;
-  background: linear-gradient(135deg, #ffffff, #c7d2fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logo-tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* Game Modes Section */
 .modes-section {
-  position: relative;
-  z-index: 1;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -217,215 +199,182 @@ function toggleRules() {
 }
 
 .mode-card {
-  background: rgba(8, 12, 20, 0.9);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 24px;
-  transition: all 0.3s ease;
-  animation: slideUp 0.5s ease;
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  animation: slideInUp 0.5s ease;
+  animation-fill-mode: backwards;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.mode-card:nth-child(2) {
-  animation-delay: 0.1s;
+.mode-card:nth-child(1) { animation-delay: 0.1s; }
+.mode-card:nth-child(2) { animation-delay: 0.2s; }
+
+.mode-card:active {
+  transform: scale(0.98);
 }
 
-.mode-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(99, 102, 241, 0.3);
-  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+.mode-card.completed {
+  opacity: 0.7;
+}
+
+.mode-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.mode-icon.daily {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+
+.mode-icon.unlimited {
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+}
+
+.mode-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.mode-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.mode-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .mode-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
-  border: 1px solid rgba(99, 102, 241, 0.3);
-  border-radius: var(--radius-lg);
-  margin-bottom: 16px;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.mode-badge.daily {
+  background: var(--success);
+  color: white;
 }
 
 .mode-badge.unlimited {
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(168, 85, 247, 0.2));
-  border-color: rgba(236, 72, 153, 0.3);
+  background: var(--pink);
+  color: white;
 }
 
-.badge-icon {
-  font-size: 1.1rem;
-}
-
-.badge-text {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--text);
-}
-
-.mode-info {
-  margin-bottom: 20px;
-}
-
-.mode-subtitle {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 6px;
-}
-
-.mode-description {
-  font-size: 0.95rem;
+.mode-desc {
+  font-size: 0.9rem;
   color: var(--text-muted);
-  line-height: 1.5;
 }
 
-.play-button {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 18px 24px;
+.play-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
   border: none;
-  border-radius: var(--radius-lg);
-  font-size: 1.15rem;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.play-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s ease;
-}
-
-.play-button:hover::before {
-  left: 100%;
-}
-
-.daily-button {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: white;
-  box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
-}
-
-.daily-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.5);
-}
-
-.unlimited-button {
-  background: linear-gradient(135deg, #ec4899, #a855f7);
-  color: white;
-  box-shadow: 0 8px 30px rgba(236, 72, 153, 0.4);
-}
-
-.unlimited-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(236, 72, 153, 0.5);
-}
-
-.play-button:active {
-  transform: scale(0.97);
-}
-
-/* Completed Daily Mode */
-.mode-card.completed {
-  opacity: 0.85;
-  border-color: rgba(34, 197, 94, 0.3);
-}
-
-.completed-badge {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 18px 24px;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
-  border: 1px solid rgba(34, 197, 94, 0.3);
-  border-radius: var(--radius-lg);
-  color: #22c55e;
-  font-size: 1.1rem;
-  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.check-icon {
+.play-btn svg {
   width: 22px;
   height: 22px;
-  fill: #22c55e;
+  color: white;
+  margin-left: 3px;
 }
 
-.btn-text {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.play-btn.daily {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  box-shadow: 0 4px 15px rgba(91, 95, 226, 0.4);
 }
 
-.play-icon {
-  width: 20px;
-  height: 20px;
+.play-btn.unlimited {
+  background: linear-gradient(135deg, var(--pink), var(--orange));
+  box-shadow: 0 4px 15px rgba(255, 64, 129, 0.4);
 }
 
-/* How to Play Section */
-.how-to-play {
-  position: relative;
-  z-index: 1;
-  margin-top: 20px;
+.play-btn:active {
+  transform: scale(0.9);
+}
+
+.done-check {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: var(--success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  background: rgba(8, 12, 20, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-lg);
-  overflow: visible;
 }
 
-.section-header {
+.done-check svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+/* How to Play */
+.how-to-play {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-top: 20px;
+  animation: slideInUp 0.5s ease 0.3s backwards;
+}
+
+.how-to-header {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
   padding: 18px 20px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-  user-select: none;
   background: transparent;
   border: none;
-  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
   font-family: inherit;
 }
 
-.section-header:hover,
-.section-header:active {
-  background: rgba(255, 255, 255, 0.05);
+.how-to-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.section-icon {
-  font-size: 1.3rem;
+.how-icon {
+  font-size: 1.4rem;
 }
 
-.section-title {
-  flex: 1;
+.how-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
-  text-align: left;
 }
 
 .chevron {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   color: var(--text-muted);
   transition: transform 0.3s ease;
 }
@@ -436,15 +385,13 @@ function toggleRules() {
 
 .rules-content {
   padding: 0 20px 20px;
-  background: rgba(8, 12, 20, 0.85);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .rule-item {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  padding: 14px 0;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -453,11 +400,11 @@ function toggleRules() {
   padding-bottom: 0;
 }
 
-.rule-number {
+.rule-num {
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6);
-  border-radius: 50%;
+  background: var(--primary);
+  border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,52 +415,66 @@ function toggleRules() {
 }
 
 .rule-item p {
-  color: var(--text-muted);
   font-size: 0.95rem;
+  color: var(--text-muted);
   line-height: 1.5;
 }
 
-.pass-badge {
-  display: inline-flex;
-  padding: 3px 10px;
-  background: linear-gradient(135deg, var(--warning), #fbbf24);
+.pass-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--warning);
   border-radius: var(--radius-sm);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #1f2937;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: var(--text-dark);
 }
 
 /* Animations */
-@keyframes orbFloat {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(30px, -20px) scale(1.05);
-  }
-}
-
-@keyframes fadeIn {
+@keyframes fadeInDown {
   from {
     opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@keyframes logoPulse {
+@keyframes logoBounce {
   0%, 100% {
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5);
-    transform: scale(1);
+    transform: translateY(0) rotate(0deg);
   }
   50% {
-    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.6);
-    transform: scale(1.03);
+    transform: translateY(-8px) rotate(2deg);
   }
 }
 
-@keyframes slideUp {
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes slideInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
@@ -524,90 +485,57 @@ function toggleRules() {
   }
 }
 
-/* Transition for rules */
-.rules-enter-active,
-.rules-leave-active {
-  transition: all 0.3s ease;
-}
-
-.rules-enter-from,
-.rules-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-@media (max-width: 480px) {
-  .logo-text {
-    font-size: 2.2rem;
-  }
-  
+/* Mobile Responsive */
+@media (max-width: 420px) {
   .logo-icon {
-    width: 44px;
-    height: 44px;
+    width: 70px;
+    height: 70px;
   }
   
   .logo-letter {
-    font-size: 1.3rem;
+    font-size: 2.2rem;
+  }
+  
+  .logo-text {
+    font-size: 2.5rem;
   }
   
   .mode-card {
-    padding: 18px;
-    border-radius: var(--radius-lg);
+    padding: 16px;
   }
   
-  .mode-subtitle {
-    font-size: 1.1rem;
+  .mode-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
   }
   
-  .mode-description {
-    font-size: 0.85rem;
-  }
-  
-  .play-button {
-    padding: 14px 18px;
-    font-size: 1rem;
-    border-radius: var(--radius-md);
-  }
-  
-  .section-header {
-    padding: 14px 16px;
-  }
-  
-  .section-title {
-    font-size: 0.95rem;
-  }
-  
-  .rules-content {
-    padding: 0 16px 16px;
-  }
-  
-  .rule-item {
-    padding: 10px 0;
-    font-size: 0.85rem;
+  .play-btn {
+    width: 46px;
+    height: 46px;
   }
 }
 
 @media (max-width: 360px) {
-  .logo-text {
-    font-size: 1.9rem;
-  }
-  
   .logo-icon {
-    width: 38px;
-    height: 38px;
+    width: 60px;
+    height: 60px;
   }
   
   .logo-letter {
+    font-size: 1.8rem;
+  }
+  
+  .logo-text {
+    font-size: 2.2rem;
+  }
+  
+  .mode-title {
     font-size: 1.1rem;
   }
   
-  .mode-subtitle {
-    font-size: 1rem;
-  }
-  
-  .play-button {
-    padding: 12px 16px;
-    font-size: 0.9rem;
+  .mode-desc {
+    font-size: 0.85rem;
   }
 }
 </style>

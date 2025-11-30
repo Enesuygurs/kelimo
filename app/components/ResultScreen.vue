@@ -1,89 +1,96 @@
 <template>
   <div class="result-screen">
-    <!-- Decorative elements -->
-    <div class="confetti-container">
-      <div class="confetti" v-for="n in 20" :key="n" :style="{ '--delay': n * 0.1 + 's', '--rotation': Math.random() * 360 + 'deg' }"></div>
+    <!-- Celebratory confetti -->
+    <div class="confetti-wrap">
+      <div class="confetti" v-for="n in 15" :key="n" :style="{ '--i': n }"></div>
     </div>
     
     <div class="result-content">
-      <div class="stats">
-        <div class="stat correct-stat">
-          <div class="stat-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="stat-svg">
+      <!-- Score Section -->
+      <div class="score-section">
+        <div class="score-circle">
+          <span class="score-value">{{ correctCount }}</span>
+          <span class="score-total">/29</span>
+        </div>
+        <p class="score-label">Doğru Cevap</p>
+      </div>
+      
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-box correct">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
               <path d="M20 6L9 17l-5-5"/>
             </svg>
           </div>
-          <span class="stat-value">{{ correctCount }}</span>
-          <span class="stat-label">Doğru</span>
+          <span class="stat-num">{{ correctCount }}</span>
+          <span class="stat-text">Doğru</span>
         </div>
-        <div class="stat wrong-stat">
-          <div class="stat-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="stat-svg">
+        <div class="stat-box wrong">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
               <path d="M18 6L6 18M6 6l12 12"/>
             </svg>
           </div>
-          <span class="stat-value">{{ wrongCount }}</span>
-          <span class="stat-label">Yanlış</span>
+          <span class="stat-num">{{ wrongCount }}</span>
+          <span class="stat-text">Yanlış</span>
         </div>
-        <div class="stat passed-stat">
-          <div class="stat-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="stat-svg">
+        <div class="stat-box passed">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </div>
-          <span class="stat-value">{{ passedCount }}</span>
-          <span class="stat-label">Pas</span>
+          <span class="stat-num">{{ passedCount }}</span>
+          <span class="stat-text">Pas</span>
         </div>
       </div>
       
-      <div class="word-results">
-        <div class="results-header">
-          <span class="results-title">📋 Sonuçlar</span>
+      <!-- Results List -->
+      <div class="results-panel">
+        <div class="panel-header">
+          <span>📋 Sonuçlar</span>
         </div>
-        <div class="results-list">
+        <div class="results-scroll">
           <div
             v-for="(result, index) in sortedResults"
             :key="result.letterIndex"
-            class="word-result-item"
+            class="result-row"
             :class="{ 
               correct: result.correct, 
               wrong: !result.correct && !result.passed,
               passed: result.passed && !result.correct
             }"
-            :style="{ '--index': index }"
+            :style="{ '--delay': index * 0.03 + 's' }"
           >
-            <div class="result-letter">{{ result.letter }}</div>
-            <div class="result-content-inner">
-              <div class="result-word">
-                <span v-if="result.correct" class="answer correct-text">{{ result.correctAnswer }}</span>
-                <span v-else-if="result.skipped" class="answer skipped-text">
-                  {{ result.correctAnswer }}
-                </span>
+            <div class="row-letter">{{ result.letter }}</div>
+            <div class="row-content">
+              <div class="row-answer">
+                <span v-if="result.correct" class="answer-text correct">{{ result.correctAnswer }}</span>
+                <span v-else-if="result.skipped" class="answer-text skipped">{{ result.correctAnswer }}</span>
                 <template v-else>
-                  <span class="answer wrong-text">{{ result.userAnswer }}</span>
-                  <span class="correct-answer-hint">→ {{ result.correctAnswer }}</span>
+                  <span class="answer-text wrong">{{ result.userAnswer }}</span>
+                  <span class="arrow">→</span>
+                  <span class="answer-text correct">{{ result.correctAnswer }}</span>
                 </template>
               </div>
-              <div class="result-meaning">{{ result.correctMeaning }}</div>
+              <p class="row-meaning">{{ result.correctMeaning }}</p>
             </div>
-            <div class="result-status">
-              <span v-if="result.correct" class="status-icon correct">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <path d="M20 6L9 17l-5-5"/>
-                </svg>
-              </span>
-              <span v-else class="status-icon wrong">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                  <path d="M18 6L6 18M6 6l12 12"/>
-                </svg>
-              </span>
+            <div class="row-status" :class="{ correct: result.correct }">
+              <svg v-if="result.correct" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+              <svg v-else viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
             </div>
           </div>
         </div>
       </div>
       
-      <button class="btn primary play-again-btn" @click="$emit('playAgain')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="refresh-icon">
+      <!-- Play Again Button -->
+      <button class="play-again-btn" @click="$emit('playAgain')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M23 4v6h-6M1 20v-6h6"/>
           <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
         </svg>
@@ -123,7 +130,7 @@ const sortedResults = computed(() => {
 }
 
 /* Confetti */
-.confetti-container {
+.confetti-wrap {
   position: fixed;
   top: 0;
   left: 0;
@@ -138,59 +145,135 @@ const sortedResults = computed(() => {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: linear-gradient(135deg, var(--primary), #ec4899);
   top: -20px;
-  left: calc(5% * var(--delay, 0));
-  animation: confettiFall 4s ease-out var(--delay, 0s) infinite;
-  transform: rotate(var(--rotation, 0deg));
-  border-radius: var(--radius-sm);
+  left: calc(var(--i) * 7%);
+  animation: confettiFall 3s ease-out calc(var(--i) * 0.15s) infinite;
+  border-radius: 2px;
 }
 
 .confetti:nth-child(odd) {
-  background: linear-gradient(135deg, #fbbf24, #f59e0b);
-  width: 8px;
+  background: var(--primary);
+  width: 12px;
   height: 8px;
 }
 
+.confetti:nth-child(even) {
+  background: var(--yellow);
+  width: 8px;
+  height: 10px;
+}
+
 .confetti:nth-child(3n) {
-  background: linear-gradient(135deg, #22c55e, #4ade80);
-  width: 12px;
-  height: 12px;
+  background: var(--success);
+  width: 10px;
+  height: 10px;
+}
+
+.confetti:nth-child(5n) {
+  background: var(--pink);
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
 }
 
 .result-content {
   position: relative;
   z-index: 1;
-  text-align: center;
   max-width: 500px;
   margin: 0 auto;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Score Section */
+.score-section {
+  text-align: center;
+  padding: 30px 0;
+  animation: scaleIn 0.5s ease;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 40px rgba(91, 95, 226, 0.4);
+  animation: scorePop 0.6s ease;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: white;
+  line-height: 1;
+}
+
+.score-total {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.score-label {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scorePop {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Stats Row */
+.stats-row {
+  display: flex;
   gap: 12px;
-  margin-bottom: 20px;
-  animation: slideInUp 0.5s ease 0.4s both;
+  margin-bottom: 24px;
+  animation: slideUp 0.5s ease 0.2s backwards;
 }
 
-.stat {
-  background: rgba(10, 15, 25, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.stat-box {
+  flex: 1;
+  background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 18px 12px;
-  transition: all 0.3s ease;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
 }
 
-.stat:hover {
-  transform: translateY(-4px);
-}
-
-.stat-icon-wrapper {
-  width: 36px;
-  height: 36px;
+.stat-icon {
+  width: 40px;
+  height: 40px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -198,339 +281,108 @@ const sortedResults = computed(() => {
   margin: 0 auto 10px;
 }
 
-.correct-stat .stat-icon-wrapper {
-  background: rgba(34, 197, 94, 0.2);
+.stat-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
-.wrong-stat .stat-icon-wrapper {
-  background: rgba(239, 68, 68, 0.2);
+.stat-box.correct .stat-icon {
+  background: rgba(46, 204, 113, 0.2);
 }
-
-.passed-stat .stat-icon-wrapper {
-  background: rgba(245, 158, 11, 0.2);
+.stat-box.correct .stat-icon svg {
+  color: var(--success);
 }
-
-.stat-svg {
-  width: 20px;
-  height: 20px;
-}
-
-.correct-stat .stat-svg {
-  stroke: var(--success);
-}
-
-.wrong-stat .stat-svg {
-  stroke: var(--danger);
-}
-
-.passed-stat .stat-svg {
-  stroke: var(--warning);
-}
-
-.stat-value {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.correct-stat .stat-value {
+.stat-box.correct .stat-num {
   color: var(--success);
 }
 
-.wrong-stat .stat-value {
+.stat-box.wrong .stat-icon {
+  background: rgba(231, 76, 60, 0.2);
+}
+.stat-box.wrong .stat-icon svg {
+  color: var(--danger);
+}
+.stat-box.wrong .stat-num {
   color: var(--danger);
 }
 
-.passed-stat .stat-value {
+.stat-box.passed .stat-icon {
+  background: rgba(243, 156, 18, 0.2);
+}
+.stat-box.passed .stat-icon svg {
+  color: var(--warning);
+}
+.stat-box.passed .stat-num {
   color: var(--warning);
 }
 
-.stat-label {
+.stat-num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.stat-text {
   font-size: 0.85rem;
   color: var(--text-muted);
-  font-weight: 500;
 }
 
-.word-results {
-  background: rgba(10, 15, 25, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* Results Panel */
+.results-panel {
+  background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 16px;
+  overflow: hidden;
   margin-bottom: 24px;
-  animation: slideInUp 0.5s ease 0.5s both;
-  text-align: left;
+  animation: slideUp 0.5s ease 0.3s backwards;
 }
 
-.results-header {
-  text-align: center;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.results-title {
+.panel-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
 }
 
-.results-list {
-  max-height: 320px;
+.results-scroll {
+  max-height: 300px;
   overflow-y: auto;
-  padding-right: 4px;
+  padding: 12px;
 }
 
-.word-result-item {
+.result-row {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 14px;
   border-radius: var(--radius-md);
-  margin-bottom: 10px;
-  background: rgba(51, 65, 85, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
-  animation: itemSlideIn 0.3s ease calc(var(--index) * 0.03s) both;
+  margin-bottom: 8px;
+  background: var(--bg-light);
+  animation: rowSlide 0.3s ease var(--delay) backwards;
+  transition: transform 0.2s ease;
 }
 
-.word-result-item:last-child {
+.result-row:last-child {
   margin-bottom: 0;
 }
 
-.word-result-item:hover {
-  background: rgba(51, 65, 85, 0.6);
-  transform: translateX(4px);
+.result-row:active {
+  transform: scale(0.98);
 }
 
-.word-result-item.correct {
+.result-row.correct {
   border-left: 4px solid var(--success);
 }
 
-.word-result-item.wrong {
+.result-row.wrong {
   border-left: 4px solid var(--danger);
 }
 
-.word-result-item.passed {
+.result-row.passed {
   border-left: 4px solid var(--warning);
 }
 
-.result-letter {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  flex-shrink: 0;
-  background: rgba(51, 65, 85, 0.6);
-  color: var(--text);
-}
-
-.word-result-item.correct .result-letter {
-  background: linear-gradient(135deg, var(--success), #4ade80);
-  color: white;
-  box-shadow: 0 4px 12px var(--glow-success);
-}
-
-.word-result-item.wrong .result-letter {
-  background: linear-gradient(135deg, var(--danger), #f87171);
-  color: white;
-  box-shadow: 0 4px 12px var(--glow-danger);
-}
-
-.word-result-item.passed .result-letter {
-  background: linear-gradient(135deg, var(--warning), #fbbf24);
-  color: #1f2937;
-  box-shadow: 0 4px 12px var(--glow-warning);
-}
-
-.result-content-inner {
-  flex: 1;
-  min-width: 0;
-}
-
-.result-word {
-  font-weight: 600;
-  font-size: 1.05rem;
-  margin-bottom: 4px;
-}
-
-.correct-text {
-  color: var(--success);
-}
-
-.wrong-text {
-  color: var(--danger);
-}
-
-.correct-answer-hint {
-  color: var(--success);
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-left: 8px;
-  opacity: 0.9;
-}
-
-.skipped-text {
-  color: var(--text-muted);
-}
-
-.result-meaning {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.result-status {
-  flex-shrink: 0;
-}
-
-.status-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.status-icon svg {
-  width: 16px;
-  height: 16px;
-}
-
-.status-icon.correct {
-  background: linear-gradient(135deg, var(--success), #4ade80);
-  color: white;
-}
-
-.status-icon.wrong {
-  background: linear-gradient(135deg, var(--danger), #f87171);
-  color: white;
-}
-
-.play-again-btn {
-  width: 100%;
-  padding: 20px;
-  font-size: 1.15rem;
-  animation: slideInUp 0.5s ease 0.6s both;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.refresh-icon {
-  width: 24px;
-  height: 24px;
-}
-
-/* Scrollbar */
-.results-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.results-list::-webkit-scrollbar-track {
-  background: rgba(51, 65, 85, 0.3);
-  border-radius: var(--radius-sm);
-}
-
-.results-list::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--primary), #8b5cf6);
-  border-radius: var(--radius-sm);
-}
-
-/* Animations */
-@keyframes confettiFall {
-  0% {
-    transform: translateY(-20px) rotate(var(--rotation, 0deg));
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100vh) rotate(calc(var(--rotation, 0deg) + 720deg));
-    opacity: 0;
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  70% {
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes starPop {
-  0% {
-    opacity: 0;
-    transform: scale(0) rotate(-180deg);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-@keyframes itemSlideIn {
+@keyframes rowSlide {
   from {
     opacity: 0;
     transform: translateX(-20px);
@@ -541,111 +393,224 @@ const sortedResults = computed(() => {
   }
 }
 
-@media (max-width: 480px) {
-  .result-header {
-    padding: 16px 20px;
+.row-letter {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.result-row.correct .row-letter {
+  background: linear-gradient(135deg, var(--success), var(--success-light));
+}
+
+.result-row.wrong .row-letter {
+  background: linear-gradient(135deg, var(--danger), var(--danger-light));
+}
+
+.result-row.passed .row-letter {
+  background: linear-gradient(135deg, var(--warning), var(--warning-light));
+}
+
+.row-content {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.row-answer {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.answer-text.correct {
+  color: var(--success);
+}
+
+.answer-text.wrong {
+  color: var(--danger);
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.answer-text.skipped {
+  color: var(--text-muted);
+}
+
+.arrow {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.row-meaning {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-status {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--danger);
+}
+
+.row-status.correct {
+  background: var(--success);
+}
+
+.row-status svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+/* Play Again Button */
+.play-again-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 6px 25px rgba(91, 95, 226, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: slideUp 0.5s ease 0.4s backwards;
+}
+
+.play-again-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.play-again-btn:active {
+  transform: scale(0.95);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 420px) {
+  .score-circle {
+    width: 100px;
+    height: 100px;
   }
   
-  .result-title {
-    font-size: 1.3rem;
+  .score-value {
+    font-size: 2rem;
   }
   
-  .trophy-icon {
-    font-size: 2.5rem;
+  .stats-row {
+    gap: 8px;
   }
   
-  .stats-container {
-    padding: 16px;
-    gap: 10px;
+  .stat-box {
+    padding: 14px 8px;
   }
   
-  .stat-item {
-    padding: 12px 8px;
+  .stat-icon {
+    width: 36px;
+    height: 36px;
   }
   
-  .stat-value {
-    font-size: 1.4rem;
+  .stat-num {
+    font-size: 1.5rem;
   }
   
-  .stat-label {
-    font-size: 0.7rem;
-  }
-  
-  .results-header {
-    padding: 12px 16px;
-    font-size: 0.85rem;
-  }
-  
-  .results-list {
-    padding: 8px 12px;
+  .results-scroll {
     max-height: 250px;
   }
   
-  .result-item {
-    padding: 10px;
+  .result-row {
+    padding: 12px;
     gap: 10px;
   }
   
-  .result-letter {
-    width: 36px;
-    height: 36px;
+  .row-letter {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  
+  .row-answer {
     font-size: 0.9rem;
   }
   
-  .result-word {
-    font-size: 0.9rem;
+  .row-meaning {
+    font-size: 0.75rem;
   }
   
-  .result-meaning {
-    font-size: 0.7rem;
+  .row-status {
+    width: 28px;
+    height: 28px;
   }
   
-  .status-icon {
-    width: 26px;
-    height: 26px;
-  }
-  
-  .status-icon svg {
+  .row-status svg {
     width: 14px;
     height: 14px;
   }
   
   .play-again-btn {
-    padding: 14px;
+    padding: 16px;
     font-size: 1rem;
-  }
-  
-  .refresh-icon {
-    width: 20px;
-    height: 20px;
   }
 }
 
 @media (max-width: 360px) {
-  .result-title {
-    font-size: 1.1rem;
+  .score-circle {
+    width: 90px;
+    height: 90px;
   }
   
-  .trophy-icon {
-    font-size: 2rem;
+  .score-value {
+    font-size: 1.8rem;
   }
   
-  .stat-value {
-    font-size: 1.2rem;
+  .stat-num {
+    font-size: 1.3rem;
   }
   
-  .results-list {
+  .stat-text {
+    font-size: 0.75rem;
+  }
+  
+  .results-scroll {
     max-height: 200px;
-  }
-  
-  .result-letter {
-    width: 32px;
-    height: 32px;
-    font-size: 0.85rem;
-  }
-  
-  .result-word {
-    font-size: 0.85rem;
   }
 }
 </style>

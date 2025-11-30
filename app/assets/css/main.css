@@ -17,38 +17,47 @@
 }
 
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #818cf8;
-  --secondary: #64748b;
-  --success: #10b981;
-  --success-light: #34d399;
-  --danger: #ef4444;
-  --danger-light: #f87171;
-  --warning: #f59e0b;
-  --warning-light: #fbbf24;
-  --accent: #06b6d4;
-  --accent-light: #22d3ee;
-  --bg: #030712;
-  --bg-light: #0f172a;
-  --bg-card: #1e293b;
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
-  --glow-primary: rgba(99, 102, 241, 0.5);
-  --glow-success: rgba(16, 185, 129, 0.5);
-  --glow-danger: rgba(239, 68, 68, 0.5);
-  --glow-warning: rgba(245, 158, 11, 0.5);
-  --glow-accent: rgba(6, 182, 212, 0.5);
-  --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-  --gradient-2: linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #6366f1 100%);
-  --gradient-3: linear-gradient(135deg, #06b6d4 0%, #6366f1 50%, #a855f7 100%);
-  --gradient-4: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
-  --gradient-rainbow: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7, #ec4899, #f43f5e, #f59e0b, #10b981, #06b6d4, #6366f1);
+  /* Flat Mobile Game Colors */
+  --primary: #5B5FE2;
+  --primary-dark: #4347C9;
+  --primary-light: #7B7FFF;
+  --secondary: #8B93A7;
+  --success: #2ECC71;
+  --success-light: #58D68D;
+  --danger: #E74C3C;
+  --danger-light: #EC7063;
+  --warning: #F39C12;
+  --warning-light: #F5B041;
+  --accent: #00D4AA;
+  --accent-light: #33DDBB;
+  --orange: #FF6B35;
+  --pink: #FF4081;
+  --purple: #9C27B0;
+  --yellow: #FFD93D;
   
-  /* Standardized Border Radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  /* Flat BG Colors */
+  --bg: #1A1A2E;
+  --bg-light: #16213E;
+  --bg-card: #252A48;
+  --bg-card-hover: #2D3454;
+  
+  /* Text */
+  --text: #FFFFFF;
+  --text-muted: #A0A8C0;
+  --text-dark: #6B7280;
+  
+  /* Shadows - softer for flat design */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(91, 95, 226, 0.4);
+  
+  /* Border Radius - more rounded for mobile game feel */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
 }
 
 html {
@@ -59,12 +68,6 @@ html {
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg);
-  background-image: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.25) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 40% at 0% 100%, rgba(236, 72, 153, 0.12) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 30% at 80% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
-  background-attachment: fixed;
   color: var(--text);
   height: 100vh;
   overflow: hidden;
@@ -191,18 +194,14 @@ body::after {
 }
 
 .btn.primary {
-  background: var(--gradient-1);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: white;
-  box-shadow: 
-    0 8px 24px var(--glow-primary),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-md), 0 0 20px rgba(91, 95, 226, 0.3);
 }
 
 .btn.primary:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 
-    0 12px 32px var(--glow-primary),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(91, 95, 226, 0.4);
 }
 
 .btn.secondary {
