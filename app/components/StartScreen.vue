@@ -55,33 +55,6 @@
       </div>
     </div>
     
-    <!-- How to Play Section -->
-    <div class="how-to-play" @click="toggleRules">
-      <div class="how-to-header">
-        <div class="how-to-left">
-          <span class="how-icon">📖</span>
-          <span class="how-title">Nasıl Oynanır?</span>
-        </div>
-        <svg class="chevron" :class="{ open: showRules }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M6 9l6 6 6-6"/>
-        </svg>
-      </div>
-      <div v-if="showRules" class="rules-content" @click.stop>
-        <div class="rule-item">
-          <div class="rule-num">1</div>
-          <p>Her harfe ait sorunun cevabını bul</p>
-        </div>
-        <div class="rule-item">
-          <div class="rule-num">2</div>
-          <p>Bilmiyorsan <span class="pass-tag">PAS</span> geç, sonra dön</p>
-        </div>
-        <div class="rule-item">
-          <div class="rule-num">3</div>
-          <p>Toplam süre <strong>5 dakika</strong></p>
-        </div>
-      </div>
-    </div>
-    
     <!-- Footer -->
     <div class="footer">
       <p>v1.0 • Kelimo</p>
@@ -98,16 +71,11 @@ defineEmits<{
   startUnlimited: [];
 }>();
 
-const showRules = ref(false);
 const dailyCompleted = ref(false);
 
 onMounted(() => {
   dailyCompleted.value = isDailyCompleted();
 });
-
-function toggleRules() {
-  showRules.value = !showRules.value;
-}
 </script>
 
 <style scoped>
