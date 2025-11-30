@@ -1,9 +1,9 @@
 // Günlük Kelime Servisi - Uzak sunucudan veri çeker
 import { WORDS_DATABASE, TURKISH_ALPHABET, type WordData } from '~/utils/words';
 
-// API endpoint - GitHub Gist, kendi sunucun veya başka bir kaynak kullanabilirsin
-// Format: Her gün için YYYY-MM-DD.json dosyası
-const API_BASE_URL = 'https://raw.githubusercontent.com/USER/kelimo-data/main/daily';
+// API endpoint - GitHub raw URL veya kendi sunucun
+// Tek dosya: gunluk.json
+const API_URL = 'https://raw.githubusercontent.com/USER/kelimo-data/main/gunluk.json';
 
 // Cache key for localStorage
 const CACHE_KEY = 'kelimo_daily_words';
@@ -91,7 +91,7 @@ export async function fetchDailyWords(): Promise<Record<string, WordData>> {
   
   // 2. API'den çekmeyi dene
   try {
-    const response = await fetch(`${API_BASE_URL}/${today}.json`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -103,8 +103,8 @@ export async function fetchDailyWords(): Promise<Record<string, WordData>> {
     if (response.ok) {
       const data: DailyWordsResponse = await response.json();
       
-      // Veri geçerliliğini kontrol et
-      if (data.words && Object.keys(data.words).length > 0) {
+      // Veri geçerliliğini kontrol et - bugünün tarihiyle eşleşmeli
+      if (data.words && Object.keys(data.words).length > 0 && data.date === today) {
         cacheWords(data);
         console.log('🌐 Günlük kelimeler API\'den yüklendi');
         return data.words;
@@ -127,8 +127,7 @@ export async function fetchDailyWords(): Promise<Record<string, WordData>> {
   return fallbackWords;
 }
 
-// API URL'ini değiştirmek için (ayarlardan vs.)
-export function setApiBaseUrl(url: string): void {
-  // Bu fonksiyon ileride ayarlar ekranından URL değiştirmek için kullanılabilir
+// API URL'ini değiştirmek için
+export function setApiUrl(url: string): void {
   console.log('API URL güncellendi:', url);
 }
