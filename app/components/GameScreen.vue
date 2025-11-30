@@ -28,9 +28,6 @@
 
     <!-- Question Area -->
     <div class="question-area">
-      <div class="current-letter">
-        <span>{{ currentLetter }}</span>
-      </div>
       <div class="question-card" :key="currentLetterIndex">
         <p class="question-text">{{ currentMeaning }}</p>
       </div>
