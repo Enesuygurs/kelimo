@@ -6,12 +6,6 @@
     </div>
     
     <div class="result-content">
-      <div class="trophy-container">
-        <span class="trophy-icon">🏆</span>
-      </div>
-      
-      <h2 class="result-title">{{ title }}</h2>
-      
       <div class="stats">
         <div class="stat correct-stat">
           <div class="stat-icon-wrapper">
@@ -149,7 +143,7 @@ const sortedResults = computed(() => {
   left: calc(5% * var(--delay, 0));
   animation: confettiFall 4s ease-out var(--delay, 0s) infinite;
   transform: rotate(var(--rotation, 0deg));
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
 }
 
 .confetti:nth-child(odd) {
@@ -172,25 +166,6 @@ const sortedResults = computed(() => {
   margin: 0 auto;
 }
 
-.trophy-container {
-  animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.trophy-icon {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 8px;
-  filter: drop-shadow(0 4px 20px rgba(251, 191, 36, 0.5));
-  animation: float 3s ease-in-out infinite;
-}
-
-.result-title {
-  font-size: 2rem;
-  margin-bottom: 24px;
-  animation: slideInUp 0.5s ease 0.2s both;
-  color: var(--text);
-}
-
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -204,7 +179,7 @@ const sortedResults = computed(() => {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   padding: 18px 12px;
   transition: all 0.3s ease;
 }
@@ -216,7 +191,7 @@ const sortedResults = computed(() => {
 .stat-icon-wrapper {
   width: 36px;
   height: 36px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,7 +256,7 @@ const sortedResults = computed(() => {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   padding: 16px;
   margin-bottom: 24px;
   animation: slideInUp 0.5s ease 0.5s both;
@@ -312,7 +287,7 @@ const sortedResults = computed(() => {
   align-items: center;
   gap: 12px;
   padding: 14px;
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   margin-bottom: 10px;
   background: rgba(51, 65, 85, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -344,7 +319,7 @@ const sortedResults = computed(() => {
 .result-letter {
   width: 44px;
   height: 44px;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -466,12 +441,12 @@ const sortedResults = computed(() => {
 
 .results-list::-webkit-scrollbar-track {
   background: rgba(51, 65, 85, 0.3);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
 }
 
 .results-list::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, var(--primary), #8b5cf6);
-  border-radius: 3px;
+  border-radius: var(--radius-sm);
 }
 
 /* Animations */
@@ -566,21 +541,111 @@ const sortedResults = computed(() => {
   }
 }
 
-@media (max-width: 400px) {
-  .result-meaning {
-    font-size: 0.75rem;
+@media (max-width: 480px) {
+  .result-header {
+    padding: 16px 20px;
   }
   
-  .score-value {
-    font-size: 3.5rem;
+  .result-title {
+    font-size: 1.3rem;
   }
   
   .trophy-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  
+  .stats-container {
+    padding: 16px;
+    gap: 10px;
+  }
+  
+  .stat-item {
+    padding: 12px 8px;
   }
   
   .stat-value {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  
+  .results-header {
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .results-list {
+    padding: 8px 12px;
+    max-height: 250px;
+  }
+  
+  .result-item {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .result-letter {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+  
+  .result-word {
+    font-size: 0.9rem;
+  }
+  
+  .result-meaning {
+    font-size: 0.7rem;
+  }
+  
+  .status-icon {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .status-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .play-again-btn {
+    padding: 14px;
+    font-size: 1rem;
+  }
+  
+  .refresh-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .result-title {
+    font-size: 1.1rem;
+  }
+  
+  .trophy-icon {
+    font-size: 2rem;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+  }
+  
+  .results-list {
+    max-height: 200px;
+  }
+  
+  .result-letter {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+  
+  .result-word {
+    font-size: 0.85rem;
   }
 }
 </style>

@@ -30,10 +30,10 @@
         </div>
         
         <button v-if="!dailyCompleted" class="play-button daily-button" @click="$emit('startDaily')">
-          <span class="btn-text">Oyna</span>
           <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
+          <span class="btn-text">Oyna</span>
         </button>
         <div v-else class="completed-badge">
           <svg viewBox="0 0 24 24" fill="currentColor" class="check-icon">
@@ -56,39 +56,37 @@
         </div>
         
         <button class="play-button unlimited-button" @click="$emit('startUnlimited')">
-          <span class="btn-text">Oyna</span>
           <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
+          <span class="btn-text">Oyna</span>
         </button>
       </div>
     </div>
     
     <!-- How to Play Section -->
     <div class="how-to-play">
-      <div class="section-header" @click="toggleRules">
+      <button type="button" class="section-header" @click.prevent="toggleRules" @touchend.prevent="toggleRules">
         <span class="section-icon">📖</span>
-        <h3>Nasıl Oynanır?</h3>
+        <span class="section-title">Nasıl Oynanır?</span>
         <svg class="chevron" :class="{ open: showRules }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M6 9l6 6 6-6"/>
         </svg>
-      </div>
-      <transition name="rules">
-        <div v-if="showRules" class="rules-content">
-          <div class="rule-item">
-            <span class="rule-number">1</span>
-            <p>Her harfe ait sorunun cevabını bul. Cevap o harf ile başlar.</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-number">2</span>
-            <p>Bilmiyorsan <span class="pass-badge">PAS</span> butonuna bas, sonra dönebilirsin.</p>
-          </div>
-          <div class="rule-item">
-            <span class="rule-number">3</span>
-            <p>Toplam süre <strong>5 dakika</strong>'dır. 26 harf için yarış!</p>
-          </div>
+      </button>
+      <div v-show="showRules" class="rules-content">
+        <div class="rule-item">
+          <span class="rule-number">1</span>
+          <p>Her harfe ait sorunun cevabını bul. Cevap o harf ile başlar.</p>
         </div>
-      </transition>
+        <div class="rule-item">
+          <span class="rule-number">2</span>
+          <p>Bilmiyorsan <span class="pass-badge">PAS</span> butonuna bas, sonra dönebilirsin.</p>
+        </div>
+        <div class="rule-item">
+          <span class="rule-number">3</span>
+          <p>Toplam süre <strong>5 dakika</strong>'dır. 26 harf için yarış!</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -120,8 +118,10 @@ function toggleRules() {
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px;
+  padding-bottom: 40px;
 }
 
 /* Animated orbs */
@@ -181,7 +181,7 @@ function toggleRules() {
   width: 56px;
   height: 56px;
   background: linear-gradient(135deg, var(--primary), #8b5cf6, #a855f7);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +221,7 @@ function toggleRules() {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   padding: 24px;
   transition: all 0.3s ease;
   animation: slideUp 0.5s ease;
@@ -244,7 +244,7 @@ function toggleRules() {
   padding: 8px 16px;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2));
   border: 1px solid rgba(99, 102, 241, 0.3);
-  border-radius: 30px;
+  border-radius: var(--radius-lg);
   margin-bottom: 16px;
 }
 
@@ -289,7 +289,7 @@ function toggleRules() {
   gap: 12px;
   padding: 18px 24px;
   border: none;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   font-size: 1.15rem;
   font-weight: 700;
   font-family: inherit;
@@ -354,7 +354,7 @@ function toggleRules() {
   padding: 18px 24px;
   background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(34, 197, 94, 0.1));
   border: 1px solid rgba(34, 197, 94, 0.3);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   color: #22c55e;
   font-size: 1.1rem;
   font-weight: 700;
@@ -379,38 +379,48 @@ function toggleRules() {
 .how-to-play {
   position: relative;
   z-index: 1;
-  margin-top: auto;
+  margin-top: 20px;
+  flex-shrink: 0;
   background: rgba(8, 12, 20, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  overflow: hidden;
-  animation: slideUp 0.5s ease 0.2s both;
+  border-radius: var(--radius-lg);
+  overflow: visible;
 }
 
 .section-header {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 18px 20px;
   cursor: pointer;
   transition: background 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
 }
 
-.section-header:hover {
-  background: rgba(255, 255, 255, 0.03);
+.section-header:hover,
+.section-header:active {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .section-icon {
   font-size: 1.3rem;
 }
 
-.section-header h3 {
+.section-title {
   flex: 1;
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text);
+  text-align: left;
 }
 
 .chevron {
@@ -426,6 +436,8 @@ function toggleRules() {
 
 .rules-content {
   padding: 0 20px 20px;
+  background: rgba(8, 12, 20, 0.85);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
 .rule-item {
@@ -465,7 +477,7 @@ function toggleRules() {
   display: inline-flex;
   padding: 3px 10px;
   background: linear-gradient(135deg, var(--warning), #fbbf24);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 700;
   color: #1f2937;
@@ -524,27 +536,78 @@ function toggleRules() {
   transform: translateY(-10px);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .logo-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   
   .logo-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
   }
   
   .logo-letter {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .mode-card {
+    padding: 18px;
+    border-radius: var(--radius-lg);
   }
   
   .mode-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+  
+  .mode-description {
+    font-size: 0.85rem;
   }
   
   .play-button {
-    padding: 16px 20px;
-    font-size: 1.05rem;
+    padding: 14px 18px;
+    font-size: 1rem;
+    border-radius: var(--radius-md);
+  }
+  
+  .section-header {
+    padding: 14px 16px;
+  }
+  
+  .section-title {
+    font-size: 0.95rem;
+  }
+  
+  .rules-content {
+    padding: 0 16px 16px;
+  }
+  
+  .rule-item {
+    padding: 10px 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-text {
+    font-size: 1.9rem;
+  }
+  
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .logo-letter {
+    font-size: 1.1rem;
+  }
+  
+  .mode-subtitle {
+    font-size: 1rem;
+  }
+  
+  .play-button {
+    padding: 12px 16px;
+    font-size: 0.9rem;
   }
 }
 </style>

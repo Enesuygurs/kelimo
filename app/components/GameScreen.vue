@@ -64,6 +64,11 @@
           spellcheck="false"
           class="answer-input"
         />
+        <button class="submit-btn" @click="handleSubmit" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
       </div>
       <div class="button-row">
         <button class="pass-button" @click="handlePass">
@@ -135,9 +140,24 @@ const timerPercent = computed(() => {
 
 // Carousel pozisyonu hesapla - aktif harf ortada
 const carouselStyle = computed(() => {
-  const itemWidth = 52;
-  const selectedWidth = 72;
-  const gap = 20;
+  // Mobil için küçük boyutlar
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 480;
+  const isSmallMobile = typeof window !== 'undefined' && window.innerWidth <= 360;
+  
+  let itemWidth = 52;
+  let selectedWidth = 72;
+  let gap = 20;
+  
+  if (isSmallMobile) {
+    itemWidth = 34;
+    selectedWidth = 48;
+    gap = 12;
+  } else if (isMobile) {
+    itemWidth = 40;
+    selectedWidth = 56;
+    gap = 12;
+  }
+  
   const totalWidth = itemWidth + gap;
   // Aktif harfi tam ortaya konumlandır
   const offset = -props.currentLetterIndex * totalWidth;
@@ -323,7 +343,7 @@ defineExpose({
   flex-shrink: 0;
   width: 52px;
   height: 52px;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,13 +443,13 @@ defineExpose({
   align-items: center;
   justify-content: center;
   padding: 4px;
-  border-radius: 50px;
+  border-radius: var(--radius-lg);
 }
 
 .countdown-border {
   position: absolute;
   inset: 0;
-  border-radius: 50px;
+  border-radius: var(--radius-lg);
   background: conic-gradient(
     from 0deg,
     var(--primary) 0%,
@@ -453,7 +473,7 @@ defineExpose({
   background: rgba(5, 8, 15, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 46px;
+  border-radius: var(--radius-lg);
   color: var(--text);
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.3),
@@ -539,7 +559,7 @@ defineExpose({
   position: relative;
   padding: 24px;
   background: rgba(10, 15, 25, 0.6);
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -553,14 +573,17 @@ defineExpose({
   background: linear-gradient(180deg, rgba(8, 12, 20, 0.95) 0%, rgba(5, 8, 15, 0.98) 100%);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-radius: 28px 28px 0 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .answer-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: rgba(10, 15, 25, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   padding: 6px;
   margin-bottom: 14px;
   transition: all 0.3s ease;
@@ -576,7 +599,7 @@ defineExpose({
 }
 
 .answer-input {
-  width: 100%;
+  flex: 1;
   background: transparent;
   border: none;
   padding: 10px 14px;
@@ -591,6 +614,31 @@ defineExpose({
 .answer-input::placeholder {
   color: var(--text-muted);
   font-weight: 400;
+}
+
+.submit-btn {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary), #8b5cf6);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.submit-btn svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
 }
 
 .button-row {
@@ -608,7 +656,7 @@ defineExpose({
   background: linear-gradient(135deg, var(--warning), #fbbf24);
   color: #1f2937;
   border: none;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font-size: 0.9rem;
   font-weight: 700;
   font-family: inherit;
@@ -658,7 +706,7 @@ defineExpose({
   background: linear-gradient(135deg, var(--danger), #f87171);
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font-size: 0.9rem;
   font-weight: 700;
   font-family: inherit;
@@ -700,7 +748,7 @@ defineExpose({
   left: 50%;
   transform: translateX(-50%);
   padding: 14px 28px;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   font-weight: 600;
   font-size: 1rem;
   z-index: 1000;
@@ -790,34 +838,121 @@ defineExpose({
   50% { opacity: 0.5; }
 }
 
-/* Responsive */
+/* Mobile Responsive */
 @media (max-width: 480px) {
-  .answer-section {
-    padding: 20px 16px 32px;
+  .alphabet-inner {
+    gap: 12px;
+  }
+  
+  .alphabet-item {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: var(--radius-md);
+  }
+  
+  .alphabet-item.selected {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+    transform: translateY(-6px) scale(1.05);
+  }
+  
+  .countdown-container {
+    padding: 8px 16px;
+  }
+  
+  .countdown-content {
+    padding: 10px 20px;
+    gap: 6px;
+  }
+  
+  .countdown-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .countdown-timer {
+    font-size: 1rem;
+  }
+  
+  .question-card {
+    padding: 16px;
+    margin: 0 12px;
   }
   
   .question-text {
-    font-size: 1.35rem;
-    padding: 20px;
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+  
+  .answer-section {
+    padding: 12px 16px 8px;
+  }
+  
+  .answer-field {
+    padding: 4px;
+    margin-bottom: 10px;
   }
   
   .answer-input {
-    padding: 16px 18px;
-    font-size: 1.1rem;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .submit-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+  }
+  
+  .submit-btn svg {
+    width: 18px;
+    height: 18px;
   }
   
   .button-row {
-    gap: 10px;
+    gap: 8px;
   }
   
   .pass-button,
   .finish-button {
-    padding: 16px 16px;
-    font-size: 0.95rem;
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+  }
+  
+  .btn-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .notification {
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    bottom: 100px;
   }
 }
 
 @media (max-width: 360px) {
+  .alphabet-item {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+    border-radius: var(--radius-sm);
+  }
+  
+  .alphabet-item.selected {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+  
+  .question-text {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  
   .pass-button span,
   .finish-button span {
     display: none;
@@ -825,13 +960,13 @@ defineExpose({
   
   .pass-button,
   .finish-button {
-    padding: 16px;
+    padding: 12px;
     justify-content: center;
   }
   
   .btn-icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 }
 </style>
