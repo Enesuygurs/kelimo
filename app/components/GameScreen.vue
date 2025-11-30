@@ -413,11 +413,9 @@ defineExpose({
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   padding: 6px;
-  padding-right: 6px;
   margin-bottom: 16px;
   transition: box-shadow 0.3s ease;
-  width: 100%;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .input-group:focus-within {
@@ -438,9 +436,10 @@ defineExpose({
 
 .input-group input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
-  padding: 14px 16px;
+  padding: 12px 14px;
   font-size: 1rem;
   font-family: inherit;
   font-weight: 500;
@@ -455,17 +454,16 @@ defineExpose({
 }
 
 .send-btn {
-  width: 46px;
-  height: 46px;
-  min-width: 46px;
-  max-width: 46px;
-  flex: 0 0 46px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
