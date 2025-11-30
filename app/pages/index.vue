@@ -149,9 +149,7 @@ function handleFinish() {
   align-items: center;
   justify-content: center;
   padding: 16px 20px;
-  background: rgba(5, 8, 15, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: var(--bg);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   position: relative;
   z-index: 100;

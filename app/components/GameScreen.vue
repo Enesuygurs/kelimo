@@ -211,6 +211,7 @@ defineExpose({
   display: flex;
   justify-content: center;
   padding: 16px 20px;
+  background: var(--bg);
 }
 
 .timer-pill {
@@ -413,10 +414,12 @@ defineExpose({
   gap: 8px;
   background: var(--bg-card);
   border-radius: var(--radius-lg);
-  padding: 6px 6px 6px 0;
+  padding: 6px;
+  padding-right: 6px;
   margin-bottom: 16px;
   transition: box-shadow 0.3s ease;
-  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-group:focus-within {
@@ -457,7 +460,8 @@ defineExpose({
   width: 46px;
   height: 46px;
   min-width: 46px;
-  flex-shrink: 0;
+  max-width: 46px;
+  flex: 0 0 46px;
   display: flex;
   align-items: center;
   justify-content: center;

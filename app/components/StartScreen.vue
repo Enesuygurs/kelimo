@@ -330,6 +330,9 @@ function toggleRules() {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   font-family: inherit;
+  outline: none;
+  color: inherit;
+  user-select: none;
 }
 
 .how-to-left {
