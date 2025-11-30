@@ -1,0 +1,28 @@
+{
+  "name": "kelimo-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "cap:sync": "npm run generate && npx cap sync",
+    "cap:android": "npm run generate && npx cap sync android && npx cap open android",
+    "cap:build": "npm run generate && npx cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@vite-pwa/nuxt": "^1.1.0",
+    "howler": "^2.2.4",
+    "nuxt": "^4.2.1",
+    "swiper": "^12.0.3",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
