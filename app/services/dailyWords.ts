@@ -2,7 +2,7 @@
 import { WORDS_DATABASE, TURKISH_ALPHABET, type WordData } from '~/utils/words';
 
 // API endpoint - GitHub raw URL veya kendi sunucun
-const API_URL = 'https://raw.githubusercontent.com/USER/kelimo-data/main/gunluk.json';
+const API_URL = 'https://raw.githubusercontent.com/Enesuygurs/kelimo/refs/heads/master/daily-data-example/gunluk.json';
 
 // Cache key for localStorage
 const CACHE_KEY = 'kelimo_daily_words';
