@@ -56,8 +56,8 @@
     </div>
     
     <!-- How to Play Section -->
-    <div class="how-to-play">
-      <button type="button" class="how-to-header" @click="toggleRules">
+    <div class="how-to-play" @click="toggleRules">
+      <div class="how-to-header">
         <div class="how-to-left">
           <span class="how-icon">📖</span>
           <span class="how-title">Nasıl Oynanır?</span>
@@ -65,8 +65,8 @@
         <svg class="chevron" :class="{ open: showRules }" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M6 9l6 6 6-6"/>
         </svg>
-      </button>
-      <div v-show="showRules" class="rules-content">
+      </div>
+      <div v-if="showRules" class="rules-content" @click.stop>
         <div class="rule-item">
           <div class="rule-num">1</div>
           <p>Her harfe ait sorunun cevabını bul</p>
@@ -316,6 +316,7 @@ function toggleRules() {
   overflow: hidden;
   margin-top: 20px;
   animation: slideInUp 0.5s ease 0.3s backwards;
+  cursor: pointer;
 }
 
 .how-to-header {
@@ -325,20 +326,18 @@ function toggleRules() {
   justify-content: space-between;
   padding: 18px 20px;
   background: transparent;
-  border: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-  font-family: inherit;
-  outline: none;
-  color: inherit;
-  user-select: none;
+  pointer-events: none;
+}
+
+.how-to-play:active .how-to-header {
+  opacity: 0.8;
 }
 
 .how-to-left {
   display: flex;
   align-items: center;
   gap: 12px;
+  pointer-events: none;
 }
 
 .how-icon {
@@ -364,6 +363,7 @@ function toggleRules() {
 
 .rules-content {
   padding: 0 20px 20px;
+  pointer-events: none;
 }
 
 .rule-item {
