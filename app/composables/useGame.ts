@@ -1,5 +1,6 @@
 import { ref, computed } from 'vue';
 import { TURKISH_ALPHABET, getTodaysWords, getRandomWords, normalizeWord, type WordData } from '~/utils/words';
+import { fetchDailyWords } from '~/services/dailyWords';
 
 export interface GameResult {
   letterIndex: number;
@@ -81,18 +82,31 @@ export function useGame() {
     return completedLetters.value.size >= TURKISH_ALPHABET.length;
   });
 
+  const isLoading = ref(false);
+
   function initGame() {
     todaysWords.value = getTodaysWords();
   }
 
-  function startGame(mode: GameMode = 'daily') {
+  async function startGame(mode: GameMode = 'daily') {
     gameMode.value = mode;
+    isLoading.value = true;
     
-    // Moda göre kelime setini seç
-    if (mode === 'daily') {
-      todaysWords.value = getTodaysWords();
-    } else {
-      todaysWords.value = getRandomWords();
+    try {
+      // Moda göre kelime setini seç
+      if (mode === 'daily') {
+        // Günlük mod: API'den çek (fallback local)
+        todaysWords.value = await fetchDailyWords();
+      } else {
+        // Limitsiz mod: Local rastgele kelimeler
+        todaysWords.value = getRandomWords();
+      }
+    } catch (error) {
+      console.error('Kelime yükleme hatası:', error);
+      // Hata durumunda local fallback
+      todaysWords.value = mode === 'daily' ? getTodaysWords() : getRandomWords();
+    } finally {
+      isLoading.value = false;
     }
     
     currentScreen.value = 'game';

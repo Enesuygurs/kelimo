@@ -1,0 +1,31 @@
+{
+  "date": "2025-12-01",
+  "words": {
+    "A": { "word": "ANAHTAR", "meaning": "Kapıları açmak için kullanılan metal alet" },
+    "B": { "word": "BAHÇE", "meaning": "Ev çevresinde çiçek ve bitki yetiştirilen alan" },
+    "C": { "word": "CADDE", "meaning": "Geniş ana yol" },
+    "Ç": { "word": "ÇANTA", "meaning": "Eşya taşımak için kullanılan aksesuar" },
+    "D": { "word": "DENIZ", "meaning": "Büyük tuzlu su kütlesi" },
+    "E": { "word": "EKMEK", "meaning": "Undan yapılan temel gıda" },
+    "F": { "word": "FENER", "meaning": "Taşınabilir ışık kaynağı" },
+    "G": { "word": "GÖKKUŞAĞI", "meaning": "Yağmur sonrası gökyüzünde oluşan renkli yay" },
+    "H": { "word": "HAVUZ", "meaning": "Yüzmek için yapılmış su deposu" },
+    "İ": { "word": "İPLIK", "meaning": "Dikiş ve örgü için kullanılan ince tel" },
+    "K": { "word": "KALEM", "meaning": "Yazmak ve çizmek için kullanılan araç" },
+    "L": { "word": "LAMBA", "meaning": "Aydınlatma aracı" },
+    "M": { "word": "MERDIVEN", "meaning": "Yukarı çıkmak için basamaklı yapı" },
+    "N": { "word": "NEHIR", "meaning": "Akan tatlı su yolu" },
+    "O": { "word": "ORMAN", "meaning": "Ağaçlarla kaplı geniş alan" },
+    "Ö": { "word": "ÖĞLE", "meaning": "Günün ortası, öğlen vakti" },
+    "P": { "word": "PERDE", "meaning": "Pencereyi kapatan kumaş" },
+    "R": { "word": "RADYO", "meaning": "Ses yayını alan cihaz" },
+    "S": { "word": "SAAT", "meaning": "Zamanı gösteren alet" },
+    "Ş": { "word": "ŞEMSIYE", "meaning": "Yağmurdan koruyan aksesuar" },
+    "T": { "word": "TELEFON", "meaning": "Uzaktan iletişim aracı" },
+    "U": { "word": "UYKU", "meaning": "Dinlenme hali" },
+    "Ü": { "word": "ÜTÜK", "meaning": "Kıyafet düzleştirme aleti" },
+    "V": { "word": "VAPUR", "meaning": "Deniz ulaşım aracı" },
+    "Y": { "word": "YILDIZ", "meaning": "Gece gökyüzünde parlayan gök cismi" },
+    "Z": { "word": "ZAMAN", "meaning": "Olayların sırasını belirleyen kavram" }
+  }
+}
