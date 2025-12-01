@@ -300,7 +300,7 @@ defineExpose({
   color: white;
   background: linear-gradient(135deg, #F7971E, #FFD200);
   transform: translateY(-12px);
-  box-shadow: 0 8px 25px rgba(247, 151, 30, 0.5);
+  box-shadow: 0 4px 12px rgba(247, 151, 30, 0.35);
   animation: letterPop 0.3s ease;
 }
 
@@ -335,8 +335,8 @@ defineExpose({
 }
 
 @keyframes passedGlow {
-  0%, 100% { box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4); }
-  50% { box-shadow: 0 4px 25px rgba(243, 156, 18, 0.6); }
+  0%, 100% { box-shadow: 0 2px 8px rgba(243, 156, 18, 0.3); }
+  50% { box-shadow: 0 3px 12px rgba(243, 156, 18, 0.45); }
 }
 
 /* Question Area */
