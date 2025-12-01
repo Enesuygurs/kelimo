@@ -208,33 +208,33 @@ defineExpose({
 .timer-bar {
   display: flex;
   justify-content: center;
-  padding: 8px 20px 16px;
+  padding: 6px 20px 14px;
   background: var(--bg);
 }
 
 .timer-pill {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  min-width: 100px;
+  gap: 6px;
+  padding: 8px 16px;
+  min-width: 90px;
   background: var(--bg-card);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-md);
 }
 
 .timer-pill svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   color: var(--text);
 }
 
 .timer-pill span {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--text);
-  min-width: 45px;
+  min-width: 42px;
   text-align: center;
 }
 
