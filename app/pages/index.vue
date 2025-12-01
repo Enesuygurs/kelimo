@@ -4,7 +4,7 @@
     <header class="app-header">
       <div class="app-logo">
         <div class="logo-icon">
-          <span class="logo-letter">Kelimo</span>
+          <span class="logo-letter">kelimo</span>
         </div>
       </div>
     </header>
