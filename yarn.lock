@@ -823,6 +823,14 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
+"@capacitor-community/admob@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.npmjs.org/@capacitor-community/admob/-/admob-7.2.0.tgz"
+  integrity sha512-ejRd0CkiHq15F0XvHXPhk9gKIlYy7lj0hxCP+XUMqXwEoX8HN0BFE7bp3QvXKI/4FtjKMD8KF++e6sYMoKpwvA==
+  dependencies:
+    "@capacitor/core" "^7.0.0"
+    "@rdlabo/capacitor-docgen" "^0.4.1"
+
 "@capacitor/android@^5.7.8":
   version "5.7.8"
   resolved "https://registry.npmjs.org/@capacitor/android/-/android-5.7.8.tgz"
@@ -855,6 +863,13 @@
   version "5.7.8"
   resolved "https://registry.npmjs.org/@capacitor/core/-/core-5.7.8.tgz"
   integrity sha512-rrZcm/2vJM0WdWRQup1TUidbjQV9PfIadSkV4rAGLD7R6PuzZSMPGT0gmoZzCRlXkqrazrWWDkurei3ozU02FA==
+  dependencies:
+    tslib "^2.1.0"
+
+"@capacitor/core@^7.0.0":
+  version "7.4.4"
+  resolved "https://registry.npmjs.org/@capacitor/core/-/core-7.4.4.tgz"
+  integrity sha512-xzjxpr+d2zwTpCaN0k+C6wKSZzWFAb9OVEUtmO72ihjr/NEDoLvsGl4WLfjWPcCO2zOy0b2X52tfRWjECFUjtw==
   dependencies:
     tslib "^2.1.0"
 
@@ -1510,6 +1525,16 @@
   version "1.2.2"
   resolved "https://registry.npmjs.org/@poppinss/exception/-/exception-1.2.2.tgz"
   integrity sha512-m7bpKCD4QMlFCjA/nKTs23fuvoVFoA83brRKmObCUNmi/9tVu8Ve3w4YQAnJu4q3Tjf5fr685HYIC/IA2zHRSg==
+
+"@rdlabo/capacitor-docgen@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/@rdlabo/capacitor-docgen/-/capacitor-docgen-0.4.1.tgz"
+  integrity sha512-zUB0lwha4Omqyr5URy/QaFjP6Gh2xxTKAFI0MClqrmUxQwmV8c84+wGvqAoWPCzg4jk1MsU6oiRVuTkUV7xseA==
+  dependencies:
+    colorette "^2.0.20"
+    github-slugger "^1.5.0"
+    minimist "^1.2.8"
+    typescript "~4.2.4"
 
 "@rolldown/pluginutils@^1.0.0-beta.50":
   version "1.0.0-beta.52"
@@ -2396,6 +2421,11 @@ colord@^2.9.3:
   version "2.9.3"
   resolved "https://registry.npmjs.org/colord/-/colord-2.9.3.tgz"
   integrity sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==
+
+colorette@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.npmjs.org/colorette/-/colorette-2.0.20.tgz"
+  integrity sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==
 
 commander@^11.1.0:
   version "11.1.0"
@@ -3336,6 +3366,11 @@ git-url-parse@^16.0.1:
   dependencies:
     git-up "^8.1.0"
 
+github-slugger@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npmjs.org/github-slugger/-/github-slugger-1.5.0.tgz"
+  integrity sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==
+
 glob-parent@^5.1.2:
   version "5.1.2"
   resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz"
@@ -4254,6 +4289,11 @@ minimatch@^9.0.4:
   integrity sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==
   dependencies:
     brace-expansion "^2.0.1"
+
+minimist@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz"
+  integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
 minipass@^3.0.0:
   version "3.3.6"
@@ -6171,6 +6211,11 @@ typed-array-length@^1.0.7:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
+
+typescript@*, typescript@~4.2.4:
+  version "4.2.4"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-4.2.4.tgz"
+  integrity sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
 
 ufo@^1.3.2, ufo@^1.5.4, ufo@^1.6.1:
   version "1.6.1"

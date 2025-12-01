@@ -54,8 +54,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { initSounds, playSound } from '~/utils/sounds';
+import { initAdMob, showBannerAd, hideBannerAd, showRewardedAd } from '~/services/admob';
 
 const {
   currentScreen,
@@ -85,10 +86,15 @@ const {
 } = useGame();
 
 const gameScreenRef = ref(null);
+const showingAd = ref(false);
 
-onMounted(() => {
+onMounted(async () => {
   initGame();
   initSounds();
+  
+  // AdMob'u başlat ve banner göster
+  await initAdMob();
+  await showBannerAd();
 });
 
 function handleStartDaily() {
@@ -123,7 +129,17 @@ function handleGoToLetter(index: number) {
   goToLetter(index);
 }
 
-function handleFinish() {
+async function handleFinish() {
+  // Önce ödüllü reklam göster
+  showingAd.value = true;
+  try {
+    await showRewardedAd();
+  } catch (e) {
+    console.log('Ad skipped or failed');
+  }
+  showingAd.value = false;
+  
+  // Sonra sonuçları göster
   finishGame();
 }
 </script>
