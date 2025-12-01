@@ -178,7 +178,7 @@ onMounted(() => {
 }
 
 .mode-icon.daily {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #11998E, #38EF7D);
 }
 
 .mode-icon.unlimited {
@@ -247,7 +247,7 @@ onMounted(() => {
 }
 
 .play-btn.daily {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #11998E, #38EF7D);
   box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
 }
 
