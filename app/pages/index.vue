@@ -47,7 +47,7 @@
         :wrong-count="wrongCount"
         :passed-count="passedCount"
         :results="results"
-        @play-again="resetGame"
+        @play-again="handlePlayAgain"
       />
     </main>
   </div>
@@ -97,11 +97,13 @@ onMounted(async () => {
   await showBannerAd();
 });
 
-function handleStartDaily() {
+async function handleStartDaily() {
+  await hideBannerAd(); // Oyun başlarken banner'ı gizle
   startGame('daily');
 }
 
-function handleStartUnlimited() {
+async function handleStartUnlimited() {
+  await hideBannerAd(); // Oyun başlarken banner'ı gizle
   startGame('unlimited');
 }
 
@@ -141,6 +143,17 @@ async function handleFinish() {
   
   // Sonra sonuçları göster
   finishGame();
+}
+
+async function handlePlayAgain() {
+  // Önce oyunu sıfırla
+  resetGame();
+  // Sonra banner'ı göstermeye çalış
+  try {
+    await showBannerAd();
+  } catch (e) {
+    console.log('Banner ad failed');
+  }
 }
 </script>
 
