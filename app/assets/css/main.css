@@ -35,11 +35,11 @@
   --purple: #9C27B0;
   --yellow: #FFD93D;
   
-  /* Flat BG Colors */
-  --bg: #1A1A2E;
-  --bg-light: #16213E;
-  --bg-card: #252A48;
-  --bg-card-hover: #2D3454;
+  /* Glass Dark BG Colors */
+  --bg: #141420;
+  --bg-light: #1A1A2A;
+  --bg-card: rgba(30, 30, 45, 0.75);
+  --bg-card-hover: rgba(40, 40, 60, 0.85);
   
   /* Text */
   --text: #FFFFFF;
@@ -47,10 +47,10 @@
   --text-dark: #6B7280;
   
   /* Shadows - softer for flat design */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.25);
-  --shadow-glow: 0 0 20px rgba(91, 95, 226, 0.4);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(17, 153, 142, 0.3);
   
   /* Border Radius - unified 16px for all */
   --radius-sm: 16px;
