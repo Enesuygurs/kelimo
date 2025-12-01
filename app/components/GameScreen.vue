@@ -113,17 +113,17 @@ const carouselStyle = computed(() => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 420;
   const isSmallMobile = typeof window !== 'undefined' && window.innerWidth <= 360;
   
-  let itemWidth = 52;
-  let selectedWidth = 72;
+  let itemWidth = 60;
+  let selectedWidth = 82;
   let gap = 12;
   
   if (isSmallMobile) {
-    itemWidth = 40;
-    selectedWidth = 54;
+    itemWidth = 46;
+    selectedWidth = 60;
     gap = 10;
   } else if (isMobile) {
-    itemWidth = 46;
-    selectedWidth = 62;
+    itemWidth = 52;
+    selectedWidth = 70;
     gap = 10;
   }
   
@@ -275,12 +275,12 @@ defineExpose({
 
 .letter-box {
   flex-shrink: 0;
-  width: 52px;
-  height: 52px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-muted);
   background: var(--bg-card);
@@ -290,12 +290,12 @@ defineExpose({
 }
 
 .letter-box.selected {
-  width: 72px;
-  height: 72px;
-  font-size: 1.9rem;
+  width: 82px;
+  height: 82px;
+  font-size: 2.2rem;
   color: white;
   background: linear-gradient(135deg, var(--primary), var(--purple));
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   box-shadow: 0 8px 25px rgba(91, 95, 226, 0.5);
   animation: letterPop 0.3s ease;
 }
@@ -570,15 +570,15 @@ defineExpose({
   }
   
   .letter-box {
-    width: 46px;
-    height: 46px;
-    font-size: 1.2rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
   }
   
   .letter-box.selected {
-    width: 62px;
-    height: 62px;
-    font-size: 1.6rem;
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
   }
   
   .current-letter {
@@ -620,15 +620,15 @@ defineExpose({
 
 @media (max-width: 360px) {
   .letter-box {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+    width: 46px;
+    height: 46px;
+    font-size: 1.2rem;
   }
   
   .letter-box.selected {
-    width: 54px;
-    height: 54px;
-    font-size: 1.4rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
   }
   
   .current-letter {
