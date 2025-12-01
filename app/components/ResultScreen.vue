@@ -202,7 +202,7 @@ const sortedResults = computed(() => {
   width: 120px;
   height: 120px;
   margin: 0 auto 16px;
-  background: linear-gradient(135deg, var(--primary), var(--purple));
+  background: linear-gradient(135deg, #11998E, #38EF7D);
   border-radius: var(--radius-full);
   display: flex;
   flex-direction: column;

@@ -102,7 +102,7 @@ onMounted(() => {
 .logo-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary), var(--purple));
+  background: linear-gradient(135deg, #11998E, #38EF7D);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;

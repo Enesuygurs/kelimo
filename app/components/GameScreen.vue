@@ -357,7 +357,7 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary), var(--purple));
+  background: linear-gradient(135deg, #11998E, #38EF7D);
   border-radius: var(--radius-xl);
   box-shadow: 0 10px 40px rgba(91, 95, 226, 0.4);
   animation: letterFloat 3s ease-in-out infinite;
