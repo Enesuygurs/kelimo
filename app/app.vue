@@ -85,12 +85,12 @@ onMounted(async () => {
 .logo-icon-large {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6, #a855f7);
+  background: linear-gradient(135deg, #11998E, #38EF7D, #00D4AA);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 8px 32px rgba(17, 153, 142, 0.5);
   animation: logoPulse 2s ease-in-out infinite;
 }
 
@@ -104,7 +104,7 @@ onMounted(async () => {
 .loading-title {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6, #a855f7);
+  background: linear-gradient(135deg, #11998E, #38EF7D, #00D4AA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

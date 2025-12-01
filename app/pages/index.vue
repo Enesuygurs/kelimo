@@ -164,7 +164,7 @@ function handleFinish() {
 .logo-icon {
   width: 120px;
   height: 40px;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6, #a855f7);
+  background: linear-gradient(135deg, #11998E, #38EF7D, #00D4AA);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
