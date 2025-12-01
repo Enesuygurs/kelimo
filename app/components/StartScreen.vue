@@ -178,7 +178,7 @@ onMounted(() => {
 }
 
 .mode-icon.daily {
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
 }
 
 .mode-icon.unlimited {
