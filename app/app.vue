@@ -139,11 +139,11 @@ onMounted(async () => {
 @keyframes logoPulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 8px 32px rgba(17, 153, 142, 0.5);
   }
   50% {
     transform: scale(1.05);
-    box-shadow: 0 12px 48px rgba(99, 102, 241, 0.7);
+    box-shadow: 0 12px 48px rgba(17, 153, 142, 0.7);
   }
 }
 

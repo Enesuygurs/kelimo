@@ -208,7 +208,7 @@ const sortedResults = computed(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 40px rgba(91, 95, 226, 0.4);
+  box-shadow: 0 10px 40px rgba(17, 153, 142, 0.4);
   animation: scorePop 0.6s ease;
 }
 
@@ -499,7 +499,7 @@ const sortedResults = computed(() => {
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 6px 25px rgba(91, 95, 226, 0.4);
+  box-shadow: 0 6px 25px rgba(17, 153, 142, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   animation: slideUp 0.5s ease 0.4s backwards;
 }

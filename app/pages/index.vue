@@ -169,7 +169,7 @@ function handleFinish() {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
   animation: logoPulse 3s ease-in-out infinite;
 }
 
@@ -183,11 +183,11 @@ function handleFinish() {
 
 @keyframes logoPulse {
   0%, 100% { 
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
     transform: scale(1);
   }
   50% { 
-    box-shadow: 0 6px 25px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 25px rgba(17, 153, 142, 0.6);
     transform: scale(1.02);
   }
 }

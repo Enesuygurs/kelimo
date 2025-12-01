@@ -248,7 +248,7 @@ onMounted(() => {
 
 .play-btn.daily {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  box-shadow: 0 4px 15px rgba(91, 95, 226, 0.4);
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
 }
 
 .play-btn.unlimited {
