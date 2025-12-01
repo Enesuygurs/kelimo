@@ -110,21 +110,21 @@ const notification = ref<{ message: string; type: 'success' | 'error' | 'info' }
 // Carousel pozisyonu hesapla - aktif harf ortada
 const carouselStyle = computed(() => {
   // Mobil için küçük boyutlar
-  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 480;
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 420;
   const isSmallMobile = typeof window !== 'undefined' && window.innerWidth <= 360;
   
   let itemWidth = 52;
   let selectedWidth = 72;
-  let gap = 20;
+  let gap = 12;
   
   if (isSmallMobile) {
-    itemWidth = 34;
-    selectedWidth = 48;
-    gap = 12;
-  } else if (isMobile) {
     itemWidth = 40;
-    selectedWidth = 56;
-    gap = 12;
+    selectedWidth = 54;
+    gap = 10;
+  } else if (isMobile) {
+    itemWidth = 46;
+    selectedWidth = 62;
+    gap = 10;
   }
   
   const totalWidth = itemWidth + gap;
@@ -196,6 +196,7 @@ defineExpose({
 
 <style scoped>
 .game-scene {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -228,7 +229,7 @@ defineExpose({
 }
 
 .timer-pill span {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--text);
@@ -274,12 +275,12 @@ defineExpose({
 
 .letter-box {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-muted);
   background: var(--bg-card);
@@ -289,12 +290,12 @@ defineExpose({
 }
 
 .letter-box.selected {
-  width: 60px;
-  height: 60px;
-  font-size: 1.6rem;
+  width: 72px;
+  height: 72px;
+  font-size: 1.9rem;
   color: white;
   background: linear-gradient(135deg, var(--primary), var(--purple));
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(91, 95, 226, 0.5);
   animation: letterPop 0.3s ease;
 }
@@ -341,6 +342,7 @@ defineExpose({
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   padding: 20px;
   gap: 24px;
 }
@@ -373,6 +375,7 @@ defineExpose({
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   padding: 24px 28px;
+  width: 100%;
   max-width: 100%;
   box-shadow: var(--shadow-md);
   animation: cardSlide 0.4s ease;
@@ -567,15 +570,15 @@ defineExpose({
   }
   
   .letter-box {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
+    width: 46px;
+    height: 46px;
+    font-size: 1.2rem;
   }
   
   .letter-box.selected {
-    width: 52px;
-    height: 52px;
-    font-size: 1.4rem;
+    width: 62px;
+    height: 62px;
+    font-size: 1.6rem;
   }
   
   .current-letter {
@@ -617,15 +620,15 @@ defineExpose({
 
 @media (max-width: 360px) {
   .letter-box {
-    width: 34px;
-    height: 34px;
-    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
   }
   
   .letter-box.selected {
-    width: 46px;
-    height: 46px;
-    font-size: 1.2rem;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4rem;
   }
   
   .current-letter {
