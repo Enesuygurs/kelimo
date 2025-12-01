@@ -1,4 +1,4 @@
-import { AdMob, BannerAdSize, BannerAdPosition } from '@capacitor-community/admob';
+import { AdMob, BannerAdSize, BannerAdPosition, RewardAdPluginEvents } from '@capacitor-community/admob';
 
 // Test Ad Unit IDs (Google'ın resmi test ID'leri)
 // Gerçek yayına geçerken bunları kendi AdMob ID'lerinle değiştir!
@@ -77,23 +77,23 @@ export async function showRewardedAd(): Promise<boolean> {
       isTesting: true, // Yayına geçerken false yap
     };
     
-    // Reklamı yükle
-    await AdMob.prepareRewardVideoAd(options);
-    console.log('Rewarded ad loaded');
-    
     // Ödül event listener
     let rewardReceived = false;
     
-    const rewardListener = AdMob.addListener('onRewardedVideoAdReward', (reward: any) => {
-      console.log('Reward received:', reward);
+    const rewardListener = await AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
+      console.log('Reward received');
       rewardReceived = true;
     });
+    
+    // Reklamı yükle
+    await AdMob.prepareRewardVideoAd(options);
+    console.log('Rewarded ad loaded');
     
     // Reklamı göster
     await AdMob.showRewardVideoAd();
     
     // Listener'ı temizle
-    rewardListener.remove();
+    await rewardListener.remove();
     
     return rewardReceived;
   } catch (error) {
