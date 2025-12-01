@@ -217,7 +217,7 @@ onMounted(() => {
 }
 
 .mode-badge.unlimited {
-  background: var(--pink);
+  background: #FF5A5F;
   color: white;
 }
 
