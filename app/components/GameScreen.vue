@@ -264,6 +264,7 @@ defineExpose({
   width: 100%;
   overflow: hidden;
   padding: 20px 0;
+  margin-top: 24px;
   background: linear-gradient(180deg, var(--bg) 0%, transparent 100%);
 }
 
