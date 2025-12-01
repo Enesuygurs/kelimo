@@ -499,8 +499,7 @@ const sortedResults = computed(() => {
   font-weight: 700;
   font-family: inherit;
   cursor: pointer;
-  box-shadow: 0 6px 25px rgba(17, 153, 142, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease;
   animation: slideUp 0.5s ease 0.4s backwards;
 }
 
