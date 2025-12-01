@@ -6,6 +6,7 @@ const TEST_BANNER_ID = 'ca-app-pub-3940256099942544/6300978111';
 const TEST_REWARDED_ID = 'ca-app-pub-3940256099942544/5224354917';
 
 let isAdMobInitialized = false;
+let isBannerVisible = false;
 
 /**
  * AdMob'u başlat
@@ -29,6 +30,13 @@ export async function initAdMob(): Promise<void> {
  */
 export async function showBannerAd(): Promise<void> {
   try {
+    // Önce mevcut banner'ı kaldır
+    try {
+      await AdMob.removeBanner();
+    } catch (e) {
+      // Banner yoksa hata verir, sorun değil
+    }
+    
     const options = {
       adId: TEST_BANNER_ID,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
@@ -38,6 +46,7 @@ export async function showBannerAd(): Promise<void> {
     };
     
     await AdMob.showBanner(options);
+    isBannerVisible = true;
     console.log('Banner ad shown');
   } catch (error) {
     console.error('Failed to show banner ad:', error);
@@ -49,10 +58,11 @@ export async function showBannerAd(): Promise<void> {
  */
 export async function hideBannerAd(): Promise<void> {
   try {
-    await AdMob.hideBanner();
-    console.log('Banner ad hidden');
+    await AdMob.removeBanner();
+    isBannerVisible = false;
+    console.log('Banner ad removed');
   } catch (error) {
-    console.error('Failed to hide banner ad:', error);
+    console.error('Failed to remove banner ad:', error);
   }
 }
 
