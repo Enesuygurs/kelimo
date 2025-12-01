@@ -42,7 +42,7 @@
         </div>
         <div class="mode-content">
           <div class="mode-header">
-            <span class="mode-title">Sınırsız</span>
+            <span class="mode-title">Limitsiz</span>
             <span class="mode-badge unlimited">∞</span>
           </div>
           <p class="mode-desc">İstediğin kadar oyna</p>
