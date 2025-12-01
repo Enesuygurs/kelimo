@@ -210,6 +210,8 @@ async function handlePlayAgain() {
 
 <style scoped>
 .layout {
+  width: 100%;
+  min-width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
