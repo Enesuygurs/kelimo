@@ -1,16 +1,5 @@
 <template>
   <div class="game-scene">
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <div class="timer-pill" :class="timerClass">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <circle cx="12" cy="12" r="9"/>
-          <path d="M12 7v5l3 3"/>
-        </svg>
-        <span>{{ formattedTime }}</span>
-      </div>
-    </div>
-
     <!-- Alphabet Strip -->
     <div class="alphabet-strip">
       <div class="alphabet-scroll" :style="carouselStyle">
@@ -23,6 +12,17 @@
         >
           {{ letter }}
         </div>
+      </div>
+    </div>
+
+    <!-- Timer Bar (under alphabet) -->
+    <div class="timer-bar">
+      <div class="timer-pill" :class="timerClass">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 3"/>
+        </svg>
+        <span>{{ formattedTime }}</span>
       </div>
     </div>
 
@@ -204,11 +204,11 @@ defineExpose({
   overflow: hidden;
 }
 
-/* Top Bar */
-.top-bar {
+/* Timer Bar (under alphabet) */
+.timer-bar {
   display: flex;
   justify-content: center;
-  padding: 16px 20px;
+  padding: 8px 20px 16px;
   background: var(--bg);
 }
 
