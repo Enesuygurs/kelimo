@@ -364,7 +364,7 @@ async function handlePlayAgain() {
 }
 
 .confirm-dialog {
-  background: var(--bg-card);
+  background: #1E1E2D;
   border-radius: var(--radius-lg);
   padding: 28px 24px;
   max-width: 320px;
