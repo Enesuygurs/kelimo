@@ -217,6 +217,7 @@ defineExpose({
   align-items: center;
   gap: 8px;
   padding: 10px 20px;
+  min-width: 100px;
   background: var(--bg-card);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-md);
@@ -233,6 +234,8 @@ defineExpose({
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: var(--text);
+  min-width: 45px;
+  text-align: center;
 }
 
 .timer-pill.warning {
