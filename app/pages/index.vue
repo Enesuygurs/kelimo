@@ -35,7 +35,7 @@
         @submit="handleSubmit"
         @pass="handlePass"
         @skip="handleSkip"
-        @finish="handleFinish"
+        @finish="showConfirmDialog"
         @go-to-letter="handleGoToLetter"
       />
 
@@ -50,11 +50,25 @@
         @play-again="handlePlayAgain"
       />
     </main>
+
+    <!-- Onay Dialogu -->
+    <div v-if="showConfirm" class="confirm-overlay" @click="cancelFinish">
+      <div class="confirm-dialog" @click.stop>
+        <div class="confirm-icon">⚠️</div>
+        <h3 class="confirm-title">Oyunu Bitir</h3>
+        <p class="confirm-message">Oyunu bitirmek istediğinize emin misiniz?</p>
+        <div class="confirm-buttons">
+          <button class="confirm-btn cancel" @click="cancelFinish">İptal</button>
+          <button class="confirm-btn confirm" @click="confirmFinish">Bitir</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue';
+import { onMounted, onUnmounted, ref, watch } from 'vue';
+import { App } from '@capacitor/app';
 import { initSounds, playSound } from '~/utils/sounds';
 import { initAdMob, showBannerAd, hideBannerAd, showRewardedAd } from '~/services/admob';
 
@@ -87,6 +101,8 @@ const {
 
 const gameScreenRef = ref(null);
 const showingAd = ref(false);
+const showConfirm = ref(false);
+let backButtonListener: any = null;
 
 onMounted(async () => {
   initGame();
@@ -95,7 +111,42 @@ onMounted(async () => {
   // AdMob'u başlat ve banner göster
   await initAdMob();
   await showBannerAd();
+  
+  // Android geri tuşunu yakala
+  backButtonListener = await App.addListener('backButton', () => {
+    if (showConfirm.value) {
+      // Dialog açıksa kapat
+      cancelFinish();
+    } else if (currentScreen.value === 'game') {
+      // Oyun ekranındaysa onay dialogu göster
+      showConfirmDialog();
+    } else if (currentScreen.value === 'result') {
+      // Sonuç ekranındaysa ana sayfaya dön
+      handlePlayAgain();
+    }
+    // Ana sayfadaysa varsayılan davranış (uygulama kapanır)
+  });
 });
+
+onUnmounted(() => {
+  if (backButtonListener) {
+    backButtonListener.remove();
+  }
+});
+
+// Onay dialogu fonksiyonları
+function showConfirmDialog() {
+  showConfirm.value = true;
+}
+
+function cancelFinish() {
+  showConfirm.value = false;
+}
+
+async function confirmFinish() {
+  showConfirm.value = false;
+  await handleFinish();
+}
 
 async function handleStartDaily() {
   await hideBannerAd(); // Oyun başlarken banner'ı gizle
@@ -293,6 +344,103 @@ async function handlePlayAgain() {
   
   .logo-letter {
     font-size: 1rem;
+  }
+}
+
+/* Confirm Dialog */
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+.confirm-dialog {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.confirm-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.confirm-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.confirm-message {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.confirm-btn {
+  flex: 1;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn.cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+.confirm-btn.cancel:active {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(0.98);
+}
+
+.confirm-btn.confirm {
+  background: linear-gradient(135deg, var(--danger), var(--danger-light));
+  color: white;
+}
+
+.confirm-btn.confirm:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
