@@ -84,7 +84,7 @@ const {
   TURKISH_ALPHABET
 } = useGame();
 
-const gameScreenRef = ref<{ showNotification: (message: string, type: 'success' | 'error' | 'info') => void } | null>(null);
+const gameScreenRef = ref(null);
 
 onMounted(() => {
   initGame();
@@ -104,27 +104,19 @@ function handleSubmit() {
   if (result.success && result.message) {
     if (result.message.includes('Doğru')) {
       playSound('correct');
-      gameScreenRef.value?.showNotification(result.message, 'success');
-    } else {
-      gameScreenRef.value?.showNotification(result.message, 'info');
     }
   } else if (!result.success) {
     playSound('wrong');
-    gameScreenRef.value?.showNotification(result.message, 'error');
   }
 }
 
 function handlePass() {
   const result = passLetter();
-  gameScreenRef.value?.showNotification(result.message, 'info');
 }
 
 function handleSkip() {
   const result = skipLetter();
   playSound('wrong');
-  if (result.correctAnswer) {
-    gameScreenRef.value?.showNotification(`Doğru cevap: ${result.correctAnswer}`, 'error');
-  }
 }
 
 function handleGoToLetter(index: number) {

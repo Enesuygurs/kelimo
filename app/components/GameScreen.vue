@@ -69,13 +69,6 @@
         </button>
       </div>
     </div>
-
-    <!-- Notification -->
-    <transition name="toast">
-      <div v-if="notification" class="toast" :class="notification.type">
-        {{ notification.message }}
-      </div>
-    </transition>
   </div>
 </template>
 
@@ -105,7 +98,6 @@ const emit = defineEmits<{
 }>();
 
 const inputRef = ref<HTMLInputElement | null>(null);
-const notification = ref<{ message: string; type: 'success' | 'error' | 'info' } | null>(null);
 
 // Carousel pozisyonu hesapla - aktif harf ortada
 const carouselStyle = computed(() => {
@@ -170,13 +162,6 @@ function handleLetterClick(index: number) {
   }
 }
 
-function showNotification(message: string, type: 'success' | 'error' | 'info' = 'info') {
-  notification.value = { message, type };
-  setTimeout(() => {
-    notification.value = null;
-  }, 2000);
-}
-
 onMounted(() => {
   nextTick(() => {
     inputRef.value?.focus();
@@ -187,10 +172,6 @@ watch(() => props.currentLetterIndex, () => {
   nextTick(() => {
     inputRef.value?.focus();
   });
-});
-
-defineExpose({
-  showNotification
 });
 </script>
 
