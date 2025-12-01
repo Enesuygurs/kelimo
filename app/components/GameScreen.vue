@@ -113,17 +113,17 @@ const carouselStyle = computed(() => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 420;
   const isSmallMobile = typeof window !== 'undefined' && window.innerWidth <= 360;
   
-  let itemWidth = 60;
-  let selectedWidth = 82;
+  let itemWidth = 70;
+  let selectedWidth = 94;
   let gap = 12;
   
   if (isSmallMobile) {
-    itemWidth = 46;
-    selectedWidth = 60;
+    itemWidth = 52;
+    selectedWidth = 68;
     gap = 10;
   } else if (isMobile) {
-    itemWidth = 52;
-    selectedWidth = 70;
+    itemWidth = 60;
+    selectedWidth = 80;
     gap = 10;
   }
   
@@ -279,12 +279,12 @@ defineExpose({
 
 .letter-box {
   flex-shrink: 0;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--text-muted);
   background: var(--bg-card);
@@ -294,9 +294,9 @@ defineExpose({
 }
 
 .letter-box.selected {
-  width: 82px;
-  height: 82px;
-  font-size: 2.2rem;
+  width: 94px;
+  height: 94px;
+  font-size: 2.5rem;
   color: white;
   background: linear-gradient(135deg, #F7971E, #FFD200);
   transform: translateY(-12px);
@@ -574,15 +574,15 @@ defineExpose({
   }
   
   .letter-box {
-    width: 52px;
-    height: 52px;
-    font-size: 1.3rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
   }
   
   .letter-box.selected {
-    width: 70px;
-    height: 70px;
-    font-size: 1.8rem;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
   }
   
   .current-letter {
@@ -624,15 +624,15 @@ defineExpose({
 
 @media (max-width: 360px) {
   .letter-box {
-    width: 46px;
-    height: 46px;
-    font-size: 1.2rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
   }
   
   .letter-box.selected {
-    width: 60px;
-    height: 60px;
-    font-size: 1.6rem;
+    width: 68px;
+    height: 68px;
+    font-size: 1.8rem;
   }
   
   .current-letter {
