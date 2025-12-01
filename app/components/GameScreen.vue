@@ -295,9 +295,9 @@ defineExpose({
   height: 82px;
   font-size: 2.2rem;
   color: white;
-  background: linear-gradient(135deg, var(--primary), var(--purple));
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
   transform: translateY(-12px);
-  box-shadow: 0 8px 25px rgba(91, 95, 226, 0.5);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
   animation: letterPop 0.3s ease;
 }
 
