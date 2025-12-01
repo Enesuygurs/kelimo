@@ -162,34 +162,16 @@ function handleFinish() {
 }
 
 .logo-icon {
-  width: 120px;
-  height: 40px;
-  background: linear-gradient(135deg, #11998E, #38EF7D, #00D4AA);
-  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
-  animation: logoPulse 3s ease-in-out infinite;
 }
 
 .logo-letter {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: -0.5px;
-}
-
-@keyframes logoPulse {
-  0%, 100% { 
-    box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
-    transform: scale(1);
-  }
-  50% { 
-    box-shadow: 0 6px 25px rgba(17, 153, 142, 0.6);
-    transform: scale(1.02);
-  }
 }
 
 .app-logo-title {
