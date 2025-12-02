@@ -1,547 +1,3986 @@
 {
   "A": [
-    { "word": "AVARE", "meaning": "Yapacak bir işi olmayan, boş duran kimse" },
-    { "word": "ADAPTE", "meaning": "Bir şeyi uygun hale getirmek, uyarlamak" },
-    { "word": "ALFABE", "meaning": "Bir dildeki harflerin tümü" },
-    { "word": "ALERJI", "meaning": "Bazı maddelere karşı vücudun aşırı tepki göstermesi" },
-    { "word": "ATLAS", "meaning": "Haritalar topluluğu içeren kitap" },
-    { "word": "AVUKAT", "meaning": "Hukuk işlerinde danışmanlık yapan kişi" },
-    { "word": "ANTIKA", "meaning": "Eski ve değerli eşya" },
-    { "word": "ARITMA", "meaning": "Suyu temizleme işlemi" },
-    { "word": "AKUSTIK", "meaning": "Ses bilimiyle veya ses yalıtımıyla ilgili" },
-    { "word": "AYDIN", "meaning": "Bilgili, kültürlü kimse" },
-    { "word": "ARABA", "meaning": "Tekerlekli ulaşım aracı" },
-    { "word": "AKTIF", "meaning": "Etkin, faal" },
-    { "word": "ARMUT", "meaning": "Yenilen meyve" },
-    { "word": "ASIST", "meaning": "Yardım eden, destek olan" },
-    { "word": "AHLAK", "meaning": "İyi davranış kuralları" },
-    { "word": "AKTÖR", "meaning": "Sahne veya film oyuncusu" },
-    { "word": "AŞURE", "meaning": "Türk mutfağından tatlı" },
-    { "word": "ANKARA", "meaning": "Türkiye'nin başkenti" }
+    {
+      "word": "ABİDE",
+      "meaning": "Anıt, önemli eser"
+    },
+    {
+      "word": "ABLUKA",
+      "meaning": "Kuşatma, çevresini sarma"
+    },
+    {
+      "word": "ABONE",
+      "meaning": "Bir hizmetten sürekli yararlanan kişi"
+    },
+    {
+      "word": "ACEMİ",
+      "meaning": "Bir işe yeni başlayan, tecrübesiz"
+    },
+    {
+      "word": "ADALET",
+      "meaning": "Hak ve hukuka uygunluk"
+    },
+    {
+      "word": "ADRES",
+      "meaning": "Bir yerin bulunduğu konum bilgisi"
+    },
+    {
+      "word": "AFİŞ",
+      "meaning": "Duvara asılan duyuru kağıdı"
+    },
+    {
+      "word": "AHENK",
+      "meaning": "Uyum, düzen"
+    },
+    {
+      "word": "AİLE",
+      "meaning": "Anne, baba ve çocuklardan oluşan toplum birimi"
+    },
+    {
+      "word": "AKADEMİ",
+      "meaning": "Yüksek okul, bilim kurulu"
+    },
+    {
+      "word": "AKILLI",
+      "meaning": "Gerçeği iyi gören, düşünceli"
+    },
+    {
+      "word": "AKREP",
+      "meaning": "Zehirli bir böcek veya saat ibresi"
+    },
+    {
+      "word": "AKSİ",
+      "meaning": "Ters, zıt veya huysuz"
+    },
+    {
+      "word": "AKTÖR",
+      "meaning": "Erkek oyuncu"
+    },
+    {
+      "word": "ALBÜM",
+      "meaning": "Resim veya müzik parçalarının toplandığı eser"
+    },
+    {
+      "word": "ALFABE",
+      "meaning": "Bir dildeki harflerin tümü"
+    },
+    {
+      "word": "ALKIŞ",
+      "meaning": "El çırparak yapılan beğeni gösterisi"
+    },
+    {
+      "word": "ALMANAK",
+      "meaning": "Yıllık olayları gösteren kitap"
+    },
+    {
+      "word": "ALTIN",
+      "meaning": "Değerli sarı maden"
+    },
+    {
+      "word": "AMAÇ",
+      "meaning": "Ulaşılmak istenen sonuç, gaye"
+    },
+    {
+      "word": "AMBLEM",
+      "meaning": "Belirtke, simge"
+    },
+    {
+      "word": "AMELİYAT",
+      "meaning": "Cerrahi operasyon"
+    },
+    {
+      "word": "ANAHTAR",
+      "meaning": "Kilit açmaya yarayan alet"
+    },
+    {
+      "word": "ANALİZ",
+      "meaning": "Çözümleme, tahlil"
+    },
+    {
+      "word": "ANIT",
+      "meaning": "Önemli bir olayı veya kişiyi hatırlatan yapı"
+    },
+    {
+      "word": "ANKET",
+      "meaning": "Soruşturma, kamuoyu yoklaması"
+    },
+    {
+      "word": "ANTEN",
+      "meaning": "Sinyal alıp vermeye yarayan cihaz"
+    },
+    {
+      "word": "ARABA",
+      "meaning": "Tekerlekli kara taşıtı"
+    },
+    {
+      "word": "ARI",
+      "meaning": "Bal yapan uçan böcek"
+    },
+    {
+      "word": "ARMAĞAN",
+      "meaning": "Hediye"
+    },
+    {
+      "word": "ASTRONOT",
+      "meaning": "Uzay adamı"
+    },
+    {
+      "word": "ATOM",
+      "meaning": "Maddenin en küçük yapı taşı"
+    },
+    {
+      "word": "AVUKAT",
+      "meaning": "Hukukçu, savunman"
+    },
+    {
+      "word": "AYNA",
+      "meaning": "Görüntüyü yansıtan cam"
+    },
+    {
+      "word": "AYAKKABI",
+      "meaning": "Ayağa giyilen giysi"
+    },
+    {
+      "word": "AYDINLIK",
+      "meaning": "Işıklı olma durumu"
+    }
   ],
   "B": [
-    { "word": "BARO", "meaning": "Bir şehir veya bölge avukatlarının bağlı oldukları meslek kuruluşu" },
-    { "word": "BULVAR", "meaning": "Geniş ve ağaçlıklı cadde" },
-    { "word": "BUTIK", "meaning": "Özel tasarım ürünler satan küçük mağaza" },
-    { "word": "BRONZ", "meaning": "Bakır ve kalay alaşımından yapılan metal" },
-    { "word": "BALKON", "meaning": "Binanın dışına çıkıntı yapan açık alan" },
-    { "word": "BISTURI", "meaning": "Ameliyatlarda kullanılan kesici alet" },
-    { "word": "BUFET", "meaning": "Yiyecek ve içeceklerin sergilendiği masa" },
-    { "word": "BONUS", "meaning": "Ek ödül veya prim" },
-    { "word": "BAYRAK", "meaning": "Bir milleti veya kurumu simgeleyen bez" },
-    { "word": "BEREKET", "meaning": "Bol ve verimli olma durumu" },
-    { "word": "BAĞ", "meaning": "Üzüm veya meyve yetiştirilen alan" },
-    { "word": "BILGE", "meaning": "Bilgili, akıllı kişi" },
-    { "word": "BOT", "meaning": "Küçük tekne" },
-    { "word": "BISIKLET", "meaning": "İki tekerlekli ulaşım aracı" },
-    { "word": "BÜYÜK", "meaning": "Hacim veya önem bakımından büyük" },
-    { "word": "BALTA", "meaning": "Ağaç kesme aracı" },
-    { "word": "BITKI", "meaning": "Canlı organizma" },
-    { "word": "BOYA", "meaning": "Renk sürmek için kullanılan madde" },
-    { "word": "BUKET", "meaning": "Çiçek demeti" }
+    {
+      "word": "BABA",
+      "meaning": "Erkek ebeveyn"
+    },
+    {
+      "word": "BACA",
+      "meaning": "Dumanın çıktığı yol"
+    },
+    {
+      "word": "BADEM",
+      "meaning": "Bir kuruyemiş türü"
+    },
+    {
+      "word": "BAĞLAMA",
+      "meaning": "Telli bir Türk çalgısı"
+    },
+    {
+      "word": "BAHANE",
+      "meaning": "Gerçek olmayan sebep"
+    },
+    {
+      "word": "BAKKAL",
+      "meaning": "Küçük market"
+    },
+    {
+      "word": "BALIK",
+      "meaning": "Suda yaşayan canlı"
+    },
+    {
+      "word": "BALON",
+      "meaning": "İçi gaz dolu oyuncak veya araç"
+    },
+    {
+      "word": "BANKA",
+      "meaning": "Para işlerinin yapıldığı kurum"
+    },
+    {
+      "word": "BANYO",
+      "meaning": "Yıkanılan yer"
+    },
+    {
+      "word": "BARDAK",
+      "meaning": "İçecek içmeye yarayan kap"
+    },
+    {
+      "word": "BASKETBOL",
+      "meaning": "Potaya top atılarak oynanan oyun"
+    },
+    {
+      "word": "BASTON",
+      "meaning": "Yürürken dayanılan değnek"
+    },
+    {
+      "word": "BAVUL",
+      "meaning": "Yolculuk çantası"
+    },
+    {
+      "word": "BAYRAK",
+      "meaning": "Bir ülkeyi simgeleyen kumaş"
+    },
+    {
+      "word": "BAYRAM",
+      "meaning": "Özel olarak kutlanan gün"
+    },
+    {
+      "word": "BEBEK",
+      "meaning": "Küçük çocuk"
+    },
+    {
+      "word": "BEDEN",
+      "meaning": "Vücut"
+    },
+    {
+      "word": "BEKÇİ",
+      "meaning": "Bir yeri koruyan görevli"
+    },
+    {
+      "word": "BELGE",
+      "meaning": "Kanıt niteliğindeki yazı, doküman"
+    },
+    {
+      "word": "BELLEK",
+      "meaning": "Hafıza"
+    },
+    {
+      "word": "BENZİN",
+      "meaning": "Akaryakıt türü"
+    },
+    {
+      "word": "BERBER",
+      "meaning": "Saç kesen kişi"
+    },
+    {
+      "word": "BESTE",
+      "meaning": "Müzik eseri"
+    },
+    {
+      "word": "BEYAZ",
+      "meaning": "Ak renk"
+    },
+    {
+      "word": "BEYİN",
+      "meaning": "Düşünme organı"
+    },
+    {
+      "word": "BIÇAK",
+      "meaning": "Kesici alet"
+    },
+    {
+      "word": "BİLET",
+      "meaning": "Giriş veya yolculuk belgesi"
+    },
+    {
+      "word": "BİLGİ",
+      "meaning": "Öğrenilen şey, malumat"
+    },
+    {
+      "word": "BİLGİSAYAR",
+      "meaning": "Elektronik işlem cihazı"
+    },
+    {
+      "word": "BİLİM",
+      "meaning": "Evreni inceleyen düzenli bilgi"
+    },
+    {
+      "word": "BİNA",
+      "meaning": "Yapı"
+    },
+    {
+      "word": "BİSKÜVİ",
+      "meaning": "Fırınlanmış kuru pasta"
+    },
+    {
+      "word": "BİTKİ",
+      "meaning": "Toprakta yetişen canlı"
+    },
+    {
+      "word": "BOYA",
+      "meaning": "Renklendirme maddesi"
+    },
+    {
+      "word": "BÖCEK",
+      "meaning": "Küçük eklem bacaklı hayvan"
+    },
+    {
+      "word": "BULUT",
+      "meaning": "Gökyüzündeki su buharı kütlesi"
+    },
+    {
+      "word": "BÜRO",
+      "meaning": "Çalışma ofisi"
+    }
   ],
   "C": [
-    { "word": "CIPS", "meaning": "İnce, yuvarlak kesilerek kızartılmış patates" },
-    { "word": "CETVEL", "meaning": "Düz çizgi çizmek için kullanılan alet" },
-    { "word": "CIKIS", "meaning": "Bir yerden ayrılma noktası" },
-    { "word": "CAMI", "meaning": "Müslümanların ibadet ettiği yer" },
-    { "word": "CAZIBE", "meaning": "Çekim gücü, albenisi olan" },
-    { "word": "CENAZE", "meaning": "Ölmüş kişinin bedeni" },
-    { "word": "CEZVE", "meaning": "Türk kahvesi pişirilen kap" },
-    { "word": "CUMLE", "meaning": "Anlam taşıyan söz dizisi" },
-    { "word": "CEVIZ", "meaning": "Kabuklu bir ağaç meyvesi" },
-    { "word": "CANLI", "meaning": "Yaşayan varlık" },
-    { "word": "CEVAP", "meaning": "Sorulan sorunun yanıtı" },
-    { "word": "CILT", "meaning": "Deri veya kitap cildi" },
-    { "word": "CENNET", "meaning": "Dini anlamda güzel mekan" },
-    { "word": "CEKET", "meaning": "Üst giysi" },
-    { "word": "CIVIL", "meaning": "Halk arasında olan, sivil" },
-    { "word": "CAYLAK", "meaning": "Deneyimsiz kimse" },
-    { "word": "CUMHUR", "meaning": "Toplumu ifade eden terim" },
-    { "word": "CINS", "meaning": "Tür, çeşit" },
-    { "word": "CAGRI", "meaning": "Davet veya çağırma" }
+    {
+      "word": "CADDE",
+      "meaning": "Büyük sokak, ana yol"
+    },
+    {
+      "word": "CAM",
+      "meaning": "Saydam ve kırılgan madde"
+    },
+    {
+      "word": "CAMİ",
+      "meaning": "Müslümanların ibadet yeri"
+    },
+    {
+      "word": "CANLI",
+      "meaning": "Yaşayan varlık"
+    },
+    {
+      "word": "CEKET",
+      "meaning": "Üste giyilen kıyafet"
+    },
+    {
+      "word": "CELSE",
+      "meaning": "Oturum"
+    },
+    {
+      "word": "CEMAAT",
+      "meaning": "Topluluk"
+    },
+    {
+      "word": "CENAZE",
+      "meaning": "Ölü ve gömülme töreni"
+    },
+    {
+      "word": "CEPHE",
+      "meaning": "Bir yapının yüzü veya savaş alanı"
+    },
+    {
+      "word": "CERRAH",
+      "meaning": "Ameliyat yapan doktor"
+    },
+    {
+      "word": "CESUR",
+      "meaning": "Korkusuz, yürekli"
+    },
+    {
+      "word": "CEVAP",
+      "meaning": "Yanıt"
+    },
+    {
+      "word": "CEVİZ",
+      "meaning": "Sert kabuklu bir yemiş"
+    },
+    {
+      "word": "CEZA",
+      "meaning": "Suç karşılığı uygulanan yaptırım"
+    },
+    {
+      "word": "CILIZ",
+      "meaning": "Zayıf, güçsüz"
+    },
+    {
+      "word": "CİHAZ",
+      "meaning": "Aygıt, alet"
+    },
+    {
+      "word": "CİLT",
+      "meaning": "Ten veya kitap kapağı"
+    },
+    {
+      "word": "CİMRİ",
+      "meaning": "Para harcamaktan kaçınan"
+    },
+    {
+      "word": "CİNS",
+      "meaning": "Tür, çeşit"
+    },
+    {
+      "word": "CİSİM",
+      "meaning": "Madde, nesne"
+    },
+    {
+      "word": "CİVCİV",
+      "meaning": "Tavuk yavrusu"
+    },
+    {
+      "word": "COŞKU",
+      "meaning": "Heyecan ve sevinç"
+    },
+    {
+      "word": "CÖMERT",
+      "meaning": "Eli açık, paylaşmayı seven"
+    },
+    {
+      "word": "CUMA",
+      "meaning": "Haftanın bir günü"
+    },
+    {
+      "word": "CUMHURİYET",
+      "meaning": "Halkın egemen olduğu yönetim biçimi"
+    },
+    {
+      "word": "CÜCE",
+      "meaning": "Boyu normalden çok kısa olan"
+    },
+    {
+      "word": "CÜZDAN",
+      "meaning": "Para koyma kabı"
+    },
+    {
+      "word": "CETVEL",
+      "meaning": "Ölçüm aleti"
+    },
+    {
+      "word": "CEZVE",
+      "meaning": "Kahve pişirme kabı"
+    }
   ],
   "Ç": [
-    { "word": "ÇATAPAT", "meaning": "Ayakla çiğnendiğinde ya da duvara sürtüldüğünde patlayan eğlence fişeği" },
-    { "word": "ÇEVIRMEN", "meaning": "Bir dilden diğerine çeviri yapan kişi" },
-    { "word": "ÇIZGI", "meaning": "İnce uzun işaret" },
-    { "word": "ÇÖZÜM", "meaning": "Problemi ortadan kaldırma" },
-    { "word": "ÇEKIM", "meaning": "Kamera ile görüntü alma" },
-    { "word": "ÇIRAK", "meaning": "Bir ustanın yanında öğrenen kişi" },
-    { "word": "ÇIPLAK", "meaning": "Üzerinde giysi olmayan" },
-    { "word": "ÇERÇEVE", "meaning": "Resim veya ayna kenarı" },
-    { "word": "ÇATAL", "meaning": "Yemek yerken kullanılan iki uçlu araç" },
-    { "word": "ÇAPRAZ", "meaning": "Birbirini kesen veya çapraz duran durum" },
-    { "word": "ÇİFTLIK", "meaning": "Hayvancılıkla uğraşılan yer" },
-    { "word": "ÇİÇEK", "meaning": "Bitkilerin çoğalma organı, süs bitkisi" },
-    { "word": "ÇAMUR", "meaning": "Islak toprak" },
-    { "word": "ÇELİK", "meaning": "Dayanıklı metal alaşım" },
-    { "word": "ÇORAP", "meaning": "Ayakta giyilen giysi" },
-    { "word": "ÇEKİRDEK", "meaning": "Meyve içindeki çekirdek" },
-    { "word": "ÇABA", "meaning": "Efor, gayret" },
-    { "word": "ÇOĞALMA", "meaning": "Artma, çoğalma süreci" },
-    { "word": "ÇIKIŞ", "meaning": "Bir yerden dışarıya çıkma yolu" }
+    {
+      "word": "ÇADIR",
+      "meaning": "Taşınabilir barınak"
+    },
+    {
+      "word": "ÇAĞ",
+      "meaning": "Zaman dilimi, devir"
+    },
+    {
+      "word": "ÇAKMAK",
+      "meaning": "Ateş yakma aleti"
+    },
+    {
+      "word": "ÇALI",
+      "meaning": "Küçük ağaççık"
+    },
+    {
+      "word": "ÇALIŞKAN",
+      "meaning": "Çok çalışan, gayretli"
+    },
+    {
+      "word": "ÇAM",
+      "meaning": "İğne yapraklı bir ağaç"
+    },
+    {
+      "word": "ÇANTA",
+      "meaning": "Eşya taşıma kabı"
+    },
+    {
+      "word": "ÇAPA",
+      "meaning": "Toprağı kazma aleti veya gemi demiri"
+    },
+    {
+      "word": "ÇARŞAF",
+      "meaning": "Yatak örtüsü"
+    },
+    {
+      "word": "ÇARŞI",
+      "meaning": "Alışveriş yeri"
+    },
+    {
+      "word": "ÇATI",
+      "meaning": "Binanın üst kısmı"
+    },
+    {
+      "word": "ÇAY",
+      "meaning": "İçilen bir bitki suyu"
+    },
+    {
+      "word": "ÇEKİÇ",
+      "meaning": "Çivi çakma aleti"
+    },
+    {
+      "word": "ÇELİK",
+      "meaning": "Sertleştirilmiş demir"
+    },
+    {
+      "word": "ÇENE",
+      "meaning": "Ağzın bulunduğu kemik yapı"
+    },
+    {
+      "word": "ÇEŞME",
+      "meaning": "Su akan musluklu yapı"
+    },
+    {
+      "word": "ÇEYREK",
+      "meaning": "Dörtte bir"
+    },
+    {
+      "word": "ÇİÇEK",
+      "meaning": "Bitkilerin renkli kısmı"
+    },
+    {
+      "word": "ÇİFTÇİ",
+      "meaning": "Toprakla uğraşan kişi"
+    },
+    {
+      "word": "ÇİKOLATA",
+      "meaning": "Kakao ile yapılan tatlı"
+    },
+    {
+      "word": "ÇİLEK",
+      "meaning": "Kırmızı bir meyve"
+    },
+    {
+      "word": "ÇİZGİ",
+      "meaning": "Uzun ince hat"
+    },
+    {
+      "word": "ÇİZME",
+      "meaning": "Uzun konçlu ayakkabı"
+    },
+    {
+      "word": "ÇOCUK",
+      "meaning": "Küçük insan"
+    },
+    {
+      "word": "ÇORAP",
+      "meaning": "Ayağa giyilen giysi"
+    },
+    {
+      "word": "ÇÖL",
+      "meaning": "Kurak ve kumluk arazi"
+    },
+    {
+      "word": "ÇÖP",
+      "meaning": "Atık madde"
+    },
+    {
+      "word": "ÇÖZÜM",
+      "meaning": "Sonuca ulaşma, halletme"
+    },
+    {
+      "word": "ÇUVAL",
+      "meaning": "Büyük torba"
+    },
+    {
+      "word": "ÇIPLAK",
+      "meaning": "Giysisiz"
+    },
+    {
+      "word": "ÇIRAK",
+      "meaning": "Usta yardımcısı"
+    }
   ],
   "D": [
-    { "word": "DIVAN", "meaning": "Osmanlı'da hem devletin karar meclisi, hem de şairlerin şiir hazinesi anlamlarındaki söz" },
-    { "word": "DAMGA", "meaning": "Bir şeyin üzerine basılan işaret" },
-    { "word": "DENGE", "meaning": "Kararlı durma hali" },
-    { "word": "DOZAJ", "meaning": "İlaç miktarının ayarlanması" },
-    { "word": "DOSYA", "meaning": "Belgelerin konulduğu kap" },
-    { "word": "DUVAR", "meaning": "Yapıları bölen dikey yapı elemanı" },
-    { "word": "DENEME", "meaning": "Bir şeyi test etme" },
-    { "word": "DERGI", "meaning": "Periyodik olarak yayınlanan basılı materyal" },
-    { "word": "DURAK", "meaning": "Toplu taşıma araçlarının durduğu yer" },
-    { "word": "DIYAR", "meaning": "Ülke, memleket" },
-    { "word": "DOKU", "meaning": "Canlıların yapı birimi" },
-    { "word": "DÜZEN", "meaning": "Sistemli, tertipli durum" },
-    { "word": "DERS", "meaning": "Öğrenme birimi" },
-    { "word": "DAMAK", "meaning": "Ağız içi tat alma bölgesi" },
-    { "word": "DAIRE", "meaning": "Dört duvarlı yaşam alanı" },
-    { "word": "DEGER", "meaning": "Önem, kıymet" },
-    { "word": "DOĞA", "meaning": "İnsan dışında kalan çevre" },
-    { "word": "DİNAMİK", "meaning": "Hareketli, değişken" },
-    { "word": "DÖNEM", "meaning": "Zaman dilimi" }
+    {
+      "word": "DAĞ",
+      "meaning": "Yüksek yer şekli"
+    },
+    {
+      "word": "DAHİ",
+      "meaning": "Olağanüstü yetenekli kimse"
+    },
+    {
+      "word": "DAKİKA",
+      "meaning": "Altmış saniyelik zaman"
+    },
+    {
+      "word": "DALGA",
+      "meaning": "Deniz yüzeyindeki hareket"
+    },
+    {
+      "word": "DAMLA",
+      "meaning": "Küçük su parçası"
+    },
+    {
+      "word": "DANS",
+      "meaning": "Müzik eşliğinde hareket"
+    },
+    {
+      "word": "DANTEL",
+      "meaning": "İnce örgü işi"
+    },
+    {
+      "word": "DAVET",
+      "meaning": "Çağrı"
+    },
+    {
+      "word": "DAVUL",
+      "meaning": "Vurmalı bir çalgı"
+    },
+    {
+      "word": "DAYI",
+      "meaning": "Annenin erkek kardeşi"
+    },
+    {
+      "word": "DEDE",
+      "meaning": "Babanın veya annenin babası"
+    },
+    {
+      "word": "DEĞER",
+      "meaning": "Kıymet, önem"
+    },
+    {
+      "word": "DEĞNEK",
+      "meaning": "Sopa"
+    },
+    {
+      "word": "DEKOR",
+      "meaning": "Süsleme, düzenleme"
+    },
+    {
+      "word": "DELİK",
+      "meaning": "Boşluk, açıklık"
+    },
+    {
+      "word": "DEMİR",
+      "meaning": "Sağlam bir maden"
+    },
+    {
+      "word": "DENİZ",
+      "meaning": "Büyük su kütlesi"
+    },
+    {
+      "word": "DEPO",
+      "meaning": "Eşya saklanan yer"
+    },
+    {
+      "word": "DERİ",
+      "meaning": "Vücudun dış örtüsü"
+    },
+    {
+      "word": "DERS",
+      "meaning": "Öğrenilen konu"
+    },
+    {
+      "word": "DESEN",
+      "meaning": "Şekil, motif"
+    },
+    {
+      "word": "DESTEK",
+      "meaning": "Yardım, dayanak"
+    },
+    {
+      "word": "DEV",
+      "meaning": "Çok büyük masal yaratığı"
+    },
+    {
+      "word": "DEVE",
+      "meaning": "Hörgüçlü bir hayvan"
+    },
+    {
+      "word": "DİL",
+      "meaning": "Konuşma organı veya lisan"
+    },
+    {
+      "word": "DİLEK",
+      "meaning": "İstek, arzu"
+    },
+    {
+      "word": "DİNAZOR",
+      "meaning": "Nesli tükenmiş büyük sürüngen"
+    },
+    {
+      "word": "DİREK",
+      "meaning": "Dikey sütun"
+    },
+    {
+      "word": "DİŞ",
+      "meaning": "Ağızdaki çiğneme organı"
+    },
+    {
+      "word": "DİZİ",
+      "meaning": "Sıra veya TV serisi"
+    },
+    {
+      "word": "DOĞA",
+      "meaning": "Tabiat"
+    },
+    {
+      "word": "DOKTOR",
+      "meaning": "Hekim"
+    },
+    {
+      "word": "DOLAP",
+      "meaning": "Eşya konulan mobilya"
+    },
+    {
+      "word": "DOMATES",
+      "meaning": "Kırmızı bir sebze"
+    },
+    {
+      "word": "DOST",
+      "meaning": "Yakın arkadaş"
+    },
+    {
+      "word": "DÖNEM",
+      "meaning": "Zaman dilimi"
+    },
+    {
+      "word": "DUMAN",
+      "meaning": "Ateşten çıkan gaz"
+    },
+    {
+      "word": "DÜĞME",
+      "meaning": "İliklenen nesne"
+    },
+    {
+      "word": "DÜNYA",
+      "meaning": "Yaşadığımız gezegen"
+    },
+    {
+      "word": "DÜRÜST",
+      "meaning": "Doğru sözlü, güvenilir"
+    }
   ],
   "E": [
-    { "word": "ERGONOMIK", "meaning": "Çok rahat ya da kullanımı kolay tasarlanmış ürün" },
-    { "word": "EPEY", "meaning": "Oldukça fazla miktarda" },
-    { "word": "EFSANE", "meaning": "Kuşaktan kuşağa aktarılan hikaye" },
-    { "word": "ETAP", "meaning": "Bir işin bölümleri" },
-    { "word": "EZBER", "meaning": "Akılda tutarak öğrenme" },
-    { "word": "ENFES", "meaning": "Çok lezzetli, harika" },
-    { "word": "EKSEN", "meaning": "Dönen bir cismin ortasından geçen çizgi" },
-    { "word": "ESINTI", "meaning": "Hafif rüzgar" },
-    { "word": "EKIP", "meaning": "Bir işi birlikte yapan kişiler topluluğu" },
-    { "word": "ESAS", "meaning": "Temel, ana kural" },
-    { "word": "EKOLOJI", "meaning": "Canlıların çevreyle ilişkisi" },
-    { "word": "ENERJI", "meaning": "İş yapma kapasitesi" },
-    { "word": "ELMA", "meaning": "Yenilen meyve" },
-    { "word": "EGO", "meaning": "Benlik duygusu" },
-    { "word": "EĞİTİM", "meaning": "Bilgi ve beceri kazandırma süreci" },
-    { "word": "EVRAK", "meaning": "Resmi belgeler" },
-    { "word": "ETİK", "meaning": "Ahlaka ilişkin kurallar" },
-    { "word": "EMPATİ", "meaning": "Başkalarının duygularını anlama yeteneği" },
-    { "word": "EKSİK", "meaning": "Tam olmayan, noksan" }
+    {
+      "word": "EBE",
+      "meaning": "Doğum yaptıran kadın"
+    },
+    {
+      "word": "ECZANE",
+      "meaning": "İlaç satılan yer"
+    },
+    {
+      "word": "EDEBİYAT",
+      "meaning": "Söz ve yazı sanatı"
+    },
+    {
+      "word": "EFE",
+      "meaning": "Yiğit, zeybek"
+    },
+    {
+      "word": "EFSANE",
+      "meaning": "Dilden dile anlatılan öykü"
+    },
+    {
+      "word": "EĞİTİM",
+      "meaning": "Öğretim, yetiştirme"
+    },
+    {
+      "word": "EHLİYET",
+      "meaning": "Yeterlilik belgesi"
+    },
+    {
+      "word": "EKİM",
+      "meaning": "Bir ay veya tohum atma"
+    },
+    {
+      "word": "EKMEK",
+      "meaning": "Temel besin maddesi"
+    },
+    {
+      "word": "EKRAN",
+      "meaning": "Görüntü yüzeyi"
+    },
+    {
+      "word": "EKSİK",
+      "meaning": "Tam olmayan"
+    },
+    {
+      "word": "ELBİSE",
+      "meaning": "Giysi"
+    },
+    {
+      "word": "ELDİVEN",
+      "meaning": "Ele giyilen koruyucu"
+    },
+    {
+      "word": "ELEKTRİK",
+      "meaning": "Enerji türü"
+    },
+    {
+      "word": "ELMA",
+      "meaning": "Yaygın bir meyve"
+    },
+    {
+      "word": "ELMAS",
+      "meaning": "Çok değerli bir taş"
+    },
+    {
+      "word": "EMEK",
+      "meaning": "Çaba, çalışma"
+    },
+    {
+      "word": "EMİR",
+      "meaning": "Buyruk"
+    },
+    {
+      "word": "EMLAK",
+      "meaning": "Taşınmaz mal"
+    },
+    {
+      "word": "ENERJİ",
+      "meaning": "Güç, takat"
+    },
+    {
+      "word": "ENGEL",
+      "meaning": "Mani, zorluk"
+    },
+    {
+      "word": "ERİK",
+      "meaning": "Bir meyve"
+    },
+    {
+      "word": "ERKEK",
+      "meaning": "Bay, adam"
+    },
+    {
+      "word": "ESİR",
+      "meaning": "Tutsak"
+    },
+    {
+      "word": "ESKİ",
+      "meaning": "Yeni olmayan"
+    },
+    {
+      "word": "EŞYA",
+      "meaning": "Nesne, mal"
+    },
+    {
+      "word": "ETKİ",
+      "meaning": "Tesir"
+    },
+    {
+      "word": "ETİKET",
+      "meaning": "Fiyat veya bilgi kağıdı"
+    },
+    {
+      "word": "EV",
+      "meaning": "Konut, yaşanılan yer"
+    },
+    {
+      "word": "EVREN",
+      "meaning": "Kainat, kozmos"
+    },
+    {
+      "word": "EYLÜL",
+      "meaning": "Sonbahar ayı"
+    },
+    {
+      "word": "EZBER",
+      "meaning": "Akılda tutma"
+    }
   ],
   "F": [
-    { "word": "FAZLA", "meaning": "Ölçüyü aşan, aşırı, çok fazla" },
-    { "word": "FATURA", "meaning": "Satın alınan ürünün belgesi" },
-    { "word": "FERMUAR", "meaning": "Giysileri kapatmaya yarayan alet" },
-    { "word": "FESTIVAL", "meaning": "Şenlik, eğlence etkinliği" },
-    { "word": "FILTRE", "meaning": "Süzgeç görevi gören alet" },
-    { "word": "FIRTINA", "meaning": "Şiddetli rüzgar ve yağış" },
-    { "word": "FOSIL", "meaning": "Taşlaşmış canlı kalıntısı" },
-    { "word": "FREN", "meaning": "Aracı durduran sistem" },
-    { "word": "FARK", "meaning": "İki şey arasındaki ayrılık" },
-    { "word": "FIKIR", "meaning": "Düşünce, görüş" },
-    { "word": "FIRIN", "meaning": "Ekmek pişirilen yer" },
-    { "word": "FOTOGRAF", "meaning": "Görüntü kaydı" },
-    { "word": "FAVORI", "meaning": "Tercih edilen" },
-    { "word": "FONKSIYON", "meaning": "İşlev, görev" },
-    { "word": "FIZIK", "meaning": "Doğa bilimlerinden biri" },
-    { "word": "FASULYE", "meaning": "Baklagil türü" },
-    { "word": "FIRSAT", "meaning": "Elverişli zaman veya durum" },
-    { "word": "FOSFOR", "meaning": "Kimyasal element" },
-    { "word": "FIRÇA", "meaning": "Temizleme veya boyama aracı" }
+    {
+      "word": "FABRİKA",
+      "meaning": "Üretim tesisi"
+    },
+    {
+      "word": "FARE",
+      "meaning": "Küçük kemirgen hayvan"
+    },
+    {
+      "word": "FARK",
+      "meaning": "Ayrım, değişiklik"
+    },
+    {
+      "word": "FATURA",
+      "meaning": "Ödeme belgesi"
+    },
+    {
+      "word": "FAYDA",
+      "meaning": "Yarar"
+    },
+    {
+      "word": "FAZLA",
+      "meaning": "Gereğinden çok"
+    },
+    {
+      "word": "FEDAKAR",
+      "meaning": "Özverili"
+    },
+    {
+      "word": "FELAKET",
+      "meaning": "Büyük yıkım, afet"
+    },
+    {
+      "word": "FENER",
+      "meaning": "Işık kaynağı"
+    },
+    {
+      "word": "FERİBOT",
+      "meaning": "Araba taşıyan gemi"
+    },
+    {
+      "word": "FEVKALADE",
+      "meaning": "Olağanüstü"
+    },
+    {
+      "word": "FIKRA",
+      "meaning": "Kısa güldürücü hikaye"
+    },
+    {
+      "word": "FIRÇA",
+      "meaning": "Boyama veya temizleme aracı"
+    },
+    {
+      "word": "FIRIN",
+      "meaning": "Pişirme yeri"
+    },
+    {
+      "word": "FISTIK",
+      "meaning": "Bir kuruyemiş"
+    },
+    {
+      "word": "FİDAN",
+      "meaning": "Yeni yetişen ağaç"
+    },
+    {
+      "word": "FİKİR",
+      "meaning": "Düşünce"
+    },
+    {
+      "word": "FİL",
+      "meaning": "Hortumlu büyük hayvan"
+    },
+    {
+      "word": "FİLM",
+      "meaning": "Sinema eseri"
+    },
+    {
+      "word": "FİNCAN",
+      "meaning": "Kahve kabı"
+    },
+    {
+      "word": "FİŞ",
+      "meaning": "Elektrik ucu veya belge"
+    },
+    {
+      "word": "FİYAT",
+      "meaning": "Bedel, ücret"
+    },
+    {
+      "word": "FİZİK",
+      "meaning": "Madde bilimi"
+    },
+    {
+      "word": "FLÜT",
+      "meaning": "Üflemeli çalgı"
+    },
+    {
+      "word": "FORMÜL",
+      "meaning": "Çözüm yolu"
+    },
+    {
+      "word": "FOTOĞRAF",
+      "meaning": "Görüntü karesi"
+    },
+    {
+      "word": "FRANSIZ",
+      "meaning": "Fransa halkından olan"
+    },
+    {
+      "word": "FREN",
+      "meaning": "Durdurma mekanizması"
+    },
+    {
+      "word": "FUTBOL",
+      "meaning": "Ayak topu oyunu"
+    },
+    {
+      "word": "FÜZE",
+      "meaning": "Roket silahı"
+    }
   ],
   "G": [
-    { "word": "GIDON", "meaning": "Bisiklet direksiyonu" },
-    { "word": "GALERI", "meaning": "Sanat eserlerinin sergilendiği yer" },
-    { "word": "GEZGIN", "meaning": "Sürekli seyahat eden kişi" },
-    { "word": "GURUP", "meaning": "Güneşin batışı" },
-    { "word": "GRAFIK", "meaning": "Verilerin görsel gösterimi" },
-    { "word": "GURME", "meaning": "Yemek konusunda uzman kişi" },
-    { "word": "GOREV", "meaning": "Yapılması gereken iş" },
-    { "word": "GIZEM", "meaning": "Sır, esrar" },
-    { "word": "GEMI", "meaning": "Denizde yol alan araç" },
-    { "word": "GIRIS", "meaning": "Bir yere ilk adım atılan bölüm" },
-    { "word": "GÜNEŞ", "meaning": "Gündüzleri ışık ve ısı sağlayan yıldız" },
-    { "word": "GÖLGE", "meaning": "Işığın engellenmesiyle oluşan karanlık alan" },
-    { "word": "GÖREV", "meaning": "Yapılması gereken iş" },
-    { "word": "GENEL", "meaning": "Kapsamlı, ortak" },
-    { "word": "GÜVEN", "meaning": "İtimat, emniyet hissi" },
-    { "word": "GELİŞİM", "meaning": "Büyüme veya ilerleme süreci" },
-    { "word": "GARDROP", "meaning": "Kıyafet koyma dolabı" },
-    { "word": "GÖSTERİ", "meaning": "Sergileme, sunum etkinliği" },
-    { "word": "GELİŞ", "meaning": "Gelme, varış" }
+    {
+      "word": "GALİBA",
+      "meaning": "Sanırım, muhtemelen"
+    },
+    {
+      "word": "GALİP",
+      "meaning": "Kazanan, yenen"
+    },
+    {
+      "word": "GAMZE",
+      "meaning": "Yanak çukuru"
+    },
+    {
+      "word": "GAR",
+      "meaning": "Tren istasyonu"
+    },
+    {
+      "word": "GARAJ",
+      "meaning": "Araba park yeri"
+    },
+    {
+      "word": "GARSON",
+      "meaning": "Servis elemanı"
+    },
+    {
+      "word": "GAZETE",
+      "meaning": "Haber bülteni"
+    },
+    {
+      "word": "GECE",
+      "meaning": "Günün karanlık kısmı"
+    },
+    {
+      "word": "GELİN",
+      "meaning": "Evlenen kadın"
+    },
+    {
+      "word": "GEMİ",
+      "meaning": "Büyük deniz taşıtı"
+    },
+    {
+      "word": "GENÇ",
+      "meaning": "Yaşlı olmayan"
+    },
+    {
+      "word": "GENİŞ",
+      "meaning": "Dar olmayan, bol"
+    },
+    {
+      "word": "GERÇEK",
+      "meaning": "Hakiki, doğru"
+    },
+    {
+      "word": "GEYİK",
+      "meaning": "Boynuzlu orman hayvanı"
+    },
+    {
+      "word": "GEZİ",
+      "meaning": "Seyahat, dolaşma"
+    },
+    {
+      "word": "GIDA",
+      "meaning": "Yiyecek, besin"
+    },
+    {
+      "word": "GİTAR",
+      "meaning": "Telli bir çalgı"
+    },
+    {
+      "word": "GİŞE",
+      "meaning": "Bilet satış yeri"
+    },
+    {
+      "word": "GİZLİ",
+      "meaning": "Saklı, bilinmeyen"
+    },
+    {
+      "word": "GÖL",
+      "meaning": "Durgun su birikintisi"
+    },
+    {
+      "word": "GÖMLEK",
+      "meaning": "Üst giysi"
+    },
+    {
+      "word": "GÖREV",
+      "meaning": "Vazife, iş"
+    },
+    {
+      "word": "GÖSTERİ",
+      "meaning": "Şov, performans"
+    },
+    {
+      "word": "GÖZ",
+      "meaning": "Görme organı"
+    },
+    {
+      "word": "GÖZLÜK",
+      "meaning": "Görme aracı"
+    },
+    {
+      "word": "GRİ",
+      "meaning": "Kül rengi"
+    },
+    {
+      "word": "GRUP",
+      "meaning": "Topluluk, küme"
+    },
+    {
+      "word": "GÜÇLÜ",
+      "meaning": "Kuvvetli"
+    },
+    {
+      "word": "GÜL",
+      "meaning": "Dikenli güzel çiçek"
+    },
+    {
+      "word": "GÜMÜŞ",
+      "meaning": "Değerli gri maden"
+    },
+    {
+      "word": "GÜNEŞ",
+      "meaning": "Isı ve ışık kaynağımız"
+    },
+    {
+      "word": "GÜNEY",
+      "meaning": "Bir yön"
+    },
+    {
+      "word": "GÜVEN",
+      "meaning": "İtimat, emniyet"
+    },
+    {
+      "word": "GÜZEL",
+      "meaning": "Hoşa giden"
+    }
   ],
   "H": [
-    { "word": "HIPOTERMI", "meaning": "Merkezi vücut sıcaklığının 35°C altına düşmesi" },
-    { "word": "HAKEM", "meaning": "Spor müsabakalarını yöneten kişi" },
-    { "word": "HEYECAN", "meaning": "Güçlü duygusal durum" },
-    { "word": "HASRET", "meaning": "Özlem, ayrılık acısı" },
-    { "word": "HAVALE", "meaning": "Para transferi" },
-    { "word": "HESAP", "meaning": "Matematiksel işlem" },
-    { "word": "HOROZ", "meaning": "Erkek tavuk" },
-    { "word": "HUTBE", "meaning": "Cuma namazında okunan konuşma" },
-    { "word": "HIKAYE", "meaning": "Anlatı, öykü" },
-    { "word": "HIZMET", "meaning": "Birine yapılan iş, servis" },
-    { "word": "HASTANE", "meaning": "Sağlık hizmeti verilen yer" },
-    { "word": "HAFIZA", "meaning": "Bellek, anı saklama yeteneği" },
-    { "word": "HAREKET", "meaning": "Yer değiştirme veya faaliyet" },
-    { "word": "HARİTA", "meaning": "Coğrafi gösterim" },
-    { "word": "HOBI", "meaning": "Boş zamanlarda yapılan etkinlik" },
-    { "word": "HUKUK", "meaning": "Toplumsal kurallar sistemi" },
-    { "word": "HASSAS", "meaning": "Kolay etkilenen, duyarlı" },
-    { "word": "HIJYEN", "meaning": "Temizlikle ilgili kurallar" },
-    { "word": "HAREKETLI", "meaning": "Aktif, hareketli" }
+    {
+      "word": "HABER",
+      "meaning": "Bilgi, havadis"
+    },
+    {
+      "word": "HACİM",
+      "meaning": "Kapladığı yer, oylum"
+    },
+    {
+      "word": "HADİSE",
+      "meaning": "Olay"
+    },
+    {
+      "word": "HAFTA",
+      "meaning": "Yedi günlük süre"
+    },
+    {
+      "word": "HAKEM",
+      "meaning": "Maç yöneten kişi"
+    },
+    {
+      "word": "HALI",
+      "meaning": "Yere serilen örtü"
+    },
+    {
+      "word": "HALK",
+      "meaning": "Toplum, ahali"
+    },
+    {
+      "word": "HAMUR",
+      "meaning": "Un ve su karışımı"
+    },
+    {
+      "word": "HANIM",
+      "meaning": "Kadın, bayan"
+    },
+    {
+      "word": "HAPİS",
+      "meaning": "Cezaevi"
+    },
+    {
+      "word": "HAREKET",
+      "meaning": "Kımıldama, eylem"
+    },
+    {
+      "word": "HARİTA",
+      "meaning": "Yeryüzü çizimi"
+    },
+    {
+      "word": "HASAT",
+      "meaning": "Ürün toplama"
+    },
+    {
+      "word": "HASTA",
+      "meaning": "Sağlığı bozulan"
+    },
+    {
+      "word": "HAVA",
+      "meaning": "Atmosfer, nefes"
+    },
+    {
+      "word": "HAVUÇ",
+      "meaning": "Turuncu bir sebze"
+    },
+    {
+      "word": "HAVUZ",
+      "meaning": "Su dolu çukur"
+    },
+    {
+      "word": "HAYAL",
+      "meaning": "Düş, imge"
+    },
+    {
+      "word": "HAYAT",
+      "meaning": "Yaşam"
+    },
+    {
+      "word": "HAYVAN",
+      "meaning": "Canlı varlık"
+    },
+    {
+      "word": "HEDİYE",
+      "meaning": "Armağan"
+    },
+    {
+      "word": "HEKİM",
+      "meaning": "Doktor"
+    },
+    {
+      "word": "HELVA",
+      "meaning": "Bir tatlı türü"
+    },
+    {
+      "word": "HESAP",
+      "meaning": "Sayma işlemi veya borç"
+    },
+    {
+      "word": "HEYKEL",
+      "meaning": "Yontu sanatı"
+    },
+    {
+      "word": "HIRSIZ",
+      "meaning": "Çalan kimse"
+    },
+    {
+      "word": "HIZ",
+      "meaning": "Sürat"
+    },
+    {
+      "word": "HİKAYE",
+      "meaning": "Öykü"
+    },
+    {
+      "word": "HİS",
+      "meaning": "Duygu"
+    },
+    {
+      "word": "HOCA",
+      "meaning": "Öğretmen veya din görevlisi"
+    },
+    {
+      "word": "HOROZ",
+      "meaning": "Erkek tavuk"
+    },
+    {
+      "word": "HUKUK",
+      "meaning": "Yasalar bütünü"
+    },
+    {
+      "word": "HURMA",
+      "meaning": "Tatlı bir meyve"
+    },
+    {
+      "word": "HÜCRE",
+      "meaning": "En küçük canlı birimi"
+    },
+    {
+      "word": "HÜZÜN",
+      "meaning": "Üzüntü, keder"
+    }
+  ],
+  "I": [
+    {
+      "word": "ILIK",
+      "meaning": "Ne sıcak ne soğuk"
+    },
+    {
+      "word": "ISINMA",
+      "meaning": "Sıcaklığın artması"
+    },
+    {
+      "word": "ISIRGAN",
+      "meaning": "Dalayan bir ot"
+    },
+    {
+      "word": "ISITICI",
+      "meaning": "Isı veren alet"
+    },
+    {
+      "word": "ISLAK",
+      "meaning": "Yaş, nemli"
+    },
+    {
+      "word": "ISLIK",
+      "meaning": "Dudakla çıkarılan ses"
+    },
+    {
+      "word": "ISSIZ",
+      "meaning": "Kimse olmayan yer"
+    },
+    {
+      "word": "IŞIK",
+      "meaning": "Aydınlık kaynağı"
+    },
+    {
+      "word": "IŞIN",
+      "meaning": "Işık demeti"
+    },
+    {
+      "word": "IZGARA",
+      "meaning": "Et pişirme aleti"
+    },
+    {
+      "word": "IRMAK",
+      "meaning": "Büyük akarsu"
+    },
+    {
+      "word": "IRK",
+      "meaning": "Soy, kök"
+    },
+    {
+      "word": "ISPANAK",
+      "meaning": "Yeşil yapraklı sebze"
+    },
+    {
+      "word": "ISIRIK",
+      "meaning": "Diş izi"
+    },
+    {
+      "word": "ILIMLI",
+      "meaning": "Aşırı olmayan"
+    }
   ],
   "İ": [
-    { "word": "ISTATISTIK", "meaning": "Bir sonuç çıkarmak için verileri yöntemli bir biçimde toplayıp sayı olarak belirtme" },
-    { "word": "IMZA", "meaning": "Kişinin kendine özgü el yazısı" },
-    { "word": "INDIRIM", "meaning": "Fiyat düşürme" },
-    { "word": "ISIM", "meaning": "Bir şeyin adı" },
-    { "word": "ITIRAZ", "meaning": "Karşı çıkma" },
-    { "word": "IZIN", "meaning": "Müsaade" },
-    { "word": "ILAC", "meaning": "Hastalığı iyileştiren madde" },
-    { "word": "ICAT", "meaning": "Yeni bir şey bulma" },
-    { "word": "ILHAM", "meaning": "Yaratıcı sezgi, esin" },
-    { "word": "ISIK", "meaning": "Görmeyi sağlayan enerji" },
-    { "word": "INTERNET", "meaning": "Dünya çapında iletişim ağı" },
-    { "word": "İNSAN", "meaning": "Akıl sahibi canlı" },
-    { "word": "İLİŞKİ", "meaning": "İki şey arasındaki bağlantı" },
-    { "word": "İCRA", "meaning": "Yasal uygulama veya icra etme" },
-    { "word": "ISIM", "meaning": "Ad, tanımlayıcı kelime" },
-    { "word": "İRADE", "meaning": "İstek ve karar gücü" },
-    { "word": "İŞLEM", "meaning": "Yapılan işlem, süreç" },
-    { "word": "İÇİNDE", "meaning": "Bir şeyin iç kısmında olma durumu" },
-    { "word": "IMZA", "meaning": "Kişinin kendine özgü işareti" }
+    {
+      "word": "İADE",
+      "meaning": "Geri verme"
+    },
+    {
+      "word": "İBADET",
+      "meaning": "Tapınma"
+    },
+    {
+      "word": "İCAT",
+      "meaning": "Buluş"
+    },
+    {
+      "word": "İÇECEK",
+      "meaning": "Meşrubat"
+    },
+    {
+      "word": "İDDİA",
+      "meaning": "Sav, tez"
+    },
+    {
+      "word": "İDEAL",
+      "meaning": "Ülkü, en uygun"
+    },
+    {
+      "word": "İFADE",
+      "meaning": "Anlatım, beyan"
+    },
+    {
+      "word": "İĞNE",
+      "meaning": "Dikiş aracı"
+    },
+    {
+      "word": "İLAÇ",
+      "meaning": "Hastalık iyileştirici madde"
+    },
+    {
+      "word": "İLAN",
+      "meaning": "Duyuru"
+    },
+    {
+      "word": "İLÇE",
+      "meaning": "İdari birim, kaza"
+    },
+    {
+      "word": "İLERİ",
+      "meaning": "Ön taraf"
+    },
+    {
+      "word": "İLETİŞİM",
+      "meaning": "Haberleşme"
+    },
+    {
+      "word": "İLİM",
+      "meaning": "Bilim"
+    },
+    {
+      "word": "İLKBAHAR",
+      "meaning": "Bir mevsim"
+    },
+    {
+      "word": "İMZA",
+      "meaning": "Kişisel işaret"
+    },
+    {
+      "word": "İNANÇ",
+      "meaning": "İman, güven"
+    },
+    {
+      "word": "İNCİR",
+      "meaning": "Tatlı bir meyve"
+    },
+    {
+      "word": "İNEK",
+      "meaning": "Süt veren hayvan"
+    },
+    {
+      "word": "İNGİLİZ",
+      "meaning": "İngiltere halkından"
+    },
+    {
+      "word": "İNSAN",
+      "meaning": "Beşer, kişi"
+    },
+    {
+      "word": "İNŞAAT",
+      "meaning": "Yapı işi"
+    },
+    {
+      "word": "İPEK",
+      "meaning": "Yumuşak kumaş hammaddesi"
+    },
+    {
+      "word": "İPLİK",
+      "meaning": "Dikiş ipi"
+    },
+    {
+      "word": "İSKELE",
+      "meaning": "Gemi yanaşma yeri"
+    },
+    {
+      "word": "İSKELET",
+      "meaning": "Kemik çatısı"
+    },
+    {
+      "word": "İSİM",
+      "meaning": "Ad"
+    },
+    {
+      "word": "İSTEK",
+      "meaning": "Arzu, talep"
+    },
+    {
+      "word": "İŞ",
+      "meaning": "Çalışma, meslek"
+    },
+    {
+      "word": "İŞÇİ",
+      "meaning": "Çalışan emekçi"
+    },
+    {
+      "word": "İŞLETME",
+      "meaning": "Ticari kuruluş"
+    },
+    {
+      "word": "İTFAİYE",
+      "meaning": "Yangın söndürme ekibi"
+    },
+    {
+      "word": "İYİ",
+      "meaning": "Kötü olmayan"
+    },
+    {
+      "word": "İZİN",
+      "meaning": "Müsaade"
+    }
+  ],
+  "J": [
+    {
+      "word": "JAKUZİ",
+      "meaning": "Masajlı banyo küveti"
+    },
+    {
+      "word": "JANDARMA",
+      "meaning": "Kırsal polis gücü"
+    },
+    {
+      "word": "JAPON",
+      "meaning": "Japonya halkından"
+    },
+    {
+      "word": "JELATİN",
+      "meaning": "Parlak ambalaj maddesi"
+    },
+    {
+      "word": "JENERATÖR",
+      "meaning": "Elektrik üreteci"
+    },
+    {
+      "word": "JEOLOJİ",
+      "meaning": "Yer bilimi"
+    },
+    {
+      "word": "JEST",
+      "meaning": "El kol hareketi veya iyilik"
+    },
+    {
+      "word": "JET",
+      "meaning": "Hızlı uçak"
+    },
+    {
+      "word": "JETON",
+      "meaning": "Oyun veya telefon parası"
+    },
+    {
+      "word": "JİLET",
+      "meaning": "Tıraş bıçağı"
+    },
+    {
+      "word": "JİMNASTİK",
+      "meaning": "Beden eğitimi sporu"
+    },
+    {
+      "word": "JİP",
+      "meaning": "Arazi aracı"
+    },
+    {
+      "word": "JOKER",
+      "meaning": "Her yere uyan kart"
+    },
+    {
+      "word": "JUDO",
+      "meaning": "Bir dövüş sporu"
+    },
+    {
+      "word": "JÜRİ",
+      "meaning": "Seçici kurul"
+    },
+    {
+      "word": "JAGUAR",
+      "meaning": "Büyük bir kedi türü"
+    },
+    {
+      "word": "JAMBON",
+      "meaning": "İşlenmiş et"
+    },
+    {
+      "word": "JEL",
+      "meaning": "Yarı akışkan madde"
+    }
   ],
   "K": [
-    { "word": "KAFI", "meaning": "Yeterli, yetecek ölçüde olan" },
-    { "word": "KANAL", "meaning": "Su veya yayın geçiş yolu" },
-    { "word": "KARGO", "meaning": "Paket taşıma hizmeti" },
-    { "word": "KAVRAM", "meaning": "Soyut düşünce, fikir" },
-    { "word": "KIMLIK", "meaning": "Kişiyi tanıtan belge" },
-    { "word": "KOPYA", "meaning": "Aynısından yapılmış örnek" },
-    { "word": "KREDI", "meaning": "Bankadan alınan borç" },
-    { "word": "KUPON", "meaning": "İndirim belgesi" },
-    { "word": "KAYNAK", "meaning": "Bir şeyin çıktığı yer" },
-    { "word": "KUTUP", "meaning": "Dünyanın en uç noktalarından her biri" },
-    { "word": "KAPI", "meaning": "Giriş-çıkış için kullanılan bölme" },
-    { "word": "KISI", "meaning": "Birey, kişi" },
-    { "word": "KISIK", "meaning": "Az ve zayıf ses" },
-    { "word": "KARE", "meaning": "Dört eş kenarlı şekil" },
-    { "word": "KITAP", "meaning": "Yazılı eser" },
-    { "word": "KUMPAS", "meaning": "Dairesel ölçme aracı veya düzen" },
-    { "word": "KUM", "meaning": "İnce taneli doğal madde" },
-    { "word": "KURAL", "meaning": "Uyulması gereken düzen" },
-    { "word": "KULLANIM", "meaning": "Bir şeyin işe koşulması" }
+    {
+      "word": "KABAK",
+      "meaning": "Bir sebze"
+    },
+    {
+      "word": "KAÇAK",
+      "meaning": "İzinsiz, firari"
+    },
+    {
+      "word": "KADIN",
+      "meaning": "Dişi insan, bayan"
+    },
+    {
+      "word": "KAFES",
+      "meaning": "Hayvan barınağı"
+    },
+    {
+      "word": "KAĞIT",
+      "meaning": "Yazı yazılan madde"
+    },
+    {
+      "word": "KAHRAMAN",
+      "meaning": "Yiğit, cesur kimse"
+    },
+    {
+      "word": "KAHVE",
+      "meaning": "Kafeinli içecek"
+    },
+    {
+      "word": "KALABALIK",
+      "meaning": "İnsan çokluğu"
+    },
+    {
+      "word": "KALE",
+      "meaning": "Savunma yapısı"
+    },
+    {
+      "word": "KALEM",
+      "meaning": "Yazı aracı"
+    },
+    {
+      "word": "KALİTE",
+      "meaning": "Nitelik, değer"
+    },
+    {
+      "word": "KALP",
+      "meaning": "Kan pompalayan organ"
+    },
+    {
+      "word": "KAMERA",
+      "meaning": "Görüntü kaydedici"
+    },
+    {
+      "word": "KAMYON",
+      "meaning": "Yük taşıtı"
+    },
+    {
+      "word": "KANAL",
+      "meaning": "Su yolu veya TV yayını"
+    },
+    {
+      "word": "KANAT",
+      "meaning": "Uçma organı"
+    },
+    {
+      "word": "KANSER",
+      "meaning": "Tehlikeli bir hastalık"
+    },
+    {
+      "word": "KAPI",
+      "meaning": "Giriş çıkış yeri"
+    },
+    {
+      "word": "KAPLAN",
+      "meaning": "Yırtıcı büyük kedi"
+    },
+    {
+      "word": "KAPTAN",
+      "meaning": "Gemi veya takım lideri"
+    },
+    {
+      "word": "KAR",
+      "meaning": "Beyaz yağış"
+    },
+    {
+      "word": "KARA",
+      "meaning": "Siyah veya toprak parçası"
+    },
+    {
+      "word": "KARDEŞ",
+      "meaning": "Aynı anne babadan olan"
+    },
+    {
+      "word": "KARINCA",
+      "meaning": "Çalışkan küçük böcek"
+    },
+    {
+      "word": "KARPUZ",
+      "meaning": "Yaz meyvesi"
+    },
+    {
+      "word": "KARTAL",
+      "meaning": "Yırtıcı kuş"
+    },
+    {
+      "word": "KASABA",
+      "meaning": "Küçük şehir"
+    },
+    {
+      "word": "KAŞIK",
+      "meaning": "Yemek yeme aracı"
+    },
+    {
+      "word": "KAT",
+      "meaning": "Bina dairesi veya tabaka"
+    },
+    {
+      "word": "KAVUN",
+      "meaning": "Sarı yaz meyvesi"
+    },
+    {
+      "word": "KAYA",
+      "meaning": "Büyük taş kütlesi"
+    },
+    {
+      "word": "KAYIK",
+      "meaning": "Küçük tekne"
+    },
+    {
+      "word": "KAZAK",
+      "meaning": "Yünlü giysi"
+    },
+    {
+      "word": "KEDİ",
+      "meaning": "Evcil hayvan"
+    },
+    {
+      "word": "KELEBEK",
+      "meaning": "Renkli kanatlı böcek"
+    },
+    {
+      "word": "KEMAN",
+      "meaning": "Yaylı çalgı"
+    },
+    {
+      "word": "KEMİK",
+      "meaning": "İskelet parçası"
+    },
+    {
+      "word": "KENT",
+      "meaning": "Şehir"
+    },
+    {
+      "word": "KİBRİT",
+      "meaning": "Ateş yakma çöpü"
+    },
+    {
+      "word": "KİRAZ",
+      "meaning": "Kırmızı meyve"
+    },
+    {
+      "word": "KİTAP",
+      "meaning": "Okuma aracı"
+    },
+    {
+      "word": "KOLTUK",
+      "meaning": "Oturma eşyası"
+    },
+    {
+      "word": "KOMŞU",
+      "meaning": "Yakın oturan"
+    },
+    {
+      "word": "KONUK",
+      "meaning": "Misafir"
+    },
+    {
+      "word": "KÖPEK",
+      "meaning": "Sadık evcil hayvan"
+    },
+    {
+      "word": "KÖPRÜ",
+      "meaning": "İki yakayı bağlayan yapı"
+    },
+    {
+      "word": "KÖY",
+      "meaning": "Küçük yerleşim yeri"
+    },
+    {
+      "word": "KULAK",
+      "meaning": "İşitme organı"
+    },
+    {
+      "word": "KUM",
+      "meaning": "Küçük taş tanecikleri"
+    },
+    {
+      "word": "KUŞ",
+      "meaning": "Uçan hayvan"
+    },
+    {
+      "word": "KUTU",
+      "meaning": "Kapalı kap"
+    },
+    {
+      "word": "KUZU",
+      "meaning": "Koyun yavrusu"
+    }
   ],
   "L": [
-    { "word": "LOGO", "meaning": "Bir ürün, firma ya da hizmet ismini, harf ve resimsel olarak belirten görsel öge" },
-    { "word": "LAZER", "meaning": "Yoğun ışık demeti" },
-    { "word": "LEVHA", "meaning": "Üzerinde yazı olan tabela" },
-    { "word": "LIRIK", "meaning": "Duygusal, şiirsel" },
-    { "word": "LOKUM", "meaning": "Türk tatlısı" },
-    { "word": "LIMAN", "meaning": "Gemilerin yanaştığı yer" },
-    { "word": "LUGAT", "meaning": "Sözlük" },
-    { "word": "LIMIT", "meaning": "Üst sınır" },
-    { "word": "LEZZET", "meaning": "Tat, lezzetli olma hali" },
-    { "word": "LABIRENT", "meaning": "Karmaşık yol ağı" },
-    { "word": "LIMON", "meaning": "Ekşi bir narenciye" },
-    { "word": "LOKAL", "meaning": "Yerel mekan" },
-    { "word": "LISTE", "meaning": "Sıralı madde kümesi" },
-    { "word": "LÜKS", "meaning": "Konforlu ve pahalı" },
-    { "word": "LAMA", "meaning": "Uzun tüylü hayvan" },
-    { "word": "LİNÇ", "meaning": "Halk tarafından cezalandırma eylemi" },
-    { "word": "LISANS", "meaning": "Resmi yetki belgesi" },
-    { "word": "LOJISTIK", "meaning": "Taşıma ve depolama yönetimi" },
-    { "word": "LEM", "meaning": "Kısa isimlendirme örneği" }
+    {
+      "word": "LABİRENT",
+      "meaning": "Karmaşık yollar"
+    },
+    {
+      "word": "LABORATUVAR",
+      "meaning": "Bilimsel deney yeri"
+    },
+    {
+      "word": "LALE",
+      "meaning": "Bir çiçek türü"
+    },
+    {
+      "word": "LAMBA",
+      "meaning": "Aydınlatma aracı"
+    },
+    {
+      "word": "LASTİK",
+      "meaning": "Esnek madde veya tekerlek"
+    },
+    {
+      "word": "LAVABO",
+      "meaning": "El yıkama yeri"
+    },
+    {
+      "word": "LEKE",
+      "meaning": "Kir izi"
+    },
+    {
+      "word": "LEYLEK",
+      "meaning": "Göçmen kuş"
+    },
+    {
+      "word": "LEZZET",
+      "meaning": "Tat"
+    },
+    {
+      "word": "LİDER",
+      "meaning": "Önder, başkan"
+    },
+    {
+      "word": "LİMAN",
+      "meaning": "Gemi barınağı"
+    },
+    {
+      "word": "LİMON",
+      "meaning": "Ekşi sarı meyve"
+    },
+    {
+      "word": "LİRA",
+      "meaning": "Para birimi"
+    },
+    {
+      "word": "LİSE",
+      "meaning": "Ortaöğretim kurumu"
+    },
+    {
+      "word": "LİSTE",
+      "meaning": "Sıralı isimler"
+    },
+    {
+      "word": "LİYAKAT",
+      "meaning": "Yeterlilik, yaraşırlık"
+    },
+    {
+      "word": "LOKANTA",
+      "meaning": "Yemek yenilen yer"
+    },
+    {
+      "word": "LOKUM",
+      "meaning": "Türk tatlısı"
+    },
+    {
+      "word": "LÜKS",
+      "meaning": "Gösterişli, pahalı"
+    },
+    {
+      "word": "LİSAN",
+      "meaning": "Dil"
+    },
+    {
+      "word": "LEVHA",
+      "meaning": "Tabela, plaka"
+    },
+    {
+      "word": "LODOS",
+      "meaning": "Güneyden esen rüzgar"
+    },
+    {
+      "word": "LİF",
+      "meaning": "İplikçik, temizlik bezi"
+    }
   ],
   "M": [
-    { "word": "MEMUR", "meaning": "Devlet hizmetinde aylıkla çalışan kimse, görevli" },
-    { "word": "MARKA", "meaning": "Ürünün ticari ismi" },
-    { "word": "MAKET", "meaning": "Küçültülmüş model" },
-    { "word": "MESAJ", "meaning": "İletilen haber" },
-    { "word": "MIZAH", "meaning": "Güldürü, espri" },
-    { "word": "MOLOZ", "meaning": "Yıkıntı parçaları" },
-    { "word": "MUZIP", "meaning": "Şakacı, muzır" },
-    { "word": "MUTLU", "meaning": "Sevinçli, neşeli" },
-    { "word": "MAHAL", "meaning": "Yer, mevki" },
-    { "word": "MOTOR", "meaning": "Enerjiyi harekete çeviren makine" },
-    { "word": "MUTFAK", "meaning": "Yemek hazırlanan yer" },
-    { "word": "MAKARNA", "meaning": "Pişirilen bir tür hamur" },
-    { "word": "MÜZİK", "meaning": "Seslerin düzenlenmesi sanatı" },
-    { "word": "MÜZE", "meaning": "Eserlerin sergilendiği yer" },
-    { "word": "MOBILYA", "meaning": "Ev eşyaları" },
-    { "word": "MEYDAN", "meaning": "Açık geniş alan" },
-    { "word": "MUTABAKAT", "meaning": "Anlaşma, uzlaşma" },
-    { "word": "MIKTAR", "meaning": "Nicelik, miktar" },
-    { "word": "MINARE", "meaning": "Camilerin kulesi" }
+    {
+      "word": "MACERA",
+      "meaning": "Serüven, heyecanlı olay"
+    },
+    {
+      "word": "MADALYA",
+      "meaning": "Ödül nişanı"
+    },
+    {
+      "word": "MADEN",
+      "meaning": "Yeraltı zenginliği"
+    },
+    {
+      "word": "MAĞAZA",
+      "meaning": "Büyük dükkan"
+    },
+    {
+      "word": "MAHALLE",
+      "meaning": "Semt bölümü"
+    },
+    {
+      "word": "MAHKEME",
+      "meaning": "Yargılama yeri"
+    },
+    {
+      "word": "MAKARNA",
+      "meaning": "Hamur işi yemek"
+    },
+    {
+      "word": "MAKAS",
+      "meaning": "Kesme aleti"
+    },
+    {
+      "word": "MAKİNE",
+      "meaning": "İş yapan aygıt"
+    },
+    {
+      "word": "MALZEME",
+      "meaning": "Gereç, materyal"
+    },
+    {
+      "word": "MANDALİNA",
+      "meaning": "Turuncu meyve"
+    },
+    {
+      "word": "MANZARA",
+      "meaning": "Görünüm"
+    },
+    {
+      "word": "MARKET",
+      "meaning": "Alışveriş yeri"
+    },
+    {
+      "word": "MARUL",
+      "meaning": "Yeşil salata bitkisi"
+    },
+    {
+      "word": "MASA",
+      "meaning": "Mobilya"
+    },
+    {
+      "word": "MASAL",
+      "meaning": "Olağanüstü hikaye"
+    },
+    {
+      "word": "MASKE",
+      "meaning": "Yüz örtüsü"
+    },
+    {
+      "word": "MAVİ",
+      "meaning": "Gökyüzü rengi"
+    },
+    {
+      "word": "MAYDANOZ",
+      "meaning": "Yeşil ot"
+    },
+    {
+      "word": "MAYMUN",
+      "meaning": "Taklitçi hayvan"
+    },
+    {
+      "word": "MECLİS",
+      "meaning": "Parlamento"
+    },
+    {
+      "word": "MEDENİYET",
+      "meaning": "Uygarlık"
+    },
+    {
+      "word": "MEKTUP",
+      "meaning": "Yazılı mesaj"
+    },
+    {
+      "word": "MELEK",
+      "meaning": "Ruhani varlık"
+    },
+    {
+      "word": "MELODİ",
+      "meaning": "Ezgi"
+    },
+    {
+      "word": "MEMUR",
+      "meaning": "Devlet çalışanı"
+    },
+    {
+      "word": "MENDİL",
+      "meaning": "Temizlik bezi"
+    },
+    {
+      "word": "MERDİVEN",
+      "meaning": "Basamaklı çıkış"
+    },
+    {
+      "word": "MERHABA",
+      "meaning": "Selamlaşma sözü"
+    },
+    {
+      "word": "MERKEZ",
+      "meaning": "Orta nokta"
+    },
+    {
+      "word": "MERMER",
+      "meaning": "Sert taş"
+    },
+    {
+      "word": "MESAFE",
+      "meaning": "Uzaklık, ara"
+    },
+    {
+      "word": "MESLEK",
+      "meaning": "İş, uğraş"
+    },
+    {
+      "word": "MEŞHUR",
+      "meaning": "Ünlü, tanınmış"
+    },
+    {
+      "word": "METAL",
+      "meaning": "Maden"
+    },
+    {
+      "word": "METRO",
+      "meaning": "Yeraltı treni"
+    },
+    {
+      "word": "MEVSİM",
+      "meaning": "Yılın bölümleri"
+    },
+    {
+      "word": "MEYDAN",
+      "meaning": "Geniş alan"
+    },
+    {
+      "word": "MEYVE",
+      "meaning": "Yenen bitki ürünü"
+    },
+    {
+      "word": "MEZAR",
+      "meaning": "Gömüt"
+    },
+    {
+      "word": "MIKNATIS",
+      "meaning": "Demiri çeken madde"
+    },
+    {
+      "word": "MİLLET",
+      "meaning": "Ulus"
+    },
+    {
+      "word": "MİMAR",
+      "meaning": "Yapı tasarımcısı"
+    },
+    {
+      "word": "MİSAFİR",
+      "meaning": "Konuk"
+    },
+    {
+      "word": "MOBİLYA",
+      "meaning": "Ev eşyası"
+    },
+    {
+      "word": "MODA",
+      "meaning": "Giyim akımı"
+    },
+    {
+      "word": "MODERN",
+      "meaning": "Çağdaş"
+    },
+    {
+      "word": "MOTOR",
+      "meaning": "Güç makinesi"
+    },
+    {
+      "word": "MUHABİR",
+      "meaning": "Haberci"
+    },
+    {
+      "word": "MUHTAR",
+      "meaning": "Mahalle yöneticisi"
+    },
+    {
+      "word": "MUM",
+      "meaning": "Aydınlatma aracı"
+    },
+    {
+      "word": "MUTFAK",
+      "meaning": "Yemek pişirme yeri"
+    },
+    {
+      "word": "MUTLU",
+      "meaning": "Sevinçli, huzurlu"
+    },
+    {
+      "word": "MÜZE",
+      "meaning": "Tarihi eser sergisi"
+    },
+    {
+      "word": "MÜZİK",
+      "meaning": "Ses sanatı"
+    }
   ],
   "N": [
-    { "word": "NACAK", "meaning": "Tek ağızlı balta" },
-    { "word": "NAKIL", "meaning": "Bir yerden başka yere taşıma" },
-    { "word": "NESIL", "meaning": "Kuşak, jenerasyon" },
-    { "word": "NIYET", "meaning": "Maksat, gaye" },
-    { "word": "NORM", "meaning": "Standart, ölçüt" },
-    { "word": "NOTER", "meaning": "Resmi belgeleri onaylayan kişi" },
-    { "word": "NUFUS", "meaning": "Bir yerdeki insan sayısı" },
-    { "word": "NUANS", "meaning": "İnce fark" },
-    { "word": "NABIZ", "meaning": "Kalp atışının damarlarda hissedilmesi" },
-    { "word": "NOSTALJI", "meaning": "Geçmişe duyulan özlem" },
-    { "word": "NELER", "meaning": "Soru zamiri türü" },
-    { "word": "NAZIK", "meaning": "Kibar, nazik davranış" },
-    { "word": "NAKIT", "meaning": "Hazır para" },
-    { "word": "NIHAI", "meaning": "Son, kesin" },
-    { "word": "NAR", "meaning": "Bir meyve türü" },
-    { "word": "NUMARA", "meaning": "Sıra veya telefon numarası" },
-    { "word": "NOT", "meaning": "Kısa yazılı bilgi" },
-    { "word": "NIYAZ", "meaning": "Dilek, yakarış" },
-    { "word": "NAHIL", "meaning": "Fidan, küçük ağaç" }
+    {
+      "word": "NABIZ",
+      "meaning": "Kalp atışı"
+    },
+    {
+      "word": "NADİR",
+      "meaning": "Az bulunan"
+    },
+    {
+      "word": "NAKİT",
+      "meaning": "Peşin para"
+    },
+    {
+      "word": "NAKLİYE",
+      "meaning": "Taşıma işi"
+    },
+    {
+      "word": "NANE",
+      "meaning": "Kokulu bitki"
+    },
+    {
+      "word": "NAR",
+      "meaning": "Taneli kırmızı meyve"
+    },
+    {
+      "word": "NASİHAT",
+      "meaning": "Öğüt"
+    },
+    {
+      "word": "NAZİK",
+      "meaning": "Kibar"
+    },
+    {
+      "word": "NEFES",
+      "meaning": "Soluk"
+    },
+    {
+      "word": "NEHİR",
+      "meaning": "Büyük akarsu"
+    },
+    {
+      "word": "NEM",
+      "meaning": "Rutubet, ıslaklık"
+    },
+    {
+      "word": "NESNE",
+      "meaning": "Cisim, şey"
+    },
+    {
+      "word": "NEŞE",
+      "meaning": "Sevinç, keyif"
+    },
+    {
+      "word": "NETİCE",
+      "meaning": "Sonuç"
+    },
+    {
+      "word": "NEZAKET",
+      "meaning": "Kibarlık"
+    },
+    {
+      "word": "NEZLE",
+      "meaning": "Soğuk algınlığı"
+    },
+    {
+      "word": "NİKAH",
+      "meaning": "Resmi evlilik"
+    },
+    {
+      "word": "NİLÜFER",
+      "meaning": "Su çiçeği"
+    },
+    {
+      "word": "NİSAN",
+      "meaning": "İlkbahar ayı"
+    },
+    {
+      "word": "NOT",
+      "meaning": "Kısa yazı veya puan"
+    },
+    {
+      "word": "NOTA",
+      "meaning": "Müzik işareti"
+    },
+    {
+      "word": "NÖBET",
+      "meaning": "Sırayla yapılan görev"
+    },
+    {
+      "word": "NUMARA",
+      "meaning": "Sayı veya hile"
+    },
+    {
+      "word": "NUTUK",
+      "meaning": "Söylev, konuşma"
+    },
+    {
+      "word": "NOKTA",
+      "meaning": "Küçük işaret veya yer"
+    },
+    {
+      "word": "NAL",
+      "meaning": "At ayakkabısı"
+    },
+    {
+      "word": "NAKIŞ",
+      "meaning": "İşleme sanatı"
+    }
   ],
   "O": [
-    { "word": "OTOMAT", "meaning": "Yiyecek, içecek gibi şeylerin alınabildiği mekanik veya elektrikli araç" },
-    { "word": "ODAK", "meaning": "Merkez, konsantrasyon noktası" },
-    { "word": "OLASI", "meaning": "Muhtemel, mümkün" },
-    { "word": "ORGAN", "meaning": "Vücudun bir bölümü" },
-    { "word": "ORTAM", "meaning": "Çevre, atmosfer" },
-    { "word": "OZGUN", "meaning": "Orijinal, kendine has" },
-    { "word": "OLMAZ", "meaning": "Kabul edilemez, imkansız" },
-    { "word": "OPERA", "meaning": "Müzikli tiyatro eseri" },
-    { "word": "OYUNCU", "meaning": "Bir oyunda veya tiyatroda rol alan kişi" },
-    { "word": "OTURUM", "meaning": "Belirli süreli toplantı bölümü" },
-    { "word": "OKUL", "meaning": "Eğitim verilen kurum" },
-    { "word": "OCAK", "meaning": "Isıtma veya yemek pişirme ünitesi" },
-    { "word": "OLAY", "meaning": "Gerçekleşen durum" },
-    { "word": "ORDU", "meaning": "Askeri kuvvet" },
-    { "word": "OPERASYON", "meaning": "Yapılan eylem veya müdahale" },
-    { "word": "ORNEK", "meaning": "Misal, örnek" },
-    { "word": "OZELLIK", "meaning": "Bir şeye ait ayırt edici özellik" },
-    { "word": "OYUN", "meaning": "Eğlence amaçlı etkinlik" },
-    { "word": "ORTAK", "meaning": "Paylaşılan, ortak kişi" }
+    {
+      "word": "OCAK",
+      "meaning": "Ateş yakılan yer veya ay"
+    },
+    {
+      "word": "ODA",
+      "meaning": "Evin bölmesi"
+    },
+    {
+      "word": "ODUN",
+      "meaning": "Yakacak ağaç parçası"
+    },
+    {
+      "word": "OFİS",
+      "meaning": "İş yeri"
+    },
+    {
+      "word": "OĞUL",
+      "meaning": "Erkek evlat"
+    },
+    {
+      "word": "OKUL",
+      "meaning": "Eğitim yeri"
+    },
+    {
+      "word": "OKYANUS",
+      "meaning": "Büyük deniz"
+    },
+    {
+      "word": "OLAY",
+      "meaning": "Hadise, vaka"
+    },
+    {
+      "word": "OLİMPİYAT",
+      "meaning": "Büyük spor yarışması"
+    },
+    {
+      "word": "OLTA",
+      "meaning": "Balık tutma aracı"
+    },
+    {
+      "word": "OMUZ",
+      "meaning": "Kolun gövdeye bağlandığı yer"
+    },
+    {
+      "word": "ONARIM",
+      "meaning": "Tamir"
+    },
+    {
+      "word": "ONAY",
+      "meaning": "Kabul, tasdik"
+    },
+    {
+      "word": "OPERA",
+      "meaning": "Müzikli sahne eseri"
+    },
+    {
+      "word": "ORDU",
+      "meaning": "Askeri birlik"
+    },
+    {
+      "word": "ORMAN",
+      "meaning": "Ağaçlık alan"
+    },
+    {
+      "word": "ORTA",
+      "meaning": "Merkez, ara"
+    },
+    {
+      "word": "ORUÇ",
+      "meaning": "İbadet için aç kalma"
+    },
+    {
+      "word": "OTEL",
+      "meaning": "Konaklama yeri"
+    },
+    {
+      "word": "OTOBÜS",
+      "meaning": "Toplu taşıma aracı"
+    },
+    {
+      "word": "OTOMOBİL",
+      "meaning": "Binek araç"
+    },
+    {
+      "word": "OYUN",
+      "meaning": "Eğlence etkinliği"
+    },
+    {
+      "word": "OYUNCAK",
+      "meaning": "Çocuk eğlencesi"
+    },
+    {
+      "word": "OK",
+      "meaning": "Yay ile atılan çubuk"
+    },
+    {
+      "word": "OT",
+      "meaning": "Küçük bitki"
+    },
+    {
+      "word": "OVAL",
+      "meaning": "Yumurta biçimi"
+    }
   ],
   "Ö": [
-    { "word": "ÖRDEK", "meaning": "Perdeayaklılardan evcil ve yabanisi de bulunan su kuşu" },
-    { "word": "ÖZLEM", "meaning": "Hasret, arzu" },
-    { "word": "ÖZEL", "meaning": "Kendine has, hususi" },
-    { "word": "ÖZET", "meaning": "Kısa anlatım" },
-    { "word": "ÖĞÜT", "meaning": "Tavsiye, nasihat" },
-    { "word": "ÖRNEK", "meaning": "Model, numune" },
-    { "word": "ÖNCE", "meaning": "Daha evvel" },
-    { "word": "ÖLÇÜT", "meaning": "Ölçü, kriter" },
-    { "word": "ÖYKÜ", "meaning": "Kısa anlatı, hikaye" },
-    { "word": "ÖNCELIK", "meaning": "Önde tutulma durumu" },
-    { "word": "ÖĞRENCİ", "meaning": "Eğitim gören kimse" },
-    { "word": "ÖZDEYİŞ", "meaning": "Kısa özlü söz" },
-    { "word": "ÖZELLIK", "meaning": "Belirgin nitelik" },
-    { "word": "ÖRNEGIN", "meaning": "Misal vermek için kullanılan ifade" },
-    { "word": "ÖDEME", "meaning": "Borç veya ücret ödemesi" },
-    { "word": "ÖĞRETMEN", "meaning": "Eğitim veren kişi" },
-    { "word": "ÖZÜM", "meaning": "Bir şeyin özü" },
-    { "word": "ÖNLEM", "meaning": "Alınan tedbir" },
-    { "word": "ÖZETLE", "meaning": "Kısaca, özet olarak" }
+    {
+      "word": "ÖDEV",
+      "meaning": "Ders çalışması, vazife"
+    },
+    {
+      "word": "ÖDÜL",
+      "meaning": "Mükafat"
+    },
+    {
+      "word": "ÖFKE",
+      "meaning": "Kızgınlık"
+    },
+    {
+      "word": "ÖĞLEN",
+      "meaning": "Gün ortası"
+    },
+    {
+      "word": "ÖĞRENCİ",
+      "meaning": "Okula giden kişi"
+    },
+    {
+      "word": "ÖĞRETMEN",
+      "meaning": "Ders veren kişi"
+    },
+    {
+      "word": "ÖKSÜRÜK",
+      "meaning": "Boğaz refleksi"
+    },
+    {
+      "word": "ÖLÇÜ",
+      "meaning": "Miktar, ebat"
+    },
+    {
+      "word": "ÖLÜM",
+      "meaning": "Hayatın sonu"
+    },
+    {
+      "word": "ÖMÜR",
+      "meaning": "Yaşam süresi"
+    },
+    {
+      "word": "ÖNEM",
+      "meaning": "Değer, kıymet"
+    },
+    {
+      "word": "ÖNERİ",
+      "meaning": "Teklif"
+    },
+    {
+      "word": "ÖNLÜK",
+      "meaning": "Koruyucu giysi"
+    },
+    {
+      "word": "ÖPÜCÜK",
+      "meaning": "Dudakla sevgi gösterisi"
+    },
+    {
+      "word": "ÖRGÜ",
+      "meaning": "İple yapılan el işi"
+    },
+    {
+      "word": "ÖRNEK",
+      "meaning": "Misal, model"
+    },
+    {
+      "word": "ÖRDEK",
+      "meaning": "Perde ayaklı kuş"
+    },
+    {
+      "word": "ÖVGÜ",
+      "meaning": "Beğeni sözü"
+    },
+    {
+      "word": "ÖYKÜ",
+      "meaning": "Hikaye"
+    },
+    {
+      "word": "ÖZEL",
+      "meaning": "Kişisel, hususi"
+    },
+    {
+      "word": "ÖZEN",
+      "meaning": "Dikkat, itina"
+    },
+    {
+      "word": "ÖZET",
+      "meaning": "Kısaltılmış içerik"
+    },
+    {
+      "word": "ÖZGÜR",
+      "meaning": "Hür, bağımsız"
+    },
+    {
+      "word": "ÖZLEM",
+      "meaning": "Hasret"
+    },
+    {
+      "word": "ÖZÜR",
+      "meaning": "Bağışlanma dileği"
+    }
   ],
   "P": [
-    { "word": "PELIKAN", "meaning": "Perdeayaklılardan evcil ve yabanisi de bulunan su kuşu" },
-    { "word": "PAKET", "meaning": "Sarılmış eşya" },
-    { "word": "PANKART", "meaning": "Üzerinde slogan yazılı afiş" },
-    { "word": "PASAJ", "meaning": "İçinden geçilen alışveriş yeri" },
-    { "word": "PERGEL", "meaning": "Daire çizmeye yarayan alet" },
-    { "word": "PINTI", "meaning": "Çok tutumlu, cimri" },
-    { "word": "PLAKA", "meaning": "Araç kimlik belgesi" },
-    { "word": "POSTA", "meaning": "Mektup gönderme hizmeti" },
-    { "word": "PUSULA", "meaning": "Yön bulmaya yarayan alet" },
-    { "word": "PIRLANTA", "meaning": "Değerli taş" },
-    { "word": "PENCERE", "meaning": "Duvara açılan camlı açıklık" },
-    { "word": "PAZAR", "meaning": "Açık alışveriş yeri" },
-    { "word": "PORTFOY", "meaning": "Çanta veya belge dosyası" },
-    { "word": "PATRON", "meaning": "İşveren, yönetici" },
-    { "word": "PROJE", "meaning": "Planlı çalışma" },
-    { "word": "PIDE", "meaning": "Türk fırın yemeği" },
-    { "word": "PESIN", "meaning": "Peşin ödeme" },
-    { "word": "PAS", "meaning": "Paslı metal veya futbol pası" },
-    { "word": "POSTA_KUTUSU", "meaning": "Mektup kutusu örneği" }
+    {
+      "word": "PAÇA",
+      "meaning": "Pantolonun alt kısmı veya çorba"
+    },
+    {
+      "word": "PAKET",
+      "meaning": "Sarılmış eşya"
+    },
+    {
+      "word": "PALA",
+      "meaning": "Geniş bıçak veya bıyık"
+    },
+    {
+      "word": "PALTO",
+      "meaning": "Kalın kışlık giysi"
+    },
+    {
+      "word": "PAMUK",
+      "meaning": "Beyaz lifli bitki"
+    },
+    {
+      "word": "PANDA",
+      "meaning": "Siyah beyaz ayı"
+    },
+    {
+      "word": "PANSİYON",
+      "meaning": "Küçük konaklama yeri"
+    },
+    {
+      "word": "PANTOLON",
+      "meaning": "Alt giysi"
+    },
+    {
+      "word": "PAPATYA",
+      "meaning": "Beyaz yapraklı çiçek"
+    },
+    {
+      "word": "PARA",
+      "meaning": "Ödeme aracı"
+    },
+    {
+      "word": "PARÇA",
+      "meaning": "Kısım, bölüm"
+    },
+    {
+      "word": "PARK",
+      "meaning": "Yeşil alan veya durma"
+    },
+    {
+      "word": "PARMAK",
+      "meaning": "El ve ayak uzvu"
+    },
+    {
+      "word": "PASAPORT",
+      "meaning": "Yurt dışı kimliği"
+    },
+    {
+      "word": "PASTA",
+      "meaning": "Tatlı hamur işi"
+    },
+    {
+      "word": "PATATES",
+      "meaning": "Nişastalı sebze"
+    },
+    {
+      "word": "PATLICAN",
+      "meaning": "Mor sebze"
+    },
+    {
+      "word": "PAZAR",
+      "meaning": "Alışveriş yeri veya gün"
+    },
+    {
+      "word": "PEÇETE",
+      "meaning": "Silme kağıdı"
+    },
+    {
+      "word": "PEHLİVAN",
+      "meaning": "Güreşçi"
+    },
+    {
+      "word": "PENCERE",
+      "meaning": "Camlı açıklık"
+    },
+    {
+      "word": "PERDE",
+      "meaning": "Pencere örtüsü"
+    },
+    {
+      "word": "PERİ",
+      "meaning": "Masal kızı"
+    },
+    {
+      "word": "PERŞEMBE",
+      "meaning": "Haftanın bir günü"
+    },
+    {
+      "word": "PETEK",
+      "meaning": "Arı yuvası veya ısıtıcı"
+    },
+    {
+      "word": "PEYNİR",
+      "meaning": "Süt ürünü"
+    },
+    {
+      "word": "PİDE",
+      "meaning": "Yassı ekmek"
+    },
+    {
+      "word": "PİL",
+      "meaning": "Enerji kaynağı"
+    },
+    {
+      "word": "PİLAV",
+      "meaning": "Pirinç yemeği"
+    },
+    {
+      "word": "PİLOT",
+      "meaning": "Uçak sürücüsü"
+    },
+    {
+      "word": "PİPET",
+      "meaning": "İçecek çubuğu"
+    },
+    {
+      "word": "PİYANGO",
+      "meaning": "Şans oyunu"
+    },
+    {
+      "word": "PİYANO",
+      "meaning": "Tuşlu çalgı"
+    },
+    {
+      "word": "PİYASA",
+      "meaning": "Pazar, ekonomi"
+    },
+    {
+      "word": "PLAJ",
+      "meaning": "Kumsal"
+    },
+    {
+      "word": "PLAK",
+      "meaning": "Müzik diski"
+    },
+    {
+      "word": "PLAN",
+      "meaning": "Tasarı, program"
+    },
+    {
+      "word": "PLASTİK",
+      "meaning": "Yapay madde"
+    },
+    {
+      "word": "POLİS",
+      "meaning": "Emniyet görevlisi"
+    },
+    {
+      "word": "PORTAKAL",
+      "meaning": "Turuncu meyve"
+    },
+    {
+      "word": "POSTA",
+      "meaning": "Mektup servisi"
+    },
+    {
+      "word": "PROJE",
+      "meaning": "Tasarı"
+    },
+    {
+      "word": "PUAN",
+      "meaning": "Sayı, skor"
+    },
+    {
+      "word": "PUSULA",
+      "meaning": "Yön bulma aracı"
+    }
   ],
   "R": [
-    { "word": "RADYAN", "meaning": "Bir dairede yarıçap uzunluğundaki yay parçasını gören merkez açıya, eşit açı ölçme birimi" },
-    { "word": "RAFINE", "meaning": "İşlenmiş, arıtılmış" },
-    { "word": "RANDEVU", "meaning": "Önceden belirlenen buluşma" },
-    { "word": "RECEL", "meaning": "Meyveden yapılan tatlı" },
-    { "word": "RETRO", "meaning": "Eski tarz, nostaljik" },
-    { "word": "RITIM", "meaning": "Müzikte tempo" },
-    { "word": "ROBOT", "meaning": "Otomatik çalışan makine" },
-    { "word": "RUTIN", "meaning": "Alışılmış düzen" },
-    { "word": "RAPOR", "meaning": "Bir durumun yazılı olarak açıklanması" },
-    { "word": "REVIZYON", "meaning": "Gözden geçirme ve düzeltme" },
-    { "word": "RAHAT", "meaning": "Konforlu, sıkıntısız" },
-    { "word": "REHBER", "meaning": "Yol gösteren kişi veya kaynak" },
-    { "word": "RISK", "meaning": "Tehlike veya belirsizlik" },
-    { "word": "ROL", "meaning": "Oyunda üstlenilen karakter" },
-    { "word": "RUH", "meaning": "Manevi varlık" },
-    { "word": "REKOR", "meaning": "En iyi performans" },
-    { "word": "RAPLAM", "meaning": "Kayıtlı müzik söylemi" },
-    { "word": "RAFLAR", "meaning": "Eşyaların konulduğu yerler" },
-    { "word": "RAHIM", "meaning": "Merhametli olma hali" }
+    {
+      "word": "RADYO",
+      "meaning": "Ses yayın cihazı"
+    },
+    {
+      "word": "RAF",
+      "meaning": "Eşya koyma yeri"
+    },
+    {
+      "word": "RAKAM",
+      "meaning": "Sayı işareti"
+    },
+    {
+      "word": "RAKİP",
+      "meaning": "Yarışılan kişi"
+    },
+    {
+      "word": "RANDEVU",
+      "meaning": "Buluşma sözü"
+    },
+    {
+      "word": "RAPOR",
+      "meaning": "Durum bildirisi"
+    },
+    {
+      "word": "REÇEL",
+      "meaning": "Meyve tatlısı"
+    },
+    {
+      "word": "REÇETE",
+      "meaning": "İlaç listesi"
+    },
+    {
+      "word": "REHBER",
+      "meaning": "Yol gösteren"
+    },
+    {
+      "word": "REKLAM",
+      "meaning": "Tanıtım"
+    },
+    {
+      "word": "RENK",
+      "meaning": "Işık yansıması"
+    },
+    {
+      "word": "RESİM",
+      "meaning": "Çizim veya fotoğraf"
+    },
+    {
+      "word": "RESMİ",
+      "meaning": "Devlete ait veya ciddi"
+    },
+    {
+      "word": "RESTORAN",
+      "meaning": "Yemek yeri"
+    },
+    {
+      "word": "REZERVASYON",
+      "meaning": "Yer ayırtma"
+    },
+    {
+      "word": "RİSK",
+      "meaning": "Tehlike ihtimali"
+    },
+    {
+      "word": "RİTİM",
+      "meaning": "Düzenli ses tekrarı"
+    },
+    {
+      "word": "ROBOT",
+      "meaning": "Otomatik makine"
+    },
+    {
+      "word": "ROL",
+      "meaning": "Oyuncunun görevi"
+    },
+    {
+      "word": "ROMAN",
+      "meaning": "Uzun edebi eser"
+    },
+    {
+      "word": "ROTA",
+      "meaning": "İzlenecek yol"
+    },
+    {
+      "word": "ROZET",
+      "meaning": "Yaka iğnesi"
+    },
+    {
+      "word": "RÖPORTAJ",
+      "meaning": "Mülakat"
+    },
+    {
+      "word": "RUH",
+      "meaning": "Can, maneviyat"
+    },
+    {
+      "word": "RUJ",
+      "meaning": "Dudak boyası"
+    },
+    {
+      "word": "RÜYA",
+      "meaning": "Düş"
+    },
+    {
+      "word": "RÜZGAR",
+      "meaning": "Hava akımı"
+    },
+    {
+      "word": "RENDE",
+      "meaning": "Mutfak aleti"
+    },
+    {
+      "word": "RAY",
+      "meaning": "Tren yolu demiri"
+    }
   ],
   "S": [
-    { "word": "SAVSAK", "meaning": "İşlerine önem vermeyen, ihmalkar" },
-    { "word": "SATIN", "meaning": "Parlak ipek kumaş" },
-    { "word": "SENARYO", "meaning": "Film veya dizi metni" },
-    { "word": "SLOGAN", "meaning": "Kısa ve akılda kalıcı söz" },
-    { "word": "SPONSOR", "meaning": "Maddi destek veren kişi veya kurum" },
-    { "word": "STATIK", "meaning": "Hareketsiz, durağan" },
-    { "word": "STRATEJI", "meaning": "Uzun vadeli plan" },
-    { "word": "SISTEM", "meaning": "Düzenli işleyiş" },
-    { "word": "SEMBOL", "meaning": "Bir kavramı temsil eden işaret" },
-    { "word": "SAGLAM", "meaning": "Dayanıklı, güçlü" },
-    { "word": "SEYAHAT", "meaning": "Gezme, yolculuk etme" },
-    { "word": "SIRA", "meaning": "Düzenli sıra" },
-    { "word": "SİNEMA", "meaning": "Film gösterim yeri" },
-    { "word": "SÖZCÜK", "meaning": "Dil birimi" },
-    { "word": "SOKAK", "meaning": "Yerleşim alanı içi yol" },
-    { "word": "SICAK", "meaning": "Yüksek ısı hissi" },
-    { "word": "SAĞLIK", "meaning": "Hastalık olmama durumu" },
-    { "word": "SUT", "meaning": "Hayvansal içecek" },
-    { "word": "SEVIM", "meaning": "Hoşluk, sevimlilik" }
+    {
+      "word": "SAAT",
+      "meaning": "Zaman ölçer"
+    },
+    {
+      "word": "SABAH",
+      "meaning": "Günün başlangıcı"
+    },
+    {
+      "word": "SABUN",
+      "meaning": "Temizlik maddesi"
+    },
+    {
+      "word": "SAÇ",
+      "meaning": "Baş kılı"
+    },
+    {
+      "word": "SADE",
+      "meaning": "Yalın, karışık olmayan"
+    },
+    {
+      "word": "SAĞLIK",
+      "meaning": "Sıhhat, esenlik"
+    },
+    {
+      "word": "SAHİL",
+      "meaning": "Kıyı"
+    },
+    {
+      "word": "SAHNE",
+      "meaning": "Gösteri yeri"
+    },
+    {
+      "word": "SAKIZ",
+      "meaning": "Çiğnenen tatlı"
+    },
+    {
+      "word": "SAKİN",
+      "meaning": "Durgun, sessiz"
+    },
+    {
+      "word": "SALATA",
+      "meaning": "Soğuk yiyecek karışımı"
+    },
+    {
+      "word": "SALÇA",
+      "meaning": "Domates veya biber ezmesi"
+    },
+    {
+      "word": "SALON",
+      "meaning": "Büyük oda"
+    },
+    {
+      "word": "SAMAN",
+      "meaning": "Kurumuş ot"
+    },
+    {
+      "word": "SANAT",
+      "meaning": "Yaratıcılık, estetik"
+    },
+    {
+      "word": "SANDALYE",
+      "meaning": "Oturak"
+    },
+    {
+      "word": "SANDIK",
+      "meaning": "Büyük kutu"
+    },
+    {
+      "word": "SANİYE",
+      "meaning": "Zaman birimi"
+    },
+    {
+      "word": "SANKİ",
+      "meaning": "Güya, adeta"
+    },
+    {
+      "word": "SAP",
+      "meaning": "Tutacak yer"
+    },
+    {
+      "word": "SARAY",
+      "meaning": "Hükümdar evi"
+    },
+    {
+      "word": "SARI",
+      "meaning": "Limon rengi"
+    },
+    {
+      "word": "SARIMSAK",
+      "meaning": "Kokulu bir sebze"
+    },
+    {
+      "word": "SATIR",
+      "meaning": "Yazı sırası veya bıçak"
+    },
+    {
+      "word": "SAVAŞ",
+      "meaning": "Harp, çatışma"
+    },
+    {
+      "word": "SAYFA",
+      "meaning": "Kağıt yüzü"
+    },
+    {
+      "word": "SAYGI",
+      "meaning": "Hürmet"
+    },
+    {
+      "word": "SAYI",
+      "meaning": "Rakam, adet"
+    },
+    {
+      "word": "SEBZE",
+      "meaning": "Yenen bitki"
+    },
+    {
+      "word": "SEÇİM",
+      "meaning": "Tercih veya oylama"
+    },
+    {
+      "word": "SEDİR",
+      "meaning": "Divan veya ağaç"
+    },
+    {
+      "word": "SEVGİ",
+      "meaning": "Aşk, muhabbet"
+    },
+    {
+      "word": "SEVİNÇ",
+      "meaning": "Mutluluk"
+    },
+    {
+      "word": "SEYAHAT",
+      "meaning": "Yolculuk"
+    },
+    {
+      "word": "SICAK",
+      "meaning": "Isısı yüksek"
+    },
+    {
+      "word": "SIFIR",
+      "meaning": "Değersiz sayı"
+    },
+    {
+      "word": "SIĞIR",
+      "meaning": "Büyükbaş hayvan"
+    },
+    {
+      "word": "SINAV",
+      "meaning": "İmtihan"
+    },
+    {
+      "word": "SINIF",
+      "meaning": "Derslik veya kategori"
+    },
+    {
+      "word": "SIR",
+      "meaning": "Gizli tutulan şey"
+    },
+    {
+      "word": "SIRA",
+      "meaning": "Dizi veya okul masası"
+    },
+    {
+      "word": "SİGARA",
+      "meaning": "Tütün ürünü"
+    },
+    {
+      "word": "SİHİR",
+      "meaning": "Büyü"
+    },
+    {
+      "word": "SİLAH",
+      "meaning": "Saldırı aleti"
+    },
+    {
+      "word": "SİLGİ",
+      "meaning": "Silme aracı"
+    },
+    {
+      "word": "SİMA",
+      "meaning": "Yüz, çehre"
+    },
+    {
+      "word": "SİMİT",
+      "meaning": "Halka şeklinde ekmek"
+    },
+    {
+      "word": "SİNEK",
+      "meaning": "Uçan böcek"
+    },
+    {
+      "word": "SİNEMA",
+      "meaning": "Film sanatı"
+    },
+    {
+      "word": "SİRK",
+      "meaning": "Gösteri çadırı"
+    },
+    {
+      "word": "SİSTEM",
+      "meaning": "Düzen, yöntem"
+    },
+    {
+      "word": "SİTE",
+      "meaning": "Konut grubu veya web yeri"
+    },
+    {
+      "word": "SİYAH",
+      "meaning": "Kara renk"
+    },
+    {
+      "word": "SİZ",
+      "meaning": "Karşıdaki kişiler"
+    },
+    {
+      "word": "SOBA",
+      "meaning": "Isıtma aracı"
+    },
+    {
+      "word": "SOĞAN",
+      "meaning": "Acı sebze"
+    },
+    {
+      "word": "SOĞUK",
+      "meaning": "Isısı düşük"
+    },
+    {
+      "word": "SOKAK",
+      "meaning": "Yol, cadde"
+    },
+    {
+      "word": "SON",
+      "meaning": "Bitiş"
+    },
+    {
+      "word": "SONBAHAR",
+      "meaning": "Güz mevsimi"
+    },
+    {
+      "word": "SORU",
+      "meaning": "Sual"
+    },
+    {
+      "word": "SORUN",
+      "meaning": "Problem"
+    },
+    {
+      "word": "SOSİS",
+      "meaning": "Et ürünü"
+    },
+    {
+      "word": "SOYADI",
+      "meaning": "Aile adı"
+    },
+    {
+      "word": "SPOR",
+      "meaning": "Beden eğitimi"
+    },
+    {
+      "word": "SU",
+      "meaning": "Yaşam sıvısı"
+    },
+    {
+      "word": "SUCUK",
+      "meaning": "Baharatlı et"
+    },
+    {
+      "word": "SULTAN",
+      "meaning": "Hükümdar"
+    },
+    {
+      "word": "SUSAM",
+      "meaning": "Küçük tohum"
+    },
+    {
+      "word": "SÜNGER",
+      "meaning": "Temizlik malzemesi"
+    },
+    {
+      "word": "SÜRPRİZ",
+      "meaning": "Beklenmedik olay"
+    },
+    {
+      "word": "SÜRÜ",
+      "meaning": "Hayvan topluluğu"
+    },
+    {
+      "word": "SÜT",
+      "meaning": "Beyaz besin sıvısı"
+    }
   ],
   "Ş": [
-    { "word": "ŞARBON", "meaning": "İnce ve yarı saydam bir tür kağıt" },
-    { "word": "ŞABLON", "meaning": "Kalıp, şekil" },
-    { "word": "ŞEHIR", "meaning": "Kent, büyük yerleşim yeri" },
-    { "word": "ŞIIR", "meaning": "Manzume, nazım" },
-    { "word": "ŞIFRE", "meaning": "Gizli kod" },
-    { "word": "ŞOFOR", "meaning": "Araç kullanan kişi" },
-    { "word": "ŞAPKA", "meaning": "Başa giyilen aksesuar" },
-    { "word": "ŞEKER", "meaning": "Tatlı madde" },
-    { "word": "ŞANLI", "meaning": "Onurlu, şerefli" },
-    { "word": "ŞEFTALI", "meaning": "Sulu bir yaz meyvesi" },
-    { "word": "ŞEHİR", "meaning": "Büyük yerleşim yeri" },
-    { "word": "ŞARKI", "meaning": "Müzik parçası" },
-    { "word": "ŞARJ", "meaning": "Elektrik yükleme işlemi" },
-    { "word": "ŞEMSİYE", "meaning": "Yağmur veya güneşten koruyan eşya" },
-    { "word": "ŞARKÜTERI", "meaning": "Et ve şarküteri ürünleri satan yer" },
-    { "word": "ŞİMDİ", "meaning": "Bu an, şu zaman" },
-    { "word": "ŞEFFAF", "meaning": "Saydam, geçirgen" },
-    { "word": "ŞAKA", "meaning": "Gülme amaçlı yapılan söz veya davranış" },
-    { "word": "ŞANZIMAN", "meaning": "Araçlarda vites sistemi" }
+    {
+      "word": "ŞAFAK",
+      "meaning": "Güneş doğuş vakti"
+    },
+    {
+      "word": "ŞAHIS",
+      "meaning": "Kişi"
+    },
+    {
+      "word": "ŞAHİT",
+      "meaning": "Tanık"
+    },
+    {
+      "word": "ŞAİR",
+      "meaning": "Şiir yazan"
+    },
+    {
+      "word": "ŞAKA",
+      "meaning": "Güldürü, latife"
+    },
+    {
+      "word": "ŞAL",
+      "meaning": "Omuz örtüsü"
+    },
+    {
+      "word": "ŞAMPİYON",
+      "meaning": "Birinci olan"
+    },
+    {
+      "word": "ŞANS",
+      "meaning": "Talih"
+    },
+    {
+      "word": "ŞAPKA",
+      "meaning": "Başlık"
+    },
+    {
+      "word": "ŞARAP",
+      "meaning": "Üzüm içkisi"
+    },
+    {
+      "word": "ŞARKI",
+      "meaning": "Müzik parçası"
+    },
+    {
+      "word": "ŞART",
+      "meaning": "Koşul"
+    },
+    {
+      "word": "ŞATO",
+      "meaning": "Büyük kale ev"
+    },
+    {
+      "word": "ŞEHİR",
+      "meaning": "Kent"
+    },
+    {
+      "word": "ŞEKER",
+      "meaning": "Tatlı madde"
+    },
+    {
+      "word": "ŞEKİL",
+      "meaning": "Biçim"
+    },
+    {
+      "word": "ŞEMSİYE",
+      "meaning": "Yağmur koruyucu"
+    },
+    {
+      "word": "ŞENLİK",
+      "meaning": "Eğlence, festival"
+    },
+    {
+      "word": "ŞEREF",
+      "meaning": "Onur"
+    },
+    {
+      "word": "ŞERİT",
+      "meaning": "İnce uzun parça"
+    },
+    {
+      "word": "ŞEY",
+      "meaning": "Nesne, madde"
+    },
+    {
+      "word": "ŞİFRE",
+      "meaning": "Gizli kod"
+    },
+    {
+      "word": "ŞİİR",
+      "meaning": "Duygulu yazı"
+    },
+    {
+      "word": "ŞİKAYET",
+      "meaning": "Yakınma"
+    },
+    {
+      "word": "ŞİMDİ",
+      "meaning": "Şu an"
+    },
+    {
+      "word": "ŞİMŞEK",
+      "meaning": "Elektrik parlaması"
+    },
+    {
+      "word": "ŞİŞE",
+      "meaning": "Cam kap"
+    },
+    {
+      "word": "ŞİŞMAN",
+      "meaning": "Kilolu"
+    },
+    {
+      "word": "ŞOFÖR",
+      "meaning": "Sürücü"
+    },
+    {
+      "word": "ŞÖHRET",
+      "meaning": "Ün"
+    },
+    {
+      "word": "ŞUBAT",
+      "meaning": "Kış ayı"
+    },
+    {
+      "word": "ŞUBE",
+      "meaning": "Dal, kol"
+    }
   ],
   "T": [
-    { "word": "SULTAN", "meaning": "İnce yufkaların içine kaymak konulup üstüne dövülmüş fıstık serpilerek yapılan bir tür baklava" },
-    { "word": "TABLET", "meaning": "Taşınabilir dokunmatik bilgisayar" },
-    { "word": "TAKTIK", "meaning": "Kısa vadeli plan" },
-    { "word": "TERAPI", "meaning": "Tedavi yöntemi" },
-    { "word": "TIRAJ", "meaning": "Basılan kopya sayısı" },
-    { "word": "TRAFIK", "meaning": "Yol üzerindeki araç akışı" },
-    { "word": "TREND", "meaning": "Moda akım" },
-    { "word": "TURIST", "meaning": "Gezgin, seyahat eden kişi" },
-    { "word": "TALEP", "meaning": "İstek, arz" },
-    { "word": "TARTI", "meaning": "Ağırlık ölçmeye yarayan alet" },
-    { "word": "TABAK", "meaning": "Yemek konulan gereç" },
-    { "word": "TARİH", "meaning": "Geçmiş olayların incelenmesi" },
-    { "word": "TUR", "meaning": "Gezi veya etap" },
-    { "word": "TEMA", "meaning": "Ana fikir veya konu" },
-    { "word": "TAMIR", "meaning": "Onarma işlemi" },
-    { "word": "TIYATRO", "meaning": "Sahne sanatı" },
-    { "word": "TAKIM", "meaning": "Birlikte çalışan grup" },
-    { "word": "TEMPO", "meaning": "Hız düzeni" },
-    { "word": "TUTKU", "meaning": "Yoğun istek veya sevgi" }
+    {
+      "word": "TABAK",
+      "meaning": "Yemek kabı"
+    },
+    {
+      "word": "TABAN",
+      "meaning": "Alt kısım"
+    },
+    {
+      "word": "TABELA",
+      "meaning": "Tanıtım levhası"
+    },
+    {
+      "word": "TABLET",
+      "meaning": "Düz bilgisayar veya ilaç"
+    },
+    {
+      "word": "TABLO",
+      "meaning": "Duvar resmi"
+    },
+    {
+      "word": "TACI",
+      "meaning": "Taç takan"
+    },
+    {
+      "word": "TAÇ",
+      "meaning": "Baş süsü"
+    },
+    {
+      "word": "TAHIL",
+      "meaning": "Buğday, arpa vb."
+    },
+    {
+      "word": "TAHMİN",
+      "meaning": "Öngörü"
+    },
+    {
+      "word": "TAHTA",
+      "meaning": "Ahşap levha"
+    },
+    {
+      "word": "TAKIM",
+      "meaning": "Ekip veya set"
+    },
+    {
+      "word": "TAKSİ",
+      "meaning": "Ticari araç"
+    },
+    {
+      "word": "TAKVİM",
+      "meaning": "Zaman çizelgesi"
+    },
+    {
+      "word": "TALEBE",
+      "meaning": "Öğrenci"
+    },
+    {
+      "word": "TALİH",
+      "meaning": "Şans"
+    },
+    {
+      "word": "TAMİR",
+      "meaning": "Onarım"
+    },
+    {
+      "word": "TANE",
+      "meaning": "Adet"
+    },
+    {
+      "word": "TANITIM",
+      "meaning": "Reklam, lansman"
+    },
+    {
+      "word": "TANK",
+      "meaning": "Zırhlı savaş aracı veya depo"
+    },
+    {
+      "word": "TARAK",
+      "meaning": "Saç düzeltme aracı"
+    },
+    {
+      "word": "TARİF",
+      "meaning": "Açıklama, reçete"
+    },
+    {
+      "word": "TARİH",
+      "meaning": "Geçmiş zaman bilimi"
+    },
+    {
+      "word": "TARLA",
+      "meaning": "Ekip biçilen yer"
+    },
+    {
+      "word": "TART",
+      "meaning": "Bir tatlı türü"
+    },
+    {
+      "word": "TASARIM",
+      "meaning": "Dizayn"
+    },
+    {
+      "word": "TAŞ",
+      "meaning": "Sert madde"
+    },
+    {
+      "word": "TATİL",
+      "meaning": "Dinlenme süresi"
+    },
+    {
+      "word": "TATLI",
+      "meaning": "Şekerli yiyecek"
+    },
+    {
+      "word": "TAVAN",
+      "meaning": "Odanın üstü"
+    },
+    {
+      "word": "TAVŞAN",
+      "meaning": "Uzun kulaklı hayvan"
+    },
+    {
+      "word": "TAVUK",
+      "meaning": "Kümes hayvanı"
+    },
+    {
+      "word": "TAY",
+      "meaning": "At yavrusu"
+    },
+    {
+      "word": "TAZE",
+      "meaning": "Bayat olmayan"
+    },
+    {
+      "word": "TEHLİKE",
+      "meaning": "Risk"
+    },
+    {
+      "word": "TEKNE",
+      "meaning": "Küçük gemi"
+    },
+    {
+      "word": "TEKNOLOJİ",
+      "meaning": "Uygulamalı bilim"
+    },
+    {
+      "word": "TELEFON",
+      "meaning": "İletişim aracı"
+    },
+    {
+      "word": "TELEVİZYON",
+      "meaning": "Görüntü cihazı"
+    },
+    {
+      "word": "TEL",
+      "meaning": "İnce metal ip"
+    },
+    {
+      "word": "TEMA",
+      "meaning": "Konu"
+    },
+    {
+      "word": "TEMİZ",
+      "meaning": "Kirli olmayan"
+    },
+    {
+      "word": "TEMMUZ",
+      "meaning": "Yaz ayı"
+    },
+    {
+      "word": "TENCERE",
+      "meaning": "Yemek pişirme kabı"
+    },
+    {
+      "word": "TENİS",
+      "meaning": "Raketle oynanan spor"
+    },
+    {
+      "word": "TEPE",
+      "meaning": "Yüksek yer"
+    },
+    {
+      "word": "TERLİK",
+      "meaning": "Ev ayakkabısı"
+    },
+    {
+      "word": "TERZİ",
+      "meaning": "Giysi diken kişi"
+    },
+    {
+      "word": "TEST",
+      "meaning": "Sınama"
+    },
+    {
+      "word": "TEYZE",
+      "meaning": "Annenin kız kardeşi"
+    },
+    {
+      "word": "TIRTIL",
+      "meaning": "Kelebek larvası"
+    },
+    {
+      "word": "TİCARET",
+      "meaning": "Alım satım işi"
+    },
+    {
+      "word": "TİYATRO",
+      "meaning": "Sahne sanatı"
+    },
+    {
+      "word": "TOHUM",
+      "meaning": "Bitki çekirdeği"
+    },
+    {
+      "word": "TOKA",
+      "meaning": "Saç tutturacağı"
+    },
+    {
+      "word": "TOP",
+      "meaning": "Yuvarlak oyun aracı"
+    },
+    {
+      "word": "TOPRAK",
+      "meaning": "Yer yüzeyi maddesi"
+    },
+    {
+      "word": "TOPLANTI",
+      "meaning": "Bir araya gelme"
+    },
+    {
+      "word": "TORBA",
+      "meaning": "Poşet, çuval"
+    },
+    {
+      "word": "TOST",
+      "meaning": "Kızarmış ekmek"
+    },
+    {
+      "word": "TOZ",
+      "meaning": "İnce kir zerresi"
+    },
+    {
+      "word": "TRAFİK",
+      "meaning": "Araç akışı"
+    },
+    {
+      "word": "TREN",
+      "meaning": "Raylı taşıt"
+    },
+    {
+      "word": "TUĞLA",
+      "meaning": "Yapı taşı"
+    },
+    {
+      "word": "TUZ",
+      "meaning": "Beyaz tat verici"
+    },
+    {
+      "word": "TÜR",
+      "meaning": "Çeşit, cins"
+    },
+    {
+      "word": "TÜRK",
+      "meaning": "Türkiye halkından"
+    },
+    {
+      "word": "TÜRKÇE",
+      "meaning": "Türk dili"
+    },
+    {
+      "word": "TÜTÜN",
+      "meaning": "Sigara hammaddesi"
+    },
+    {
+      "word": "TÜY",
+      "meaning": "Kuş kılı"
+    }
   ],
   "U": [
-    { "word": "UFO", "meaning": "Gökyüzünde tanımlanamayan cisim" },
-    { "word": "ULASIM", "meaning": "Bir yerden başka yere gitme" },
-    { "word": "UNIVERSITE", "meaning": "Yüksek öğretim kurumu" },
-    { "word": "URETIM", "meaning": "Mal veya hizmet yapma" },
-    { "word": "UYARI", "meaning": "Dikkat çekme, ihtar" },
-    { "word": "UZANTI", "meaning": "Devam eden bölüm" },
-    { "word": "UZMAN", "meaning": "Alanında bilgili kişi" },
-    { "word": "UCRET", "meaning": "Hizmet karşılığı ödenen para" },
-    { "word": "UYDU", "meaning": "Bir gezegenin çevresinde dönen gök cismi" },
-    { "word": "UZAY", "meaning": "Dünya atmosferi dışındaki alan" },
-    { "word": "UYGUN", "meaning": "Elverişli, uygun olan" },
-    { "word": "URLA", "meaning": "Yer adı örneği" },
-    { "word": "ULUS", "meaning": "Topluluk, millet" },
-    { "word": "UNUTMA", "meaning": "Bir şeyi akılda tutma çağrısı" },
-    { "word": "UÇURUM", "meaning": "Yüksek dik yamaç" },
-    { "word": "UÇAK", "meaning": "Hava aracı" },
-    { "word": "UMUT", "meaning": "Gelecek için beklenti" },
-    { "word": "ULAŞIM", "meaning": "Bir yere gitme sistemi" },
-    { "word": "USTALIK", "meaning": "Yüksek beceri seviyesi" }
+    {
+      "word": "UÇAK",
+      "meaning": "Hava taşıtı"
+    },
+    {
+      "word": "UÇURTMA",
+      "meaning": "İple uçurulan oyuncak"
+    },
+    {
+      "word": "UCUZ",
+      "meaning": "Pahalı olmayan"
+    },
+    {
+      "word": "UFAK",
+      "meaning": "Küçük"
+    },
+    {
+      "word": "UĞUR",
+      "meaning": "Şans getiren şey"
+    },
+    {
+      "word": "ULAŞIM",
+      "meaning": "Gidip gelme, taşıma"
+    },
+    {
+      "word": "ULUS",
+      "meaning": "Millet"
+    },
+    {
+      "word": "UMUT",
+      "meaning": "Ümit, beklenti"
+    },
+    {
+      "word": "UN",
+      "meaning": "Öğütülmüş tahıl tozu"
+    },
+    {
+      "word": "UNUTKAN",
+      "meaning": "Çabuk unutan"
+    },
+    {
+      "word": "USTA",
+      "meaning": "Zanaatkar, ehil"
+    },
+    {
+      "word": "USLU",
+      "meaning": "Yaramaz olmayan"
+    },
+    {
+      "word": "UYARI",
+      "meaning": "İkaz"
+    },
+    {
+      "word": "UYDU",
+      "meaning": "Gezegen çevresinde dönen gök cismi"
+    },
+    {
+      "word": "UYGUN",
+      "meaning": "Elverişli, yakışır"
+    },
+    {
+      "word": "UYKU",
+      "meaning": "Dinlenme hali"
+    },
+    {
+      "word": "UYUMLU",
+      "meaning": "Ahenkli"
+    },
+    {
+      "word": "UZAK",
+      "meaning": "Yakın olmayan"
+    },
+    {
+      "word": "UZAY",
+      "meaning": "Sonsuz boşluk"
+    },
+    {
+      "word": "UZMAN",
+      "meaning": "Bilirkişi"
+    },
+    {
+      "word": "UZUN",
+      "meaning": "Kısa olmayan"
+    },
+    {
+      "word": "UNVAN",
+      "meaning": "San, lakap"
+    },
+    {
+      "word": "UYGAR",
+      "meaning": "Medeni"
+    },
+    {
+      "word": "UÇ",
+      "meaning": "Sivri kenar"
+    }
   ],
   "Ü": [
-    { "word": "ÜZÜM", "meaning": "En fazla çeşide sahip olan meyve türü" },
-    { "word": "ÜLKE", "meaning": "Devlet, vatan" },
-    { "word": "ÜMIT", "meaning": "Beklenti, temenni" },
-    { "word": "ÜNLÜ", "meaning": "Tanınmış, meşhur" },
-    { "word": "ÜRETIM", "meaning": "Yapım, imalat" },
-    { "word": "ÜSLUP", "meaning": "Tarz, biçim" },
-    { "word": "ÜCRET", "meaning": "Ödeme, bedel" },
-    { "word": "ÜNVAN", "meaning": "Meslek veya makam adı" },
-    { "word": "ÜÇGEN", "meaning": "Üç kenarlı geometrik şekil" },
-    { "word": "ÜSTAD", "meaning": "Usta, uzman kişi" },
-    { "word": "ÜRETEN", "meaning": "Üretim yapan kişi veya sistem" },
-    { "word": "ÜRÜN", "meaning": "Üretilmiş mal" },
-    { "word": "ÜNVANLI", "meaning": "Unvanı olan" },
-    { "word": "ÜCRETSİZ", "meaning": "Bedava, parasız" },
-    { "word": "ÜRETİMİ", "meaning": "Üretme süreci" },
-    { "word": "ÜSTÜNLÜK", "meaning": "Avantaj, avantajlı durum" },
-    { "word": "ÜMİTVAR", "meaning": "Umudu olan" },
-    { "word": "ÜSTATLIK", "meaning": "Ustalık derecesi" },
-    { "word": "ÜZÜLME", "meaning": "Üzüntü belirtisi" }
+    {
+      "word": "ÜCRET",
+      "meaning": "Hizmet karşılığı para"
+    },
+    {
+      "word": "ÜÇGEN",
+      "meaning": "Üç kenarlı şekil"
+    },
+    {
+      "word": "ÜLKE",
+      "meaning": "Devlet, memleket"
+    },
+    {
+      "word": "ÜMİT",
+      "meaning": "Umut"
+    },
+    {
+      "word": "ÜNİVERSİTE",
+      "meaning": "Yüksek öğretim kurumu"
+    },
+    {
+      "word": "ÜNLÜ",
+      "meaning": "Meşhur"
+    },
+    {
+      "word": "ÜRÜN",
+      "meaning": "Mahsul, mamul"
+    },
+    {
+      "word": "ÜS",
+      "meaning": "Askeri merkez veya matematik terimi"
+    },
+    {
+      "word": "ÜSTAT",
+      "meaning": "Usta, bilge kişi"
+    },
+    {
+      "word": "ÜSTÜN",
+      "meaning": "Daha iyi, galip"
+    },
+    {
+      "word": "ÜTÜ",
+      "meaning": "Kıyafet düzleştirici"
+    },
+    {
+      "word": "ÜYE",
+      "meaning": "Bir topluluğa dahil olan"
+    },
+    {
+      "word": "ÜZÜM",
+      "meaning": "Salkımlı meyve"
+    },
+    {
+      "word": "ÜZGÜN",
+      "meaning": "Mutsuz, kederli"
+    },
+    {
+      "word": "ÜÇ",
+      "meaning": "Bir sayı"
+    },
+    {
+      "word": "ÜŞÜMEK",
+      "meaning": "Soğuktan etkilenmek"
+    },
+    {
+      "word": "ÜRETİM",
+      "meaning": "İmalat"
+    }
   ],
   "V": [
-    { "word": "VERIM", "meaning": "Bir işten elde edilen iyi sonuç, fayda" },
-    { "word": "VALIZ", "meaning": "Seyahat çantası" },
-    { "word": "VANTILATÖR", "meaning": "Hava sirkülasyonu sağlayan alet" },
-    { "word": "VEKTOR", "meaning": "Yönü ve büyüklüğü olan nicelik" },
-    { "word": "VERGI", "meaning": "Devlete ödenen zorunlu para" },
-    { "word": "VIDEO", "meaning": "Hareketli görüntü kaydı" },
-    { "word": "VIRAJ", "meaning": "Yolun kıvrımı" },
-    { "word": "VIZYON", "meaning": "Gelecek görüşü" },
-    { "word": "VITRIN", "meaning": "Mağaza ürünlerinin sergilendiği cam bölme" },
-    { "word": "VURGUN", "meaning": "Ani büyük kazanç veya beklenmedik darbe" },
-    { "word": "VALOR", "meaning": "Değer, cesaret örneği" },
-    { "word": "VAKIT", "meaning": "Zaman dilimi" },
-    { "word": "VIDE O", "meaning": "Görüntü kaydı (yazım varyantı)" },
-    { "word": "VAKIF", "meaning": "Hayır kurumu" },
-    { "word": "VIZYONER", "meaning": "Geleceği gören kişi" },
-    { "word": "VURGU", "meaning": "Önem verme, altını çizme" },
-    { "word": "VIP", "meaning": "Önemli kişi kısaltması" },
-    { "word": "VITAMIN", "meaning": "Besin öğesi" },
-    { "word": "VİDEO2", "meaning": "Ek video örnek kelimesi" }
+    {
+      "word": "VAGON",
+      "meaning": "Tren arabası"
+    },
+    {
+      "word": "VAHŞİ",
+      "meaning": "Yabani, evcil olmayan"
+    },
+    {
+      "word": "VAKIF",
+      "meaning": "Hayır kurumu"
+    },
+    {
+      "word": "VAKİT",
+      "meaning": "Zaman"
+    },
+    {
+      "word": "VALİ",
+      "meaning": "İl yöneticisi"
+    },
+    {
+      "word": "VALİZ",
+      "meaning": "Bavul"
+    },
+    {
+      "word": "VAPUR",
+      "meaning": "Yolcu gemisi"
+    },
+    {
+      "word": "VARİL",
+      "meaning": "Büyük sıvı kabı"
+    },
+    {
+      "word": "VARLIK",
+      "meaning": "Mevcudiyet veya zenginlik"
+    },
+    {
+      "word": "VATAN",
+      "meaning": "Yurt"
+    },
+    {
+      "word": "VATANDAŞ",
+      "meaning": "Yurttaş"
+    },
+    {
+      "word": "VAZO",
+      "meaning": "Çiçek kabı"
+    },
+    {
+      "word": "VEDA",
+      "meaning": "Ayrılık selamı"
+    },
+    {
+      "word": "VEFA",
+      "meaning": "Bağlılık, sadakat"
+    },
+    {
+      "word": "VELİ",
+      "meaning": "Öğrenci sorumlusu"
+    },
+    {
+      "word": "VERGİ",
+      "meaning": "Devlete ödenen para"
+    },
+    {
+      "word": "VERİ",
+      "meaning": "Data, bilgi"
+    },
+    {
+      "word": "VESTİYER",
+      "meaning": "Askılık"
+    },
+    {
+      "word": "VETERİNER",
+      "meaning": "Hayvan doktoru"
+    },
+    {
+      "word": "VEZİR",
+      "meaning": "Bakan veya satranç taşı"
+    },
+    {
+      "word": "VİDA",
+      "meaning": "Döndürülerek takılan çivi"
+    },
+    {
+      "word": "VİDEO",
+      "meaning": "Görüntü kaydı"
+    },
+    {
+      "word": "VİLLA",
+      "meaning": "Müstakil lüks ev"
+    },
+    {
+      "word": "VİNÇ",
+      "meaning": "Yük kaldırma aracı"
+    },
+    {
+      "word": "VİRAJ",
+      "meaning": "Dönemeç"
+    },
+    {
+      "word": "VİRÜS",
+      "meaning": "Hastalık mikrobu"
+    },
+    {
+      "word": "VİŞNE",
+      "meaning": "Ekşi kırmızı meyve"
+    },
+    {
+      "word": "VİTRİN",
+      "meaning": "Sergileme camı"
+    },
+    {
+      "word": "VİZE",
+      "meaning": "Giriş izni"
+    },
+    {
+      "word": "VOLKAN",
+      "meaning": "Yanardağ"
+    },
+    {
+      "word": "VÜCUT",
+      "meaning": "Beden"
+    }
   ],
   "Y": [
-    { "word": "YARAR", "meaning": "Bir işten elde edilen iyi sonuç, fayda" },
-    { "word": "YALAN", "meaning": "Gerçek olmayan söz" },
-    { "word": "YASAK", "meaning": "İzin verilmeyen şey" },
-    { "word": "YELPAZE", "meaning": "El ile sallanan serinletici" },
-    { "word": "YILDIZ", "meaning": "Gökyüzünde parlayan gök cismi" },
-    { "word": "YOGUN", "meaning": "Sıkışık, kalabalık" },
-    { "word": "YUREK", "meaning": "Kalp, gönül" },
-    { "word": "YUZEY", "meaning": "Bir şeyin dış kısmı" },
-    { "word": "YANKI", "meaning": "Sesin engelden yansıyarak geri dönmesi" },
-    { "word": "YORUM", "meaning": "Bir konuya ilişkin değerlendirme" },
-    { "word": "YEMEK", "meaning": "Besin, öğün" },
-    { "word": "YENI", "meaning": "Yeni, taze" },
-    { "word": "YONETIM", "meaning": "Organizasyonun yönetilmesi" },
-    { "word": "YOLCU", "meaning": "Seyahat eden kişi" },
-    { "word": "YAGMUR", "meaning": "Su damlalarının yağması" },
-    { "word": "YUMURTA", "meaning": "Tavuk yumurtası, besin" },
-    { "word": "YAMAN", "meaning": "Çok, şiddetli" },
-    { "word": "YAKIN", "meaning": "Uzak olmayan, yakın" },
-    { "word": "YAŞAM", "meaning": "Hayat, yaşam süreci" }
+    {
+      "word": "YABANCI",
+      "meaning": "Tanıdık olmayan"
+    },
+    {
+      "word": "YAĞ",
+      "meaning": "Kaygan sıvı besin"
+    },
+    {
+      "word": "YAĞMUR",
+      "meaning": "Su yağışı"
+    },
+    {
+      "word": "YAKIT",
+      "meaning": "Enerji maddesi"
+    },
+    {
+      "word": "YAKIN",
+      "meaning": "Uzak olmayan"
+    },
+    {
+      "word": "YALAN",
+      "meaning": "Gerçek dışı söz"
+    },
+    {
+      "word": "YALI",
+      "meaning": "Deniz kenarındaki ev"
+    },
+    {
+      "word": "YALNIZ",
+      "meaning": "Tek başına"
+    },
+    {
+      "word": "YAMAÇ",
+      "meaning": "Dağ kenarı"
+    },
+    {
+      "word": "YANGIN",
+      "meaning": "Büyük ateş felaketi"
+    },
+    {
+      "word": "YANIT",
+      "meaning": "Cevap"
+    },
+    {
+      "word": "YANKI",
+      "meaning": "Ses yansıması"
+    },
+    {
+      "word": "YAPRAK",
+      "meaning": "Bitki organı"
+    },
+    {
+      "word": "YARA",
+      "meaning": "Doku hasarı"
+    },
+    {
+      "word": "YARDIM",
+      "meaning": "İmdat, destek"
+    },
+    {
+      "word": "YARIŞ",
+      "meaning": "Müsabaka"
+    },
+    {
+      "word": "YASTIK",
+      "meaning": "Baş altı minderi"
+    },
+    {
+      "word": "YAŞ",
+      "meaning": "Ömür süresi veya ıslak"
+    },
+    {
+      "word": "YAŞAM",
+      "meaning": "Hayat"
+    },
+    {
+      "word": "YATAK",
+      "meaning": "Uyuma yeri"
+    },
+    {
+      "word": "YATIRIM",
+      "meaning": "Geleceğe yönelik harcama"
+    },
+    {
+      "word": "YAVRU",
+      "meaning": "Küçük hayvan veya çocuk"
+    },
+    {
+      "word": "YAY",
+      "meaning": "Ok atma aracı veya esnek metal"
+    },
+    {
+      "word": "YAYA",
+      "meaning": "Yürüyen kişi"
+    },
+    {
+      "word": "YAZ",
+      "meaning": "Sıcak mevsim"
+    },
+    {
+      "word": "YAZAR",
+      "meaning": "Kitap yazan"
+    },
+    {
+      "word": "YAZI",
+      "meaning": "Metin"
+    },
+    {
+      "word": "YAZILIM",
+      "meaning": "Bilgisayar programı"
+    },
+    {
+      "word": "YEDEK",
+      "meaning": "İhtiyat"
+    },
+    {
+      "word": "YELKEN",
+      "meaning": "Rüzgarla giden gemi bezi"
+    },
+    {
+      "word": "YEMEK",
+      "meaning": "Gıda, aş"
+    },
+    {
+      "word": "YEMİN",
+      "meaning": "Ant"
+    },
+    {
+      "word": "YENİ",
+      "meaning": "Eski olmayan"
+    },
+    {
+      "word": "YER",
+      "meaning": "Zemin, mekan"
+    },
+    {
+      "word": "YEŞİL",
+      "meaning": "Doğa rengi"
+    },
+    {
+      "word": "YETER",
+      "meaning": "Kafi"
+    },
+    {
+      "word": "YETKİ",
+      "meaning": "Söz hakkı, otorite"
+    },
+    {
+      "word": "YIL",
+      "meaning": "Sene"
+    },
+    {
+      "word": "YILDIZ",
+      "meaning": "Gökyüzü cismi"
+    },
+    {
+      "word": "YILAN",
+      "meaning": "Sürüngen hayvan"
+    },
+    {
+      "word": "YOĞURT",
+      "meaning": "Süt ürünü"
+    },
+    {
+      "word": "YOKUŞ",
+      "meaning": "Eğimli yol"
+    },
+    {
+      "word": "YOL",
+      "meaning": "Gidilen yer"
+    },
+    {
+      "word": "YOLCU",
+      "meaning": "Seyahat eden"
+    },
+    {
+      "word": "YORGUN",
+      "meaning": "Halsiz, bitkin"
+    },
+    {
+      "word": "YORUM",
+      "meaning": "Görüş, açıklama"
+    },
+    {
+      "word": "YÖN",
+      "meaning": "İstikamet"
+    },
+    {
+      "word": "YÖNETİM",
+      "meaning": "İdare"
+    },
+    {
+      "word": "YUVA",
+      "meaning": "Ev, barınak"
+    },
+    {
+      "word": "YÜK",
+      "meaning": "Taşınan ağırlık"
+    },
+    {
+      "word": "YÜKSEK",
+      "meaning": "Alçak olmayan"
+    },
+    {
+      "word": "YÜN",
+      "meaning": "Koyun tüyü"
+    },
+    {
+      "word": "YÜZ",
+      "meaning": "Çehre veya sayı"
+    },
+    {
+      "word": "YÜZME",
+      "meaning": "Suda ilerleme"
+    },
+    {
+      "word": "YÜZÜK",
+      "meaning": "Parmak takısı"
+    }
   ],
   "Z": [
-    { "word": "ZAT", "meaning": "Kimse, kişi" },
-    { "word": "ZEMIN", "meaning": "Taban, alt yüzey" },
-    { "word": "ZEYTIN", "meaning": "Akdeniz meyvesi" },
-    { "word": "ZIRH", "meaning": "Koruyucu metal giysi" },
-    { "word": "ZONE", "meaning": "Bölge, alan" },
-    { "word": "ZURNA", "meaning": "Nefesli çalgı" },
-    { "word": "ZUMBA", "meaning": "Dans sporu türü" },
-    { "word": "ZIRVE", "meaning": "En yüksek nokta" },
-    { "word": "ZAFER", "meaning": "Galibiyet, başarı" },
-    { "word": "ZENGIN", "meaning": "Maddi varlığı fazla olan" },
-    { "word": "ZAMAN", "meaning": "Süre, vakit" },
-    { "word": "ZIYARET", "meaning": "Birini görmeye gitme eylemi" },
-    { "word": "ZINCIR", "meaning": "Bağlantılı halkalar dizisi" },
-    { "word": "ZAMANLAMA", "meaning": "Doğru zaman ayarı" },
-    { "word": "ZARF", "meaning": "Mektup konulan kabı" },
-    { "word": "ZIHIN", "meaning": "Düşünme ve algılama yetisi" },
-    { "word": "ZABIT", "meaning": "Kayıt tutan memur" },
-    { "word": "ZORUNLU", "meaning": "Yapılması gereken, mecburi" },
-    { "word": "ZIGZAG", "meaning": "Kıvrımlı çizgi" }
+    {
+      "word": "ZAFER",
+      "meaning": "Başarı, galibiyet"
+    },
+    {
+      "word": "ZAMAN",
+      "meaning": "Vakit"
+    },
+    {
+      "word": "ZAMBAK",
+      "meaning": "Güzel kokulu çiçek"
+    },
+    {
+      "word": "ZAR",
+      "meaning": "Oyun küpü veya ince örtü"
+    },
+    {
+      "word": "ZARAFET",
+      "meaning": "İncelik, kibarlık"
+    },
+    {
+      "word": "ZARAR",
+      "meaning": "Ziyan, hasar"
+    },
+    {
+      "word": "ZARF",
+      "meaning": "Mektup kabı"
+    },
+    {
+      "word": "ZAYIF",
+      "meaning": "Güçsüz veya ince"
+    },
+    {
+      "word": "ZEBRA",
+      "meaning": "Çizgili hayvan"
+    },
+    {
+      "word": "ZEKA",
+      "meaning": "Akıl gücü"
+    },
+    {
+      "word": "ZEKİ",
+      "meaning": "Akıllı"
+    },
+    {
+      "word": "ZENGİN",
+      "meaning": "Varlıklı"
+    },
+    {
+      "word": "ZERRECİK",
+      "meaning": "Çok küçük parça"
+    },
+    {
+      "word": "ZEVK",
+      "meaning": "Haz, beğeni"
+    },
+    {
+      "word": "ZEYTİN",
+      "meaning": "Kahvaltılık siyah meyve"
+    },
+    {
+      "word": "ZILGIT",
+      "meaning": "Sevinç çığlığı"
+    },
+    {
+      "word": "ZIRH",
+      "meaning": "Koruyucu giysi"
+    },
+    {
+      "word": "ZIT",
+      "meaning": "Karşıt"
+    },
+    {
+      "word": "ZİNCİR",
+      "meaning": "Halkalı bağ"
+    },
+    {
+      "word": "ZİNDAN",
+      "meaning": "Karanlık hapishane"
+    },
+    {
+      "word": "ZİRAAT",
+      "meaning": "Tarım"
+    },
+    {
+      "word": "ZİRVE",
+      "meaning": "Doruk, en üst nokta"
+    },
+    {
+      "word": "ZİYARET",
+      "meaning": "Görüşmeye gitme"
+    },
+    {
+      "word": "ZOR",
+      "meaning": "Kolay olmayan, güç"
+    },
+    {
+      "word": "ZÜRAFA",
+      "meaning": "Uzun boyunlu hayvan"
+    },
+    {
+      "word": "ZİL",
+      "meaning": "Ses çıkaran araç"
+    },
+    {
+      "word": "ZAM",
+      "meaning": "Fiyat artışı"
+    },
+    {
+      "word": "ZEMİN",
+      "meaning": "Yer, taban"
+    }
   ]
 }

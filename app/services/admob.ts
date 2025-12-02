@@ -1,9 +1,8 @@
 import { AdMob, BannerAdSize, BannerAdPosition, RewardAdPluginEvents } from '@capacitor-community/admob';
 
-// Test Ad Unit IDs (Google'ın resmi test ID'leri)
-// Gerçek yayına geçerken bunları kendi AdMob ID'lerinle değiştir!
-const TEST_BANNER_ID = 'ca-app-pub-3940256099942544/6300978111';
-const TEST_REWARDED_ID = 'ca-app-pub-3940256099942544/5224354917';
+// Production Ad Unit IDs
+const BANNER_ID = 'ca-app-pub-3202065698022430/8508076790';
+const REWARDED_ID = 'ca-app-pub-3202065698022430/9629586779';
 
 let isAdMobInitialized = false;
 let isBannerVisible = false;
@@ -16,7 +15,7 @@ export async function initAdMob(): Promise<void> {
   
   try {
     await AdMob.initialize({
-      initializeForTesting: true, // Yayına geçerken false yap
+      initializeForTesting: false,
     });
     isAdMobInitialized = true;
     console.log('AdMob initialized successfully');
@@ -38,11 +37,11 @@ export async function showBannerAd(): Promise<void> {
     }
     
     const options = {
-      adId: TEST_BANNER_ID,
+      adId: BANNER_ID,
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
-      isTesting: true, // Yayına geçerken false yap
+      isTesting: false,
     };
     
     await AdMob.showBanner(options);
@@ -73,8 +72,8 @@ export async function hideBannerAd(): Promise<void> {
 export async function showRewardedAd(): Promise<boolean> {
   try {
     const options = {
-      adId: TEST_REWARDED_ID,
-      isTesting: true, // Yayına geçerken false yap
+      adId: REWARDED_ID,
+      isTesting: false,
     };
     
     // Ödül event listener
@@ -108,8 +107,8 @@ export async function showRewardedAd(): Promise<boolean> {
 export async function preloadRewardedAd(): Promise<void> {
   try {
     const options = {
-      adId: TEST_REWARDED_ID,
-      isTesting: true,
+      adId: REWARDED_ID,
+      isTesting: false,
     };
     await AdMob.prepareRewardVideoAd(options);
     console.log('Rewarded ad preloaded');

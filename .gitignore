@@ -29,3 +29,11 @@ android/.gradle/
 android/build/
 android/capacitor-cordova-android-plugins/build/
 android/local.properties
+
+# Keystore files (sensitive - never commit!)
+*.keystore
+*.jks
+
+# Release bundles/APKs
+*.aab
+*.apk
