@@ -26,6 +26,7 @@ logs
 # Android build outputs
 android/app/build/
 android/.gradle/
+android/.kotlin/
 android/build/
 android/capacitor-cordova-android-plugins/build/
 android/local.properties
@@ -37,3 +38,6 @@ android/local.properties
 # Release bundles/APKs
 *.aab
 *.apk
+
+# Temporary/dev folders
+0.0.0.0/
